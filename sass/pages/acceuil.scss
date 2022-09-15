@@ -1,0 +1,297 @@
+@import "../utils/utils";
+@import "../base/base";
+@import "../layouts/header"; 
+@import "../layouts/footer";
+
+#acceuil{
+    text-align: center;
+    font-size: $fontSmall;
+
+    &__heroBanner{
+        background: url("../assets/pictures/acceuil/fond_acceuil_abeilles-mobile.png") no-repeat;
+        background-size: cover;
+        color: $White;
+        height: 962px;
+        h1{
+            padding: 160px 0px 150px 0px;
+        }
+        h2{
+            padding: 40px 0px 40px 0px;
+            font-size: $fontMedium;
+            font-weight: 100;
+        }
+        @media (min-width: 800px){
+            text-align: left;
+            background: url("../assets/pictures/acceuil/fond_acceuil_abeilles.png") no-repeat;
+            background-size: cover;
+            height: 580px;
+            h1{
+                padding: 130px 0px 50px 50px;
+            }
+            h2{
+                padding: 20px 0px 20px 80px;
+            }
+        }
+    }
+
+    &__frenchFlag{
+        display: flex;
+        &-blue{
+            background-color: blue;
+        }
+        &-white{
+            background-color: white;
+        }
+        &-red{
+            background-color: red;
+        }
+        &-blue, &-white, &-red{
+            padding: 10px 0px 10px 0px;
+            width: 33.3333333333%;
+        }
+    }
+
+    &__description{
+        font-size: $fontMedium;
+        color: $colorPrimary;
+        &-ruches{
+            position: relative;
+            &-where{
+                margin: 400px 0px 400px 0px;
+            }
+            h3, &-where{
+                position: relative;
+                z-index: 1;
+            }
+            img{
+                position: absolute; 
+            }
+            h3{
+                margin-top: 80px;
+            }
+            &-background{
+                background: url("../assets/pictures/acceuil/fond_acceuil_dessin-coline-mobile.png") no-repeat;
+                background-size: cover;
+                height: 90px;
+                &-tournesol{
+                    left: 5px;
+                    bottom: 50px;
+                }
+                &-ruche{
+                    right: 10px;
+                    top: 80px;
+                }
+                &-abeille1{
+                    left: 168px;
+                    bottom: 200px;
+                }
+                &-abeille2{
+                    left: 520px;
+                    bottom: 360px;
+                    transform: rotate(-18deg);
+                    width: 60px;
+                    height: 56px;
+                }
+                &-abeille3{
+                    left: 560px;
+                    bottom: 140px;
+                    width: 55px;
+                    height: 51px;
+                }
+                &-abeille4{
+                    right: 620px;
+                    top: 100px;
+                    transform: rotate(18deg);
+                    width: 60px;
+                    height: 56px;
+                }
+                &-abeille5{
+                    right: 550px;
+                    top: 280px;
+                    width: 70px;
+                    height: 65px;
+                }
+                &-abeille6{
+                    right: 230px;
+                    top: 250px;
+                    transform: rotate(-25deg);
+                    width: 56px;
+                    height: 52px;
+                }
+            }
+            @media (min-width: 800px){
+                font-size: $fontSmall;
+                > h3{
+                    padding-left: 70px;
+                    text-align: left;
+                }
+                &-background{
+                    background: url("../assets/pictures/acceuil/fond_acceuil_dessin-coline.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+            @media (min-width: 1300px){
+                &-where{
+                    text-align: right;
+                    padding-right: 300px;
+                    margin: 0px 0px 100px 0px;
+                }
+            }
+        }
+        &-apiculteur{
+            background-color: $colorSecondary;
+            color: $White;
+            padding-bottom: 100px;
+            h3, figure, p{
+                padding-top: 60px;
+            }
+            h4{
+                font-weight: 100;
+                margin-top: 10px;
+            }
+            &-work{
+                figure:hover{
+                    animation: shake 1s ease-in infinite;
+                }
+            }
+            @media (min-width: 800px){
+                font-size: $fontSmall;
+                &-desc{
+                    img{
+                        width: 300px;
+                        height: 226px;
+                        margin-left: 50px;
+                    }
+                    &-card{
+                        text-align: left;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+                &-work{
+                    img{
+                        width: 151px;
+                        height: 180px;
+                    }
+                }
+            }
+            @media (min-width: 1000px){
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    justify-content: space-evenly;
+            }
+        }
+    }
+
+    &__apiarie{
+        background: url("../assets/pictures/acceuil/fond_acceuil_ruches-mobile.png") no-repeat center;
+        background-size: cover;
+        height: 1000px;
+        @media (min-width: 800px){
+            background: url("../assets/pictures/acceuil/fond_acceuil_ruches.png") no-repeat center;
+            background-size: cover;
+            height: 700px;
+        }
+    }
+
+    &__pointsDeVente{
+        background-color: $colorPrimary;
+        h2{
+            font-size: $fontLarge;
+            color: $White;
+            padding: 70px 0px 150px 0px;
+        }
+        figure{
+            margin-bottom: 80px;
+        }
+        ul{
+            font-size: $fontMedium;
+            span{
+                color: $White;
+            }
+        }
+        @media (min-width: 800px){
+            h2{
+                font-size: 2.4rem;
+                padding: 50px 0px 0px 0px;
+            }
+            div{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+                figure{
+                    margin-bottom: 0px;
+                }
+                
+                ul{
+                    font-size: $fontSmall;
+                }
+            }
+            &-map{
+                width: 278px;
+                height: 450px;
+                margin-bottom: -80px;
+            }
+            &-cart{
+                width: 130px;
+                height: 118px;
+            }
+        }
+    }
+
+    &__honeyFlow{
+        background: url("../assets/pictures/acceuil/fond_acceuil_dessin-miel-mobile.png") no-repeat center;
+        background-size: cover;
+        height: 486px;
+        @media (min-width: 800px){
+            background: url("../assets/pictures/acceuil/fond_acceuil_dessin-miel.png") no-repeat center;
+            background-size: cover;
+            height: 389px;
+        }
+    }
+
+    &__pictogram{
+        margin-bottom: 100px;
+        h4{
+            font-weight: 100;
+            margin: 50px 0px 50px 0px;
+        }
+        @media (min-width: 800px){
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            div{
+                text-align: center;
+            }
+            &-honey{
+                width: 134px;
+                height: 197px;
+            }
+            &-bankCard{
+                width: 221px;
+                height: 123px;
+            }
+            &-cardboard{
+                width: 176px;
+                height: 203px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

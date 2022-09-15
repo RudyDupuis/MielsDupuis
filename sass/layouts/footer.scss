@@ -1,0 +1,107 @@
+footer{
+    background-color: $colorPrimary;
+    text-align: center;
+    font-size: $fontMedium;
+    position: relative;
+    a:hover{
+        color: $White;
+    }
+    #dessinAcacia{
+        position: absolute;
+        right: 0px;
+        top: 60px;
+    }
+    #dessinRonce{
+        position: absolute;
+        bottom: 60px;
+        left: 0px;
+    }
+    #footer{
+        position: relative;
+        z-index: 1;
+        &__link{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 100px 0px 50px 0px;
+            &-rateContact{
+                white-space: nowrap;
+                h3{
+                    font-weight: normal;
+                    margin: 40px 0px 20px 0px;
+                }
+                a:hover{
+                img{
+                    opacity:.5;
+                }
+                }
+            }
+            &-rod{
+                border-bottom: 6px solid $Black;
+                width: 30%;
+                margin: 40px 0px 40px 0px;
+            }
+            ul{
+                margin-bottom: 50px;
+                li{
+                    margin: 20px 0px 20px 0px;
+                }
+            }
+        }
+        &__networkCopyright{
+            figure{
+                margin-bottom: 100px;
+                :hover{
+                    opacity: 0.5;
+                }
+            }
+            h4{
+                font-size: $fontSmall;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    @media (min-width: 800px){
+        font-size: $fontSmall;
+        text-align: left;
+        #footer{
+            &__link{
+                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 50px;
+                &-rateContact{
+                   text-align: center;
+                    img{
+                        width: 24px;
+                        height: 25px;
+                    } 
+                }
+                &-rod{
+                    border-right: 4px solid $Black;
+                    width: 0%;
+                    height: 150px;
+                    margin: 0px 60px 0px 60px;
+                }
+                ul{
+                    margin-bottom: 0px;
+                }
+            }
+            &__networkCopyright{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                figure{
+                    margin-bottom: 0px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                h4{
+                    font-size: 1.2rem;
+                    align-items: flex-end;
+                }
+            }
+        }  
+    }
+}
