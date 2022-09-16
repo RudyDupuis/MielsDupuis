@@ -3,12 +3,12 @@
 @import "../layouts/header"; 
 @import "../layouts/footer";
 
-#acceuil{
+#accueil{
     text-align: center;
     font-size: $fontSmall;
 
     &__heroBanner{
-        background: url("../assets/pictures/acceuil/fond_acceuil_abeilles-mobile.png") no-repeat;
+        background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.png") no-repeat;
         background-size: cover;
         color: $White;
         height: 962px;
@@ -22,7 +22,7 @@
         }
         @media (min-width: 800px){
             text-align: left;
-            background: url("../assets/pictures/acceuil/fond_acceuil_abeilles.png") no-repeat;
+            background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat;
             background-size: cover;
             height: 580px;
             h1{
@@ -70,7 +70,7 @@
                 margin-top: 80px;
             }
             &-background{
-                background: url("../assets/pictures/acceuil/fond_acceuil_dessin-coline-mobile.png") no-repeat;
+                background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.png") no-repeat;
                 background-size: cover;
                 height: 90px;
                 &-tournesol{
@@ -126,7 +126,7 @@
                     text-align: left;
                 }
                 &-background{
-                    background: url("../assets/pictures/acceuil/fond_acceuil_dessin-coline.png") no-repeat;
+                    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat;
                     background-size: cover;
                 }
             }
@@ -186,11 +186,11 @@
     }
 
     &__apiarie{
-        background: url("../assets/pictures/acceuil/fond_acceuil_ruches-mobile.png") no-repeat center;
+        background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
         background-size: cover;
         height: 1000px;
         @media (min-width: 800px){
-            background: url("../assets/pictures/acceuil/fond_acceuil_ruches.png") no-repeat center;
+            background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;
             background-size: cover;
             height: 700px;
         }
@@ -244,11 +244,11 @@
     }
 
     &__honeyFlow{
-        background: url("../assets/pictures/acceuil/fond_acceuil_dessin-miel-mobile.png") no-repeat center;
+        background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.png") no-repeat center;
         background-size: cover;
         height: 486px;
         @media (min-width: 800px){
-            background: url("../assets/pictures/acceuil/fond_acceuil_dessin-miel.png") no-repeat center;
+            background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center;
             background-size: cover;
             height: 389px;
         }

@@ -196,112 +196,112 @@ footer #footer__networkCopyright h4 {
   }
 }
 
-#acceuil {
+#accueil {
   text-align: center;
   font-size: 1.5rem;
 }
 
-#acceuil__heroBanner {
-  background: url("../assets/pictures/acceuil/fond_acceuil_abeilles-mobile.png") no-repeat;
+#accueil__heroBanner {
+  background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.png") no-repeat;
   background-size: cover;
   color: #ffffffff;
   height: 962px;
 }
 
-#acceuil__heroBanner h1 {
+#accueil__heroBanner h1 {
   padding: 160px 0px 150px 0px;
 }
 
-#acceuil__heroBanner h2 {
+#accueil__heroBanner h2 {
   padding: 40px 0px 40px 0px;
   font-size: 2rem;
   font-weight: 100;
 }
 
 @media (min-width: 800px) {
-  #acceuil__heroBanner {
+  #accueil__heroBanner {
     text-align: left;
-    background: url("../assets/pictures/acceuil/fond_acceuil_abeilles.png") no-repeat;
+    background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat;
     background-size: cover;
     height: 580px;
   }
-  #acceuil__heroBanner h1 {
+  #accueil__heroBanner h1 {
     padding: 130px 0px 50px 50px;
   }
-  #acceuil__heroBanner h2 {
+  #accueil__heroBanner h2 {
     padding: 20px 0px 20px 80px;
   }
 }
 
-#acceuil__frenchFlag {
+#accueil__frenchFlag {
   display: flex;
 }
 
-#acceuil__frenchFlag-blue {
+#accueil__frenchFlag-blue {
   background-color: blue;
 }
 
-#acceuil__frenchFlag-white {
+#accueil__frenchFlag-white {
   background-color: white;
 }
 
-#acceuil__frenchFlag-red {
+#accueil__frenchFlag-red {
   background-color: red;
 }
 
-#acceuil__frenchFlag-blue, #acceuil__frenchFlag-white, #acceuil__frenchFlag-red {
+#accueil__frenchFlag-blue, #accueil__frenchFlag-white, #accueil__frenchFlag-red {
   padding: 10px 0px 10px 0px;
   width: 33.3333333333%;
 }
 
-#acceuil__description {
+#accueil__description {
   font-size: 2rem;
   color: #ffca18ff;
 }
 
-#acceuil__description-ruches {
+#accueil__description-ruches {
   position: relative;
 }
 
-#acceuil__description-ruches-where {
+#accueil__description-ruches-where {
   margin: 400px 0px 400px 0px;
 }
 
-#acceuil__description-ruches h3, #acceuil__description-ruches-where {
+#accueil__description-ruches h3, #accueil__description-ruches-where {
   position: relative;
   z-index: 1;
 }
 
-#acceuil__description-ruches img {
+#accueil__description-ruches img {
   position: absolute;
 }
 
-#acceuil__description-ruches h3 {
+#accueil__description-ruches h3 {
   margin-top: 80px;
 }
 
-#acceuil__description-ruches-background {
-  background: url("../assets/pictures/acceuil/fond_acceuil_dessin-coline-mobile.png") no-repeat;
+#accueil__description-ruches-background {
+  background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.png") no-repeat;
   background-size: cover;
   height: 90px;
 }
 
-#acceuil__description-ruches-background-tournesol {
+#accueil__description-ruches-background-tournesol {
   left: 5px;
   bottom: 50px;
 }
 
-#acceuil__description-ruches-background-ruche {
+#accueil__description-ruches-background-ruche {
   right: 10px;
   top: 80px;
 }
 
-#acceuil__description-ruches-background-abeille1 {
+#accueil__description-ruches-background-abeille1 {
   left: 168px;
   bottom: 200px;
 }
 
-#acceuil__description-ruches-background-abeille2 {
+#accueil__description-ruches-background-abeille2 {
   left: 520px;
   bottom: 360px;
   transform: rotate(-18deg);
@@ -309,14 +309,14 @@ footer #footer__networkCopyright h4 {
   height: 56px;
 }
 
-#acceuil__description-ruches-background-abeille3 {
+#accueil__description-ruches-background-abeille3 {
   left: 560px;
   bottom: 140px;
   width: 55px;
   height: 51px;
 }
 
-#acceuil__description-ruches-background-abeille4 {
+#accueil__description-ruches-background-abeille4 {
   right: 620px;
   top: 100px;
   transform: rotate(18deg);
@@ -324,14 +324,14 @@ footer #footer__networkCopyright h4 {
   height: 56px;
 }
 
-#acceuil__description-ruches-background-abeille5 {
+#accueil__description-ruches-background-abeille5 {
   right: 550px;
   top: 280px;
   width: 70px;
   height: 65px;
 }
 
-#acceuil__description-ruches-background-abeille6 {
+#accueil__description-ruches-background-abeille6 {
   right: 230px;
   top: 250px;
   transform: rotate(-25deg);
@@ -340,69 +340,69 @@ footer #footer__networkCopyright h4 {
 }
 
 @media (min-width: 800px) {
-  #acceuil__description-ruches {
+  #accueil__description-ruches {
     font-size: 1.5rem;
   }
-  #acceuil__description-ruches > h3 {
+  #accueil__description-ruches > h3 {
     padding-left: 70px;
     text-align: left;
   }
-  #acceuil__description-ruches-background {
-    background: url("../assets/pictures/acceuil/fond_acceuil_dessin-coline.png") no-repeat;
+  #accueil__description-ruches-background {
+    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat;
     background-size: cover;
   }
 }
 
 @media (min-width: 1300px) {
-  #acceuil__description-ruches-where {
+  #accueil__description-ruches-where {
     text-align: right;
     padding-right: 300px;
     margin: 0px 0px 100px 0px;
   }
 }
 
-#acceuil__description-apiculteur {
+#accueil__description-apiculteur {
   background-color: #44aa00ff;
   color: #ffffffff;
   padding-bottom: 100px;
 }
 
-#acceuil__description-apiculteur h3, #acceuil__description-apiculteur figure, #acceuil__description-apiculteur p {
+#accueil__description-apiculteur h3, #accueil__description-apiculteur figure, #accueil__description-apiculteur p {
   padding-top: 60px;
 }
 
-#acceuil__description-apiculteur h4 {
+#accueil__description-apiculteur h4 {
   font-weight: 100;
   margin-top: 10px;
 }
 
-#acceuil__description-apiculteur-work figure:hover {
+#accueil__description-apiculteur-work figure:hover {
   animation: shake 1s ease-in infinite;
 }
 
 @media (min-width: 800px) {
-  #acceuil__description-apiculteur {
+  #accueil__description-apiculteur {
     font-size: 1.5rem;
   }
-  #acceuil__description-apiculteur-desc img {
+  #accueil__description-apiculteur-desc img {
     width: 300px;
     height: 226px;
     margin-left: 50px;
   }
-  #acceuil__description-apiculteur-desc-card {
+  #accueil__description-apiculteur-desc-card {
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #acceuil__description-apiculteur-work img {
+  #accueil__description-apiculteur-work img {
     width: 151px;
     height: 180px;
   }
 }
 
 @media (min-width: 1000px) {
-  #acceuil__description-apiculteur {
+  #accueil__description-apiculteur {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -410,113 +410,113 @@ footer #footer__networkCopyright h4 {
   }
 }
 
-#acceuil__apiarie {
-  background: url("../assets/pictures/acceuil/fond_acceuil_ruches-mobile.png") no-repeat center;
+#accueil__apiarie {
+  background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
   background-size: cover;
   height: 1000px;
 }
 
 @media (min-width: 800px) {
-  #acceuil__apiarie {
-    background: url("../assets/pictures/acceuil/fond_acceuil_ruches.png") no-repeat center;
+  #accueil__apiarie {
+    background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;
     background-size: cover;
     height: 700px;
   }
 }
 
-#acceuil__pointsDeVente {
+#accueil__pointsDeVente {
   background-color: #ffca18ff;
 }
 
-#acceuil__pointsDeVente h2 {
+#accueil__pointsDeVente h2 {
   font-size: 3rem;
   color: #ffffffff;
   padding: 70px 0px 150px 0px;
 }
 
-#acceuil__pointsDeVente figure {
+#accueil__pointsDeVente figure {
   margin-bottom: 80px;
 }
 
-#acceuil__pointsDeVente ul {
+#accueil__pointsDeVente ul {
   font-size: 2rem;
 }
 
-#acceuil__pointsDeVente ul span {
+#accueil__pointsDeVente ul span {
   color: #ffffffff;
 }
 
 @media (min-width: 800px) {
-  #acceuil__pointsDeVente h2 {
+  #accueil__pointsDeVente h2 {
     font-size: 2.4rem;
     padding: 50px 0px 0px 0px;
   }
-  #acceuil__pointsDeVente div {
+  #accueil__pointsDeVente div {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
   }
-  #acceuil__pointsDeVente div figure {
+  #accueil__pointsDeVente div figure {
     margin-bottom: 0px;
   }
-  #acceuil__pointsDeVente div ul {
+  #accueil__pointsDeVente div ul {
     font-size: 1.5rem;
   }
-  #acceuil__pointsDeVente-map {
+  #accueil__pointsDeVente-map {
     width: 278px;
     height: 450px;
     margin-bottom: -80px;
   }
-  #acceuil__pointsDeVente-cart {
+  #accueil__pointsDeVente-cart {
     width: 130px;
     height: 118px;
   }
 }
 
-#acceuil__honeyFlow {
-  background: url("../assets/pictures/acceuil/fond_acceuil_dessin-miel-mobile.png") no-repeat center;
+#accueil__honeyFlow {
+  background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.png") no-repeat center;
   background-size: cover;
   height: 486px;
 }
 
 @media (min-width: 800px) {
-  #acceuil__honeyFlow {
-    background: url("../assets/pictures/acceuil/fond_acceuil_dessin-miel.png") no-repeat center;
+  #accueil__honeyFlow {
+    background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center;
     background-size: cover;
     height: 389px;
   }
 }
 
-#acceuil__pictogram {
+#accueil__pictogram {
   margin-bottom: 100px;
 }
 
-#acceuil__pictogram h4 {
+#accueil__pictogram h4 {
   font-weight: 100;
   margin: 50px 0px 50px 0px;
 }
 
 @media (min-width: 800px) {
-  #acceuil__pictogram {
+  #accueil__pictogram {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
   }
-  #acceuil__pictogram div {
+  #accueil__pictogram div {
     text-align: center;
   }
-  #acceuil__pictogram-honey {
+  #accueil__pictogram-honey {
     width: 134px;
     height: 197px;
   }
-  #acceuil__pictogram-bankCard {
+  #accueil__pictogram-bankCard {
     width: 221px;
     height: 123px;
   }
-  #acceuil__pictogram-cardboard {
+  #accueil__pictogram-cardboard {
     width: 176px;
     height: 203px;
   }
