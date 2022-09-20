@@ -9,4 +9,3 @@ https://www.linkedin.com/posts/rudy-dupuis_designgraphic-developpeur-developpeme
 
 This is my first A to Z mockup integration.
 Do not hesitate to give me your opinion and advice on my code. It will help me a lot to progress.
-Next step: animations!
