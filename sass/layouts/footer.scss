@@ -6,12 +6,12 @@ footer{
     a:hover{
         color: $White;
     }
-    #dessinAcacia{
+    #dessinAcacia{            //For background decoration
         position: absolute;
         right: 0px;
-        top: 60px;
+        top: 60px;      
     }
-    #dessinRonce{
+    #dessinRonce{             //For background decoration
         position: absolute;
         bottom: 60px;
         left: 0px;
@@ -25,14 +25,14 @@ footer{
             align-items: center;
             padding: 100px 0px 50px 0px;
             &-rateContact{
-                white-space: nowrap;
+                white-space: nowrap;      //To keep the stars aligned if the screen is very small
                 h3{
                     font-weight: normal;
                     margin: 40px 0px 20px 0px;
                 }
                 a:hover{
                 img{
-                    opacity:.5;
+                    opacity:.5;              //To let the user know that there is a link behind
                 }
                 }
             }
@@ -52,7 +52,7 @@ footer{
             figure{
                 margin-bottom: 100px;
                 :hover{
-                    opacity: 0.5;
+                    opacity: 0.5;               //To let the user know that there is a link behind
                 }
             }
             h4{

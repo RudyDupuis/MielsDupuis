@@ -6,3 +6,64 @@ $Black: #000000ff;
 $fontLarge: 3rem;
 $fontMedium: 2rem;
 $fontSmall: 1.5rem;
+
+@keyframes tracking-in-expand {          //letter spacing stretches back to normal display
+    0%{
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40%{
+      opacity: 0.6;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@keyframes fly {                   //bees fly from one end of the screen to the other
+    0% {
+        transform: translateX(-1300px);
+    }
+    100% {
+        transform: translateX(1300px);
+    }  
+}
+
+@keyframes shake {                           //quick shake animation
+    0%{
+        transform: translateX(-5px) translateY(5px) rotate(0deg);
+    }
+    25%{
+        transform: translateX(-2.5px) translateY(2.5px) rotate(2deg);
+    }
+    50%{
+        transform: translateX(0px) translateY(0px) rotate(4deg);
+    }
+    75%{
+        transform: translateX(-2.5px) translateY(2.5px) rotate(2deg);
+    }
+    100%{
+        transform: translateX(-5px) translateY(5px) rotate(0deg);
+    }
+}
+
+@keyframes fall-tub {                        // wait 40% and falling tubs
+  0%{
+    transform: translateY(-100px);
+  }
+  40%{
+    transform: translateY(-98px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@keyframes mouving-cart {                  //the cart arrives from the left and receives the tubs
+  0%{
+    transform: translateX(-200px);
+  }
+  60%{
+    transform: translateX(0px);
+  }
+}

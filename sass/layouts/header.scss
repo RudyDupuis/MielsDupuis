@@ -10,12 +10,14 @@ header{
         margin-top: 20px;
         margin-bottom: 10px;
         &-picto{
-            white-space: nowrap;
+            white-space: nowrap;    //To keep the pictograms on the same line if the screen is very small
             &-compte:hover{
                 background: url(../assets/pictures/header/picto_compte-active.png) no-repeat center;
+                animation: shake 1s ease-in infinite reverse;
             }
             &-panier:hover{
                 background: url(../assets/pictures/header/picto_panier-active.png) no-repeat center;
+                animation: shake 1s ease-out infinite reverse;
             }
             img{
                 margin-left: 25px;
@@ -28,7 +30,7 @@ header{
         font-size: 2rem;
         margin-bottom: 20px;
     }
-    @media (min-width: 800px){
+    @media (min-width: 800px){       //The links go below the rest
         display: flex;
         flex-direction: row-reverse;
         align-items: center;

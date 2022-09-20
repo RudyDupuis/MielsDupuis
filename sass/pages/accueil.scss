@@ -11,18 +11,20 @@
         background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.png") no-repeat;
         background-size: cover;
         color: $White;
-        height: 962px;
+        height: 962px;        
         h1{
             padding: 160px 0px 150px 0px;
+            animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;      //cf utils
         }
         h2{
             padding: 40px 0px 40px 0px;
             font-size: $fontMedium;
             font-weight: 100;
+            animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;          //cf utils
         }
         @media (min-width: 800px){
             text-align: left;
-            background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat;
+            background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat; //change of image for computer format layout
             background-size: cover;
             height: 580px;
             h1{
@@ -34,7 +36,7 @@
         }
     }
 
-    &__frenchFlag{
+    &__frenchFlag{            //line between heroBanner and description
         display: flex;
         &-blue{
             background-color: blue;
@@ -54,6 +56,7 @@
     &__description{
         font-size: $fontMedium;
         color: $colorPrimary;
+        overflow-x: hidden;            //to hide the scrollbar caused by the animation of the bees
         &-ruches{
             position: relative;
             &-where{
@@ -81,9 +84,10 @@
                     right: 10px;
                     top: 80px;
                 }
-                &-abeille1{
+                &-abeille1{                         //changed size, direction, rotation, speed and animation effect between bees to add life to animations
                     left: 168px;
                     bottom: 200px;
+                    animation: shake 2s ease-in-out infinite;              //cf utils
                 }
                 &-abeille2{
                     left: 520px;
@@ -91,12 +95,14 @@
                     transform: rotate(-18deg);
                     width: 60px;
                     height: 56px;
+                    animation: fly 12s infinite reverse;                     
                 }
                 &-abeille3{
                     left: 560px;
                     bottom: 140px;
                     width: 55px;
                     height: 51px;
+                    animation: fly 12s infinite;                            
                 }
                 &-abeille4{
                     right: 620px;
@@ -104,12 +110,14 @@
                     transform: rotate(18deg);
                     width: 60px;
                     height: 56px;
+                    animation: fly 17s ease-in-out infinite;                  
                 }
                 &-abeille5{
                     right: 550px;
                     top: 280px;
                     width: 70px;
                     height: 65px;
+                    animation: fly 10s ease-out infinite;
                 }
                 &-abeille6{
                     right: 230px;
@@ -117,6 +125,7 @@
                     transform: rotate(-25deg);
                     width: 56px;
                     height: 52px;
+                    animation: fly 13s ease-in infinite;
                 }
             }
             @media (min-width: 800px){
@@ -126,11 +135,11 @@
                     text-align: left;
                 }
                 &-background{
-                    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat;
+                    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat; //change of image for computer format layout
                     background-size: cover;
                 }
             }
-            @media (min-width: 1300px){
+            @media (min-width: 1300px){    //so bees don't touch each other if animation is stopped
                 &-where{
                     text-align: right;
                     padding-right: 300px;
@@ -150,8 +159,45 @@
                 margin-top: 10px;
             }
             &-work{
-                figure:hover{
-                    animation: shake 1s ease-in infinite;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                figure{
+                    position: relative;
+                    width: 300px;
+                    &:hover{
+                        #accueil__description-apiculteur-work-abeille1{
+                            opacity: 100%;
+                            animation: shake 0.9s ease-in-out infinite;
+                        } 
+                        #accueil__description-apiculteur-work-abeille2{
+                            opacity: 100%;
+                            animation: shake 0.8s ease-in-out infinite;
+                        }
+                        #accueil__description-apiculteur-work-abeille3{
+                            opacity: 100%;
+                            animation: shake 0.7s ease-in-out infinite;
+                        }
+                    }
+                }
+                &-abeille1, &-abeille2, &-abeille3 {    //hidden bees for hover animation
+                    width: 55px;
+                    height: 51px;
+                    position: absolute;
+                    opacity: 0%;
+                }
+                &-abeille1{
+                    right: 0px;
+                    transform: rotate(5deg);
+                }
+                &-abeille2{
+                    left: 20px;
+                    top: 20px;
+                    transform: rotate(20deg);
+                }
+                &-abeille3{
+                    left: 0px;
+                    top: 120px;
                 }
             }
             @media (min-width: 800px){
@@ -169,12 +215,6 @@
                         align-items: center;
                     }
                 }
-                &-work{
-                    img{
-                        width: 151px;
-                        height: 180px;
-                    }
-                }
             }
             @media (min-width: 1000px){
                     display: flex;
@@ -190,7 +230,7 @@
         background-size: cover;
         height: 1000px;
         @media (min-width: 800px){
-            background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;
+            background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;  //change of image for computer format layout
             background-size: cover;
             height: 700px;
         }
@@ -198,6 +238,11 @@
 
     &__pointsDeVente{
         background-color: $colorPrimary;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         h2{
             font-size: $fontLarge;
             color: $White;
@@ -206,8 +251,79 @@
         figure{
             margin-bottom: 80px;
         }
+        figure:nth-child(1){   //map and location points
+            position: relative;
+            width: 280px;
+            height: 480px;
+        }
+        &-map{
+            &-point1, &-point2, &-point3, &-point4, &-point5, &-point6, &-point7, &-point8{
+                position: absolute;
+                &:hover{
+                    scale: 150%;
+                }
+            }
+            &-point1{
+                top: 335px;
+                left: 50px;
+            }
+            &-point2{
+                top: 284px;
+                left: 110px;
+            }
+            &-point3{
+                top: 0px;
+                left: -20px;
+            }
+            &-point4{
+                top: -10px;
+                left: 8px;
+            }
+            &-point5{
+                top: 382px;
+                left: 175px;
+            }
+            &-point6{
+                top: 395px;
+                left: 180px;
+            }
+            &-point7{
+                top: 405px;
+                left: 195px;
+            }
+            &-point8{
+                top: 393px;
+                left: 175px;
+            }
+        }
+        figure:nth-child(2){   //cart
+            position: relative;
+            width: 160px;
+            height: 200px;
+            &:hover{                                 //cf utils
+                #accueil__pointsDeVente-cartTub{
+                    animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
+                }
+                #accueil__pointsDeVente-cart{
+                    animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
+                }
+            }
+        }
+        &-cart{
+            position: absolute;
+            left: 5px;
+            bottom: 30px;
+        }
+        &-cartTub{
+            position: absolute;
+            left: 5px;
+            bottom: 30px;
+        }
         ul{
             font-size: $fontMedium;
+            a:hover{
+                color: $White;
+            }    
             span{
                 color: $White;
             }
@@ -231,15 +347,6 @@
                     font-size: $fontSmall;
                 }
             }
-            &-map{
-                width: 278px;
-                height: 450px;
-                margin-bottom: -80px;
-            }
-            &-cart{
-                width: 130px;
-                height: 118px;
-            }
         }
     }
 
@@ -248,7 +355,7 @@
         background-size: cover;
         height: 486px;
         @media (min-width: 800px){
-            background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center;
+            background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center; //change of image for computer format layout
             background-size: cover;
             height: 389px;
         }
@@ -268,15 +375,15 @@
             div{
                 text-align: center;
             }
-            &-honey{
+            &-honey{       //proportional reduction
                 width: 134px;
                 height: 197px;
             }
-            &-bankCard{
+            &-bankCard{       //proportional reduction
                 width: 221px;
                 height: 123px;
             }
-            &-cardboard{
+            &-cardboard{       //proportional reduction
                 width: 176px;
                 height: 203px;
             }

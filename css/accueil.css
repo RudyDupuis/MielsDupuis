@@ -1,3 +1,64 @@
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(-1300px);
+  }
+  100% {
+    transform: translateX(1300px);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-5px) translateY(5px) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-2.5px) translateY(2.5px) rotate(2deg);
+  }
+  50% {
+    transform: translateX(0px) translateY(0px) rotate(4deg);
+  }
+  75% {
+    transform: translateX(-2.5px) translateY(2.5px) rotate(2deg);
+  }
+  100% {
+    transform: translateX(-5px) translateY(5px) rotate(0deg);
+  }
+}
+
+@keyframes fall-tub {
+  0% {
+    transform: translateY(-100px);
+  }
+  40% {
+    transform: translateY(-98px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes mouving-cart {
+  0% {
+    transform: translateX(-200px);
+  }
+  60% {
+    transform: translateX(0px);
+  }
+}
+
 @font-face {
   font-family: "BerlinSansFB";
   src: url("../assets/fonts/BRLNSR.woff") format("woff");
@@ -42,10 +103,12 @@ header #header__logoPicto-picto {
 
 header #header__logoPicto-picto-compte:hover {
   background: url(../assets/pictures/header/picto_compte-active.png) no-repeat center;
+  animation: shake 1s ease-in infinite reverse;
 }
 
 header #header__logoPicto-picto-panier:hover {
   background: url(../assets/pictures/header/picto_panier-active.png) no-repeat center;
+  animation: shake 1s ease-out infinite reverse;
 }
 
 header #header__logoPicto-picto img {
@@ -210,12 +273,14 @@ footer #footer__networkCopyright h4 {
 
 #accueil__heroBanner h1 {
   padding: 160px 0px 150px 0px;
+  animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 #accueil__heroBanner h2 {
   padding: 40px 0px 40px 0px;
   font-size: 2rem;
   font-weight: 100;
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
 @media (min-width: 800px) {
@@ -257,6 +322,7 @@ footer #footer__networkCopyright h4 {
 #accueil__description {
   font-size: 2rem;
   color: #ffca18ff;
+  overflow-x: hidden;
 }
 
 #accueil__description-ruches {
@@ -299,6 +365,7 @@ footer #footer__networkCopyright h4 {
 #accueil__description-ruches-background-abeille1 {
   left: 168px;
   bottom: 200px;
+  animation: shake 2s ease-in-out infinite;
 }
 
 #accueil__description-ruches-background-abeille2 {
@@ -307,6 +374,7 @@ footer #footer__networkCopyright h4 {
   transform: rotate(-18deg);
   width: 60px;
   height: 56px;
+  animation: fly 12s infinite reverse;
 }
 
 #accueil__description-ruches-background-abeille3 {
@@ -314,6 +382,7 @@ footer #footer__networkCopyright h4 {
   bottom: 140px;
   width: 55px;
   height: 51px;
+  animation: fly 12s infinite;
 }
 
 #accueil__description-ruches-background-abeille4 {
@@ -322,6 +391,7 @@ footer #footer__networkCopyright h4 {
   transform: rotate(18deg);
   width: 60px;
   height: 56px;
+  animation: fly 17s ease-in-out infinite;
 }
 
 #accueil__description-ruches-background-abeille5 {
@@ -329,6 +399,7 @@ footer #footer__networkCopyright h4 {
   top: 280px;
   width: 70px;
   height: 65px;
+  animation: fly 10s ease-out infinite;
 }
 
 #accueil__description-ruches-background-abeille6 {
@@ -337,6 +408,7 @@ footer #footer__networkCopyright h4 {
   transform: rotate(-25deg);
   width: 56px;
   height: 52px;
+  animation: fly 13s ease-in infinite;
 }
 
 @media (min-width: 800px) {
@@ -376,8 +448,53 @@ footer #footer__networkCopyright h4 {
   margin-top: 10px;
 }
 
-#accueil__description-apiculteur-work figure:hover {
-  animation: shake 1s ease-in infinite;
+#accueil__description-apiculteur-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#accueil__description-apiculteur-work figure {
+  position: relative;
+  width: 300px;
+}
+
+#accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille1 {
+  opacity: 100%;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille2 {
+  opacity: 100%;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille3 {
+  opacity: 100%;
+  animation: shake 0.7s ease-in-out infinite;
+}
+
+#accueil__description-apiculteur-work-abeille1, #accueil__description-apiculteur-work-abeille2, #accueil__description-apiculteur-work-abeille3 {
+  width: 55px;
+  height: 51px;
+  position: absolute;
+  opacity: 0%;
+}
+
+#accueil__description-apiculteur-work-abeille1 {
+  right: 0px;
+  transform: rotate(5deg);
+}
+
+#accueil__description-apiculteur-work-abeille2 {
+  left: 20px;
+  top: 20px;
+  transform: rotate(20deg);
+}
+
+#accueil__description-apiculteur-work-abeille3 {
+  left: 0px;
+  top: 120px;
 }
 
 @media (min-width: 800px) {
@@ -394,10 +511,6 @@ footer #footer__networkCopyright h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  #accueil__description-apiculteur-work img {
-    width: 151px;
-    height: 180px;
   }
 }
 
@@ -428,6 +541,12 @@ footer #footer__networkCopyright h4 {
   background-color: #ffca18ff;
 }
 
+#accueil__pointsDeVente div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #accueil__pointsDeVente h2 {
   font-size: 3rem;
   color: #ffffffff;
@@ -438,8 +557,92 @@ footer #footer__networkCopyright h4 {
   margin-bottom: 80px;
 }
 
+#accueil__pointsDeVente figure:nth-child(1) {
+  position: relative;
+  width: 280px;
+  height: 480px;
+}
+
+#accueil__pointsDeVente-map-point1, #accueil__pointsDeVente-map-point2, #accueil__pointsDeVente-map-point3, #accueil__pointsDeVente-map-point4, #accueil__pointsDeVente-map-point5, #accueil__pointsDeVente-map-point6, #accueil__pointsDeVente-map-point7, #accueil__pointsDeVente-map-point8 {
+  position: absolute;
+}
+
+#accueil__pointsDeVente-map-point1:hover, #accueil__pointsDeVente-map-point2:hover, #accueil__pointsDeVente-map-point3:hover, #accueil__pointsDeVente-map-point4:hover, #accueil__pointsDeVente-map-point5:hover, #accueil__pointsDeVente-map-point6:hover, #accueil__pointsDeVente-map-point7:hover, #accueil__pointsDeVente-map-point8:hover {
+  scale: 150%;
+}
+
+#accueil__pointsDeVente-map-point1 {
+  top: 335px;
+  left: 50px;
+}
+
+#accueil__pointsDeVente-map-point2 {
+  top: 284px;
+  left: 110px;
+}
+
+#accueil__pointsDeVente-map-point3 {
+  top: 0px;
+  left: -20px;
+}
+
+#accueil__pointsDeVente-map-point4 {
+  top: -10px;
+  left: 8px;
+}
+
+#accueil__pointsDeVente-map-point5 {
+  top: 382px;
+  left: 175px;
+}
+
+#accueil__pointsDeVente-map-point6 {
+  top: 395px;
+  left: 180px;
+}
+
+#accueil__pointsDeVente-map-point7 {
+  top: 405px;
+  left: 195px;
+}
+
+#accueil__pointsDeVente-map-point8 {
+  top: 393px;
+  left: 175px;
+}
+
+#accueil__pointsDeVente figure:nth-child(2) {
+  position: relative;
+  width: 160px;
+  height: 200px;
+}
+
+#accueil__pointsDeVente figure:nth-child(2):hover #accueil__pointsDeVente-cartTub {
+  animation: fall-tub 2s cubic-bezier(0.8, 1.15, 0.9, 1.01);
+}
+
+#accueil__pointsDeVente figure:nth-child(2):hover #accueil__pointsDeVente-cart {
+  animation: mouving-cart 2s cubic-bezier(0.84, 1.47, 0.9, 1.01);
+}
+
+#accueil__pointsDeVente-cart {
+  position: absolute;
+  left: 5px;
+  bottom: 30px;
+}
+
+#accueil__pointsDeVente-cartTub {
+  position: absolute;
+  left: 5px;
+  bottom: 30px;
+}
+
 #accueil__pointsDeVente ul {
   font-size: 2rem;
+}
+
+#accueil__pointsDeVente ul a:hover {
+  color: #ffffffff;
 }
 
 #accueil__pointsDeVente ul span {
@@ -463,15 +666,6 @@ footer #footer__networkCopyright h4 {
   }
   #accueil__pointsDeVente div ul {
     font-size: 1.5rem;
-  }
-  #accueil__pointsDeVente-map {
-    width: 278px;
-    height: 450px;
-    margin-bottom: -80px;
-  }
-  #accueil__pointsDeVente-cart {
-    width: 130px;
-    height: 118px;
   }
 }
 
