@@ -61,7 +61,7 @@ footer{
             }
         }
     }
-    @media (min-width: 800px){
+    @media (min-width: 800px) and (orientation: portrait){
         font-size: $fontSmall;
         text-align: left;
         #footer{

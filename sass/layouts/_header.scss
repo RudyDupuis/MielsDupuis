@@ -28,7 +28,7 @@ header{
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
-    @media (min-width: 800px){       //The links go below the rest
+    @media (min-width: 800px) and (orientation: portrait){       //The links go below the rest
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
