@@ -120,7 +120,7 @@ header #header__link {
   margin-bottom: 20px;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   header {
     display: flex;
     flex-direction: row-reverse;
@@ -213,7 +213,7 @@ footer #footer__networkCopyright h4 {
   padding-bottom: 30px;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   footer {
     font-size: 1.5rem;
     text-align: left;
@@ -281,7 +281,7 @@ footer #footer__networkCopyright h4 {
   animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__heroBanner {
     text-align: left;
     background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat;
@@ -409,7 +409,7 @@ footer #footer__networkCopyright h4 {
   animation: fly 13s ease-in infinite;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__description-ruches {
     font-size: 1.5rem;
   }
@@ -495,7 +495,7 @@ footer #footer__networkCopyright h4 {
   top: 120px;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__description-apiculteur {
     font-size: 1.5rem;
   }
@@ -527,7 +527,7 @@ footer #footer__networkCopyright h4 {
   height: 1000px;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__apiarie {
     background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;
     background-size: cover;
@@ -647,7 +647,7 @@ footer #footer__networkCopyright h4 {
   color: #ffffffff;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__pointsDeVente h2 {
     font-size: 2.4rem;
     padding: 50px 0px 0px 0px;
@@ -673,7 +673,7 @@ footer #footer__networkCopyright h4 {
   height: 486px;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__honeyFlow {
     background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center;
     background-size: cover;
@@ -690,7 +690,7 @@ footer #footer__networkCopyright h4 {
   margin: 50px 0px 50px 0px;
 }
 
-@media (min-width: 800px) and (orientation: portrait) {
+@media (min-width: 800px) and (orientation: landscape) {
   #accueil__pictogram {
     display: flex;
     align-items: center;
