@@ -28,14 +28,14 @@ footer{
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 100px 0px 50px 0px;
+            padding-top: 100px;
 
             &-rateContact{
                 white-space: nowrap;      //To keep the stars aligned if the screen is very small
 
                 h3{
                     font-weight: normal;
-                    margin: 40px 0px 20px 0px;
+                    margin: 20px 0px;
                 }
 
                 a:hover{
@@ -51,19 +51,16 @@ footer{
                 margin: 40px 0px;
             }
 
-            ul{
-                margin-bottom: 50px;
-
-                li{
-                    margin: 20px 0px;
-                }
+            li{
+                 margin: 20px 0px;
             }
         }
 
         &__networkCopyright{
+            padding-bottom: 50px;
 
             figure{
-                margin-bottom: 100px;
+                margin: 100px 0px;
 
                 a:hover{
                     img{
@@ -72,41 +69,47 @@ footer{
                 }
             }
 
-            h4{
-                font-size: 2rem;
-                padding-bottom: 30px;
+            p{
+                font-size: 2rem;  
             }
         }
     }
     @media (min-width: 800px) and (orientation: landscape){
-        font-size: 1.5rem;
-        text-align: left;
+        font-size: 1.2rem;
+
+        #dessinAcacia{
+            top: 5px;
+            width: 229px;
+            height: 262px;
+        }
+
+        #dessinRonce{
+            width: 220px;
+            height: 188px;
+        }
 
         #footer{
-
             &__link{
                 flex-direction: row;
                 justify-content: center;
-                margin-bottom: 50px;
+                padding: 40px 0px;
 
                 &-rateContact{
-                   text-align: center;
-
                     img{
-                        width: 24px;
-                        height: 25px;
+                        width: 20px;
+                        height: 19px;
                     } 
                 }
 
-                &-rod{
-                    border-right: 4px solid $Black;
-                    width: 0%;
-                    height: 150px;
-                    margin: 0px 60px 0px 60px;
+                ul{
+                    text-align: left;
                 }
 
-                ul{
-                    margin-bottom: 0px;
+                &-rod{
+                    border-right: 3px solid $Black;
+                    width: 0%;
+                    height: 120px;
+                    margin: 0px 60px;
                 }
             }
 
@@ -114,9 +117,11 @@ footer{
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-around;
+                align-items: center;
+                padding-bottom: 20px;
 
                 figure{
-                    margin-bottom: 0px;
+                    margin: 0px;
 
                     img{
                         width: 30px;
@@ -124,8 +129,8 @@ footer{
                     }
                 }
 
-                h4{
-                    font-size: 1.2rem;
+                p{
+                    font-size: 1rem;
                     align-items: flex-end;
                 }
             }

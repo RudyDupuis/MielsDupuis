@@ -198,7 +198,7 @@ footer #footer__link {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0px 50px 0px;
+  padding-top: 100px;
 }
 
 footer #footer__link-rateContact {
@@ -207,7 +207,7 @@ footer #footer__link-rateContact {
 
 footer #footer__link-rateContact h3 {
   font-weight: normal;
-  margin: 40px 0px 20px 0px;
+  margin: 20px 0px;
 }
 
 footer #footer__link-rateContact a:hover img {
@@ -220,67 +220,73 @@ footer #footer__link-rod {
   margin: 40px 0px;
 }
 
-footer #footer__link ul {
-  margin-bottom: 50px;
-}
-
-footer #footer__link ul li {
+footer #footer__link li {
   margin: 20px 0px;
 }
 
+footer #footer__networkCopyright {
+  padding-bottom: 50px;
+}
+
 footer #footer__networkCopyright figure {
-  margin-bottom: 100px;
+  margin: 100px 0px;
 }
 
 footer #footer__networkCopyright figure a:hover img {
   opacity: .5;
 }
 
-footer #footer__networkCopyright h4 {
+footer #footer__networkCopyright p {
   font-size: 2rem;
-  padding-bottom: 30px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
   footer {
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1.2rem;
+  }
+  footer #dessinAcacia {
+    top: 5px;
+    width: 229px;
+    height: 262px;
+  }
+  footer #dessinRonce {
+    width: 220px;
+    height: 188px;
   }
   footer #footer__link {
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 50px;
-  }
-  footer #footer__link-rateContact {
-    text-align: center;
+    padding: 40px 0px;
   }
   footer #footer__link-rateContact img {
-    width: 24px;
-    height: 25px;
-  }
-  footer #footer__link-rod {
-    border-right: 4px solid #000000ff;
-    width: 0%;
-    height: 150px;
-    margin: 0px 60px 0px 60px;
+    width: 20px;
+    height: 19px;
   }
   footer #footer__link ul {
-    margin-bottom: 0px;
+    text-align: left;
+  }
+  footer #footer__link-rod {
+    border-right: 3px solid #000000ff;
+    width: 0%;
+    height: 120px;
+    margin: 0px 60px;
   }
   footer #footer__networkCopyright {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
   }
   footer #footer__networkCopyright figure {
-    margin-bottom: 0px;
+    margin: 0px;
   }
   footer #footer__networkCopyright figure img {
     width: 30px;
     height: 30px;
   }
-  footer #footer__networkCopyright h4 {
-    font-size: 1.2rem;
+  footer #footer__networkCopyright p {
+    font-size: 1rem;
     align-items: flex-end;
   }
 }
