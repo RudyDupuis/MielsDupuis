@@ -67,42 +67,54 @@
         }
     }
 
+    /*** Description ***/
+
     &__description{
-        font-size: $fontMedium;
+        font-size: 3rem;
         color: $colorPrimary;
         overflow-x: hidden;            //to hide the scrollbar caused by the animation of the bees
+
         &-ruches{
             position: relative;
+            
             &-where{
-                margin: 400px 0px 400px 0px;
+                margin: 400px 0px;
             }
+
             h3, &-where{
                 position: relative;
                 z-index: 1;
             }
+
             img{
                 position: absolute; 
             }
+
             h3{
                 margin-top: 80px;
             }
+
             &-background{
                 background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.png") no-repeat;
                 background-size: cover;
                 height: 90px;
+
                 &-tournesol{
                     left: 5px;
                     bottom: 50px;
                 }
+
                 &-ruche{
                     right: 10px;
                     top: 80px;
                 }
+
                 &-abeille1{                         //changed size, direction, rotation, speed and animation effect between bees to add life to animations
                     left: 168px;
                     bottom: 200px;
                     animation: shake 2s ease-in-out infinite;              //cf utils
                 }
+
                 &-abeille2{
                     left: 520px;
                     bottom: 360px;
@@ -111,6 +123,7 @@
                     height: 56px;
                     animation: fly 12s infinite reverse;                     
                 }
+
                 &-abeille3{
                     left: 560px;
                     bottom: 140px;
@@ -118,6 +131,7 @@
                     height: 51px;
                     animation: fly 12s infinite;                            
                 }
+
                 &-abeille4{
                     right: 620px;
                     top: 100px;
@@ -126,6 +140,7 @@
                     height: 56px;
                     animation: fly 17s ease-in-out infinite;                  
                 }
+
                 &-abeille5{
                     right: 550px;
                     top: 280px;
@@ -133,6 +148,7 @@
                     height: 65px;
                     animation: fly 10s ease-out infinite;
                 }
+
                 &-abeille6{
                     right: 230px;
                     top: 250px;
@@ -142,17 +158,21 @@
                     animation: fly 13s ease-in infinite;
                 }
             }
+
             @media (min-width: 800px) and (orientation: landscape){
-                font-size: $fontSmall;
+                font-size: 1.3rem;
+
                 > h3{
                     padding-left: 70px;
                     text-align: left;
                 }
+
                 &-background{
                     background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat; //change of image for computer format layout
                     background-size: cover;
                 }
             }
+            
             @media (min-width: 1300px){    //so bees don't touch each other if animation is stopped
                 &-where{
                     text-align: right;
@@ -161,67 +181,82 @@
                 }
             }
         }
+
         &-apiculteur{
             background-color: $colorSecondary;
             color: $White;
             padding-bottom: 100px;
+
             h3, figure, p{
                 padding-top: 60px;
             }
+
             h4{
                 font-weight: 100;
                 margin-top: 10px;
             }
+
             &-work{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 figure{
                     position: relative;
                     width: 300px;
+
                     &:hover{
                         #accueil__description-apiculteur-work-abeille1{
                             opacity: 100%;
                             animation: shake 0.9s ease-in-out infinite;
-                        } 
+                        }
+
                         #accueil__description-apiculteur-work-abeille2{
                             opacity: 100%;
                             animation: shake 0.8s ease-in-out infinite;
                         }
+
                         #accueil__description-apiculteur-work-abeille3{
                             opacity: 100%;
                             animation: shake 0.7s ease-in-out infinite;
                         }
                     }
                 }
+
                 &-abeille1, &-abeille2, &-abeille3 {    //hidden bees for hover animation
                     width: 55px;
                     height: 51px;
                     position: absolute;
                     opacity: 0%;
                 }
+
                 &-abeille1{
                     right: 0px;
                     transform: rotate(5deg);
                 }
+
                 &-abeille2{
                     left: 20px;
                     top: 20px;
                     transform: rotate(20deg);
                 }
+
                 &-abeille3{
                     left: 0px;
                     top: 120px;
                 }
             }
+
             @media (min-width: 800px) and (orientation: landscape){
-                font-size: $fontSmall;
+                font-size: 1.3rem;
+
                 &-desc{
                     img{
                         width: 300px;
                         height: 226px;
                         margin-left: 50px;
                     }
+
                     &-card{
                         text-align: left;
                         display: flex;
@@ -230,6 +265,7 @@
                     }
                 }
             }
+
             @media (min-width: 1000px){
                     display: flex;
                     justify-content: center;
@@ -238,11 +274,14 @@
             }
         }
     }
+    
+    /*** Apiarie ***/
 
     &__apiarie{
         background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
         background-size: cover;
         height: 1000px;
+
         @media (min-width: 800px) and (orientation: landscape){
             background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;  //change of image for computer format layout
             background-size: cover;
@@ -250,29 +289,37 @@
         }
     }
 
+    /*** Point de vente ***/
+
     &__pointsDeVente{
         background-color: $colorPrimary;
+
         div{
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         h2{
-            font-size: $fontLarge;
+            font-size: 5rem;
             color: $White;
             padding: 70px 0px 150px 0px;
         }
+
         figure{
             margin-bottom: 80px;
         }
+
         figure:nth-child(1){   //map and location points
             position: relative;
             width: 280px;
             height: 480px;
         }
+
         &-map{
             &-point1, &-point2, &-point3, &-point4, &-point5, &-point6, &-point7, &-point8{
                 position: absolute;
+
                 &:hover{
                     scale: 150%;
                 }
@@ -310,55 +357,66 @@
                 left: 175px;
             }
         }
+
         figure:nth-child(2){   //cart
             position: relative;
             width: 160px;
             height: 200px;
+
             &:hover{                                 //cf utils
                 #accueil__pointsDeVente-cartTub{
                     animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
                 }
+
                 #accueil__pointsDeVente-cart{
                     animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
                 }
             }
         }
+
         &-cart{
             position: absolute;
             left: 5px;
             bottom: 30px;
         }
+
         &-cartTub{
             position: absolute;
             left: 5px;
             bottom: 30px;
         }
+
         ul{
-            font-size: $fontMedium;
+            font-size: 3rem;
+
             a:hover{
                 color: $White;
-            }    
+            }
+
             span{
                 color: $White;
             }
         }
+
         @media (min-width: 800px) and (orientation: landscape){
             h2{
                 font-size: 2.4rem;
                 padding: 50px 0px 0px 0px;
             }
+
             div{
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: center;
                 align-items: center;
                 justify-content: space-evenly;
+
                 figure{
                     margin-bottom: 0px;
                 }
                 
                 ul{
-                    font-size: $fontSmall;
+                    font-size: 1.3rem;
                 }
             }
         }
@@ -375,28 +433,41 @@
         }
     }
 
+    /*** Pictogram ***/
+
     &__pictogram{
         margin-bottom: 100px;
+
         h4{
+            font-size: 3rem;
             font-weight: 100;
-            margin: 50px 0px 50px 0px;
+            margin: 50px 0px;
         }
+
         @media (min-width: 800px) and (orientation: landscape){
             display: flex;
             align-items: center;
             justify-content: space-around;
             margin-bottom: 20px;
+
             div{
                 text-align: center;
             }
+
+            h4{
+                font-size: 1.3rem;
+            }
+
             &-honey{       //proportional reduction
                 width: 134px;
                 height: 197px;
             }
+
             &-bankCard{       //proportional reduction
                 width: 221px;
                 height: 123px;
             }
+
             &-cardboard{       //proportional reduction
                 width: 176px;
                 height: 203px;

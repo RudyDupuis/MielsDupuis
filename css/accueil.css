@@ -300,6 +300,10 @@ footer #footer__networkCopyright p {
   text-align: center;
   /*** Hero Baner ***/
   /*** French Flag ***/
+  /*** Description ***/
+  /*** Apiarie ***/
+  /*** Point de vente ***/
+  /*** Pictogram ***/
 }
 
 #accueil__heroBanner {
@@ -365,7 +369,7 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__description {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #ffca18ff;
   overflow-x: hidden;
 }
@@ -375,7 +379,7 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__description-ruches-where {
-  margin: 400px 0px 400px 0px;
+  margin: 400px 0px;
 }
 
 #accueil__description-ruches h3, #accueil__description-ruches-where {
@@ -458,7 +462,7 @@ footer #footer__networkCopyright p {
 
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__description-ruches {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   #accueil__description-ruches > h3 {
     padding-left: 70px;
@@ -544,7 +548,7 @@ footer #footer__networkCopyright p {
 
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__description-apiculteur {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   #accueil__description-apiculteur-desc img {
     width: 300px;
@@ -593,7 +597,7 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__pointsDeVente h2 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #ffffffff;
   padding: 70px 0px 150px 0px;
 }
@@ -683,7 +687,7 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__pointsDeVente ul {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 #accueil__pointsDeVente ul a:hover {
@@ -710,7 +714,7 @@ footer #footer__networkCopyright p {
     margin-bottom: 0px;
   }
   #accueil__pointsDeVente div ul {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -733,8 +737,9 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__pictogram h4 {
+  font-size: 3rem;
   font-weight: 100;
-  margin: 50px 0px 50px 0px;
+  margin: 50px 0px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
@@ -746,6 +751,9 @@ footer #footer__networkCopyright p {
   }
   #accueil__pictogram div {
     text-align: center;
+  }
+  #accueil__pictogram h4 {
+    font-size: 1.3rem;
   }
   #accueil__pictogram-honey {
     width: 134px;
