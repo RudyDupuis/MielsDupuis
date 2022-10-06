@@ -89,35 +89,35 @@ header a:hover {
   color: #ffca18ff;
 }
 
-header #header__logoPicto {
+header #header__image {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
-header #header__logoPicto-picto {
+header #header__image-picto {
   white-space: nowrap;
 }
 
-header #header__logoPicto-picto-compte:hover {
+header #header__image-picto-compte:hover {
   background: url(../assets/pictures/header/picto_compte-active.png) no-repeat center;
 }
 
-header #header__logoPicto-picto-panier:hover {
+header #header__image-picto-panier:hover {
   background: url(../assets/pictures/header/picto_panier-active.png) no-repeat center;
 }
 
-header #header__logoPicto-picto img {
-  margin-left: 25px;
+header #header__image-picto a:last-child {
+  margin-left: 50px;
 }
 
 header #header__link {
   display: flex;
   justify-content: space-evenly;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  font-size: 2.1rem;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
@@ -126,8 +126,13 @@ header #header__link {
     flex-direction: row-reverse;
     align-items: center;
   }
-  header #header__logoPicto {
+  header #header__image {
     width: 70%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  header #header__image a:last-child {
+    margin-left: 25px;
   }
   header #header__link {
     width: 30%;
@@ -141,7 +146,7 @@ header #header__link {
 footer {
   background-color: #ffca18ff;
   text-align: center;
-  font-size: 2rem;
+  font-size: 45px;
   position: relative;
 }
 
@@ -209,7 +214,7 @@ footer #footer__networkCopyright figure :hover {
 }
 
 footer #footer__networkCopyright h4 {
-  font-size: 1.5rem;
+  font-size: 30px;
   padding-bottom: 30px;
 }
 
