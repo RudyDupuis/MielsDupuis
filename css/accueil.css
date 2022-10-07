@@ -552,6 +552,10 @@ footer #footer__networkCopyright p {
   top: 120px;
 }
 
+#accueil__description-apiculteur-work p {
+  width: 600px;
+}
+
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__description-apiculteur {
     font-size: 1.3rem;
@@ -572,6 +576,9 @@ footer #footer__networkCopyright p {
   }
   #accueil__description-apiculteur-work figure {
     width: 300px;
+  }
+  #accueil__description-apiculteur-work p {
+    width: 400px;
   }
 }
 
