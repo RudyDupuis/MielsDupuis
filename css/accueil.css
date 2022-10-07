@@ -181,7 +181,7 @@ footer h3, footer ul {
 }
 
 footer p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 footer a:hover {
@@ -609,10 +609,6 @@ footer #footer__networkCopyright figure a:hover img {
 #accueil__description-apiculteur-work-abeille3 {
   left: 0px;
   top: 120px;
-}
-
-#accueil__description-apiculteur-work p {
-  width: 600px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
