@@ -76,18 +76,28 @@
         left: 95%;
         border: 3px solid rgb(53, 50, 50);
         border-radius: 20px;
-        width: 50px;
-        height: 50px;
+        width: 100px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
   
         &-arrow{
-            width: 16px;
-            height: 16px;
+            width: 32px;
+            height: 32px;
             border-top: 4px solid rgb(53, 50, 50);
             border-right: 4px solid rgb(53, 50, 50);
             transform: rotate(-45deg);
+        }
+
+        @media (min-width: 800px) and (orientation: landscape){
+            width: 50px;
+            height: 50px;
+
+            &-arrow{
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 
