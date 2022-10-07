@@ -74,8 +74,8 @@
         z-index: 3;
         top: 85%;
         left: 95%;
-        border: 3px solid rgb(53, 50, 50);
-        border-radius: 20px;
+        border: 6px solid rgb(53, 50, 50);
+        border-radius: 40px;
         width: 100px;
         height: 100px;
         display: flex;
@@ -85,18 +85,22 @@
         &-arrow{
             width: 32px;
             height: 32px;
-            border-top: 4px solid rgb(53, 50, 50);
-            border-right: 4px solid rgb(53, 50, 50);
+            border-top: 8px solid rgb(53, 50, 50);
+            border-right: 8px solid rgb(53, 50, 50);
             transform: rotate(-45deg);
         }
 
         @media (min-width: 800px) and (orientation: landscape){
             width: 50px;
             height: 50px;
+            border: 3px solid rgb(53, 50, 50);
+            border-radius: 20px;
 
             &-arrow{
                 width: 16px;
                 height: 16px;
+                border-top: 4px solid rgb(53, 50, 50);
+                border-right: 4px solid rgb(53, 50, 50);
             }
         }
     }
@@ -104,9 +108,29 @@
     /*** Description ***/
 
     &__description{
-        font-size: 2.8rem;
         color: $colorPrimary;
         overflow-x: hidden;            //to hide the scrollbar caused by the animation of the bees
+
+        h3{
+            font-size: 3rem;
+        } 
+        h4, ul{
+            font-size: 2.8rem;
+        }
+        p{
+            font-size: 2.6rem;
+        }
+        @media (min-width: 800px) and (orientation: landscape){
+            h3{
+                font-size: 1.3rem;
+            } 
+            h4, ul{
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
 
         /*** Ruches ***/
 
@@ -122,12 +146,12 @@
                 z-index: 1;
             }
 
-            img{
-                position: absolute; 
-            }
-
             h3{
                 margin-top: 80px;
+            }
+
+            img{
+                position: absolute; 
             }
 
             &-background{
@@ -196,8 +220,6 @@
             }
 
             @media (min-width: 800px) and (orientation: landscape){
-                font-size: 1.3rem;
-
                 > h3{
                     padding-left: 70px;
                     text-align: left;
@@ -225,10 +247,6 @@
             color: $White;
             padding-bottom: 100px;
 
-            p{
-                font-size: 2.5rem;
-            }
-
             h3, figure, p{
                 padding-top: 60px;
             }
@@ -249,17 +267,17 @@
 
                     &:hover{
                         #accueil__description-apiculteur-work-abeille1{
-                            opacity: 100%;
+                            opacity: 1;
                             animation: shake 0.9s ease-in-out infinite;
                         }
 
                         #accueil__description-apiculteur-work-abeille2{
-                            opacity: 100%;
+                            opacity: 1;
                             animation: shake 0.8s ease-in-out infinite;
                         }
 
                         #accueil__description-apiculteur-work-abeille3{
-                            opacity: 100%;
+                            opacity: 1;
                             animation: shake 0.7s ease-in-out infinite;
                         }
                     }
@@ -269,7 +287,7 @@
                     width: 55px;
                     height: 51px;
                     position: absolute;
-                    opacity: 0%;
+                    opacity: 0;
                 }
 
                 &-abeille1{
@@ -294,12 +312,6 @@
             }
 
             @media (min-width: 800px) and (orientation: landscape){
-                font-size: 1.3rem;
-
-                p{
-                    font-size: 1.2rem;
-                }
-
                 &-desc{
                     img{
                         width: 300px;
@@ -331,7 +343,7 @@
                 }
             }
 
-            @media (min-width: 1000px){
+            @media (min-width: 1000px){     //for better transition
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -369,6 +381,18 @@
             font-size: 5rem;
             color: $White;
             padding: 70px 0px 150px 0px;
+        }
+        
+        ul{
+            font-size: 3rem;
+
+            a:hover{
+                color: $White;
+            }
+
+            span{
+                color: $White;
+            }
         }
 
         figure:nth-child(1){   //map and location points
@@ -449,46 +473,35 @@
             height: 262px;
         }
 
-        ul{
-            font-size: 3rem;
-
-            a:hover{
-                color: $White;
-            }
-
-            span{
-                color: $White;
-            }
-        }
 
         @media (min-width: 800px) and (orientation: landscape){
-            h2{
-                font-size: 2.4rem;
-                padding: 50px 0px 0px 0px;
-            }
-
             div{
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: center;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: space-evenly;  
+            }
 
-                figure{
-                    &:nth-child(1){
-                        width: 280px;
-                        height: 480px;
-                    }
+            h2{
+                font-size: 2.4rem;
+                padding: 50px 0px 0px 0px;
+            }
+            
+            ul{
+                font-size: 1.3rem;
+            }
 
-                    &:nth-child(2){
-                        width: 200px;
-                        height: 200px;
-                        margin-bottom: 0px;
-                    }
+            figure{
+                &:nth-child(1){
+                    width: 280px;
+                    height: 480px;
                 }
 
-                ul{
-                    font-size: 1.3rem;
+                &:nth-child(2){
+                    width: 200px;
+                    height: 200px;
+                    margin-bottom: 0px;
                 }
             }
             
@@ -545,6 +558,7 @@
         background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.png") no-repeat center;
         background-size: cover;
         height: 486px;
+
         @media (min-width: 800px) and (orientation: landscape){
             background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center; //change of image for computer format layout
             background-size: cover;
