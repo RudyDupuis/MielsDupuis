@@ -70,9 +70,11 @@
     /*** Description ***/
 
     &__description{
-        font-size: 3rem;
+        font-size: 2.8rem;
         color: $colorPrimary;
         overflow-x: hidden;            //to hide the scrollbar caused by the animation of the bees
+
+        /*** Ruches ***/
 
         &-ruches{
             position: relative;
@@ -182,10 +184,16 @@
             }
         }
 
+        /*** Apiculteur ***/
+
         &-apiculteur{
             background-color: $colorSecondary;
             color: $White;
             padding-bottom: 100px;
+
+            p{
+                font-size: 2.5rem;
+            }
 
             h3, figure, p{
                 padding-top: 60px;
@@ -203,7 +211,7 @@
 
                 figure{
                     position: relative;
-                    width: 300px;
+                    width: 400px;
 
                     &:hover{
                         #accueil__description-apiculteur-work-abeille1{
@@ -250,6 +258,10 @@
             @media (min-width: 800px) and (orientation: landscape){
                 font-size: 1.3rem;
 
+                p{
+                    font-size: 1.2rem;
+                }
+
                 &-desc{
                     img{
                         width: 300px;
@@ -262,6 +274,12 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                    }
+                }
+
+                &-work{
+                    figure{
+                        width: 300px;
                     }
                 }
             }
@@ -280,7 +298,7 @@
     &__apiarie{
         background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
         background-size: cover;
-        height: 1000px;
+        height: 1400px;
 
         @media (min-width: 800px) and (orientation: landscape){
             background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;  //change of image for computer format layout

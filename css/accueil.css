@@ -369,9 +369,11 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__description {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #ffca18ff;
   overflow-x: hidden;
+  /*** Ruches ***/
+  /*** Apiculteur ***/
 }
 
 #accueil__description-ruches {
@@ -488,6 +490,10 @@ footer #footer__networkCopyright p {
   padding-bottom: 100px;
 }
 
+#accueil__description-apiculteur p {
+  font-size: 2.5rem;
+}
+
 #accueil__description-apiculteur h3, #accueil__description-apiculteur figure, #accueil__description-apiculteur p {
   padding-top: 60px;
 }
@@ -505,7 +511,7 @@ footer #footer__networkCopyright p {
 
 #accueil__description-apiculteur-work figure {
   position: relative;
-  width: 300px;
+  width: 400px;
 }
 
 #accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille1 {
@@ -550,6 +556,9 @@ footer #footer__networkCopyright p {
   #accueil__description-apiculteur {
     font-size: 1.3rem;
   }
+  #accueil__description-apiculteur p {
+    font-size: 1.2rem;
+  }
   #accueil__description-apiculteur-desc img {
     width: 300px;
     height: 226px;
@@ -560,6 +569,9 @@ footer #footer__networkCopyright p {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  #accueil__description-apiculteur-work figure {
+    width: 300px;
   }
 }
 
@@ -575,7 +587,7 @@ footer #footer__networkCopyright p {
 #accueil__apiarie {
   background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
   background-size: cover;
-  height: 1000px;
+  height: 1400px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
