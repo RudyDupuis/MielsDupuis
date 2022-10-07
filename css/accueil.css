@@ -611,6 +611,10 @@ footer #footer__networkCopyright figure a:hover img {
   top: 120px;
 }
 
+#accueil__description-apiculteur-work p {
+  padding: 0px 70px;
+}
+
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__description-apiculteur-desc img {
     width: 300px;
@@ -632,6 +636,7 @@ footer #footer__networkCopyright figure a:hover img {
   }
   #accueil__description-apiculteur-work p {
     width: 400px;
+    padding: 0px;
   }
 }
 

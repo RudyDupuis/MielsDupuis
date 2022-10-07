@@ -305,6 +305,10 @@
                     left: 0px;
                     top: 120px;
                 }
+
+                p{
+                    padding: 0px 70px;
+                }
             }
 
             @media (min-width: 800px) and (orientation: landscape){
@@ -335,6 +339,7 @@
 
                     p{
                         width: 400px;
+                        padding: 0px;
                     }
                 }
             }
