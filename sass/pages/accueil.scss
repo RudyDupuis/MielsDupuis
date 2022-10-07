@@ -284,6 +284,11 @@
                 &-work{
                     figure{
                         width: 300px;
+
+                        img:first-child{
+                            width: 133px;
+                            height: 158px;
+                        }
                     }
 
                     p{
@@ -338,56 +343,61 @@
 
         figure:nth-child(1){   //map and location points
             position: relative;
-            width: 280px;
-            height: 480px;
+            width: 559px;
+            height: 960px;
         }
 
         &-map{
+            width: 483px;
+            height: 836px;
+
             &-point1, &-point2, &-point3, &-point4, &-point5, &-point6, &-point7, &-point8{
                 position: absolute;
+                width: 37px;
+                height: 49px;
 
                 &:hover{
                     scale: 150%;
                 }
             }
             &-point1{
-                top: 335px;
-                left: 50px;
+                top: 608px;
+                left: 118px;
             }
             &-point2{
-                top: 284px;
-                left: 110px;
+                top: 508px;
+                left: 227px;
             }
             &-point3{
                 top: 0px;
-                left: -20px;
+                left: -1px;
             }
             &-point4{
-                top: -10px;
-                left: 8px;
+                top: -16px;
+                left: 48px;
             }
             &-point5{
-                top: 382px;
-                left: 175px;
+                top: 681px;
+                left: 356px;
             }
             &-point6{
-                top: 395px;
-                left: 180px;
+                top: 710px;
+                left: 362px;
             }
             &-point7{
-                top: 405px;
-                left: 195px;
+                top: 730px;
+                left: 384px;
             }
             &-point8{
-                top: 393px;
-                left: 175px;
+                top: 709px;
+                left: 350px;
             }
         }
 
         figure:nth-child(2){   //cart
             position: relative;
-            width: 160px;
-            height: 200px;
+            width: 340px;
+            height: 340px;
 
             &:hover{                                 //cf utils
                 #accueil__pointsDeVente-cartTub{
@@ -400,16 +410,12 @@
             }
         }
 
-        &-cart{
+        &-cart, &-cartTub{
             position: absolute;
             left: 5px;
             bottom: 30px;
-        }
-
-        &-cartTub{
-            position: absolute;
-            left: 5px;
-            bottom: 30px;
+            width: 287px;
+            height: 262px;
         }
 
         ul{
@@ -439,12 +445,69 @@
 
                 figure{
                     margin-bottom: 0px;
+
+                    &:nth-child(1){
+                        width: 280px;
+                        height: 480px;
+                    }
+
+                    &:nth-child(2){
+                        width: 200px;
+                        height: 200px;
+                    }
                 }
-                
+
                 ul{
                     font-size: 1.3rem;
                 }
             }
+            
+            &-map{
+                width: 242px;
+                height: 418px;
+
+                &-point1, &-point2, &-point3, &-point4, &-point5, &-point6, &-point7, &-point8{
+                    width: 18px;
+                    height: 24px;
+                }
+                &-point1{
+                    top: 304px;
+                    left: 62px;
+                }
+                &-point2{
+                    top: 259px;
+                    left: 118px;
+                }
+                &-point3{
+                    top: 0px;
+                    left: -3px;
+                }
+                &-point4{
+                    top: -10px;
+                    left: 23px;
+                }
+                &-point5{
+                    top: 342px;
+                    left: 175px;
+                }
+                &-point6{
+                    top: 358px;
+                    left: 180px;
+                }
+                &-point7{
+                    top: 363px;
+                    left: 195px;
+                }
+                &-point8{
+                    top: 357px;
+                    left: 175px;
+                }
+            }
+            
+            &-cart, &-cartTub{
+                    width: 160px;
+                    height: 146px;
+                }
         }
     }
 

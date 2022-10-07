@@ -577,6 +577,10 @@ footer #footer__networkCopyright p {
   #accueil__description-apiculteur-work figure {
     width: 300px;
   }
+  #accueil__description-apiculteur-work figure img:first-child {
+    width: 133px;
+    height: 158px;
+  }
   #accueil__description-apiculteur-work p {
     width: 400px;
   }
@@ -627,12 +631,19 @@ footer #footer__networkCopyright p {
 
 #accueil__pointsDeVente figure:nth-child(1) {
   position: relative;
-  width: 280px;
-  height: 480px;
+  width: 559px;
+  height: 960px;
+}
+
+#accueil__pointsDeVente-map {
+  width: 483px;
+  height: 836px;
 }
 
 #accueil__pointsDeVente-map-point1, #accueil__pointsDeVente-map-point2, #accueil__pointsDeVente-map-point3, #accueil__pointsDeVente-map-point4, #accueil__pointsDeVente-map-point5, #accueil__pointsDeVente-map-point6, #accueil__pointsDeVente-map-point7, #accueil__pointsDeVente-map-point8 {
   position: absolute;
+  width: 37px;
+  height: 49px;
 }
 
 #accueil__pointsDeVente-map-point1:hover, #accueil__pointsDeVente-map-point2:hover, #accueil__pointsDeVente-map-point3:hover, #accueil__pointsDeVente-map-point4:hover, #accueil__pointsDeVente-map-point5:hover, #accueil__pointsDeVente-map-point6:hover, #accueil__pointsDeVente-map-point7:hover, #accueil__pointsDeVente-map-point8:hover {
@@ -640,49 +651,49 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__pointsDeVente-map-point1 {
-  top: 335px;
-  left: 50px;
+  top: 608px;
+  left: 118px;
 }
 
 #accueil__pointsDeVente-map-point2 {
-  top: 284px;
-  left: 110px;
+  top: 508px;
+  left: 227px;
 }
 
 #accueil__pointsDeVente-map-point3 {
   top: 0px;
-  left: -20px;
+  left: -1px;
 }
 
 #accueil__pointsDeVente-map-point4 {
-  top: -10px;
-  left: 8px;
+  top: -16px;
+  left: 48px;
 }
 
 #accueil__pointsDeVente-map-point5 {
-  top: 382px;
-  left: 175px;
+  top: 681px;
+  left: 356px;
 }
 
 #accueil__pointsDeVente-map-point6 {
-  top: 395px;
-  left: 180px;
+  top: 710px;
+  left: 362px;
 }
 
 #accueil__pointsDeVente-map-point7 {
-  top: 405px;
-  left: 195px;
+  top: 730px;
+  left: 384px;
 }
 
 #accueil__pointsDeVente-map-point8 {
-  top: 393px;
-  left: 175px;
+  top: 709px;
+  left: 350px;
 }
 
 #accueil__pointsDeVente figure:nth-child(2) {
   position: relative;
-  width: 160px;
-  height: 200px;
+  width: 340px;
+  height: 340px;
 }
 
 #accueil__pointsDeVente figure:nth-child(2):hover #accueil__pointsDeVente-cartTub {
@@ -693,16 +704,12 @@ footer #footer__networkCopyright p {
   animation: mouving-cart 2s cubic-bezier(0.84, 1.47, 0.9, 1.01);
 }
 
-#accueil__pointsDeVente-cart {
+#accueil__pointsDeVente-cart, #accueil__pointsDeVente-cartTub {
   position: absolute;
   left: 5px;
   bottom: 30px;
-}
-
-#accueil__pointsDeVente-cartTub {
-  position: absolute;
-  left: 5px;
-  bottom: 30px;
+  width: 287px;
+  height: 262px;
 }
 
 #accueil__pointsDeVente ul {
@@ -732,8 +739,60 @@ footer #footer__networkCopyright p {
   #accueil__pointsDeVente div figure {
     margin-bottom: 0px;
   }
+  #accueil__pointsDeVente div figure:nth-child(1) {
+    width: 280px;
+    height: 480px;
+  }
+  #accueil__pointsDeVente div figure:nth-child(2) {
+    width: 200px;
+    height: 200px;
+  }
   #accueil__pointsDeVente div ul {
     font-size: 1.3rem;
+  }
+  #accueil__pointsDeVente-map {
+    width: 242px;
+    height: 418px;
+  }
+  #accueil__pointsDeVente-map-point1, #accueil__pointsDeVente-map-point2, #accueil__pointsDeVente-map-point3, #accueil__pointsDeVente-map-point4, #accueil__pointsDeVente-map-point5, #accueil__pointsDeVente-map-point6, #accueil__pointsDeVente-map-point7, #accueil__pointsDeVente-map-point8 {
+    width: 18px;
+    height: 24px;
+  }
+  #accueil__pointsDeVente-map-point1 {
+    top: 304px;
+    left: 62px;
+  }
+  #accueil__pointsDeVente-map-point2 {
+    top: 259px;
+    left: 118px;
+  }
+  #accueil__pointsDeVente-map-point3 {
+    top: 0px;
+    left: -3px;
+  }
+  #accueil__pointsDeVente-map-point4 {
+    top: -10px;
+    left: 23px;
+  }
+  #accueil__pointsDeVente-map-point5 {
+    top: 342px;
+    left: 175px;
+  }
+  #accueil__pointsDeVente-map-point6 {
+    top: 358px;
+    left: 180px;
+  }
+  #accueil__pointsDeVente-map-point7 {
+    top: 363px;
+    left: 195px;
+  }
+  #accueil__pointsDeVente-map-point8 {
+    top: 357px;
+    left: 175px;
+  }
+  #accueil__pointsDeVente-cart, #accueil__pointsDeVente-cartTub {
+    width: 160px;
+    height: 146px;
   }
 }
 
