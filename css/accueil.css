@@ -300,6 +300,7 @@ footer #footer__networkCopyright p {
   text-align: center;
   /*** Hero Baner ***/
   /*** French Flag ***/
+  /**** Anchor****/
   /*** Description ***/
   /*** Apiarie ***/
   /*** Point de vente ***/
@@ -366,6 +367,28 @@ footer #footer__networkCopyright p {
 #accueil__frenchFlag-blue, #accueil__frenchFlag-white, #accueil__frenchFlag-red {
   padding: 10px 0px 10px 0px;
   width: 33.3333333333%;
+}
+
+#accueil__anchor {
+  position: sticky;
+  z-index: 3;
+  top: 85%;
+  left: 95%;
+  border: 3px solid #353232;
+  border-radius: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#accueil__anchor-arrow {
+  width: 16px;
+  height: 16px;
+  border-top: 4px solid #353232;
+  border-right: 4px solid #353232;
+  transform: rotate(-45deg);
 }
 
 #accueil__description {
@@ -491,7 +514,7 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__description-apiculteur p {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
 }
 
 #accueil__description-apiculteur h3, #accueil__description-apiculteur figure, #accueil__description-apiculteur p {
@@ -625,10 +648,6 @@ footer #footer__networkCopyright p {
   padding: 70px 0px 150px 0px;
 }
 
-#accueil__pointsDeVente figure {
-  margin-bottom: 80px;
-}
-
 #accueil__pointsDeVente figure:nth-child(1) {
   position: relative;
   width: 559px;
@@ -692,6 +711,7 @@ footer #footer__networkCopyright p {
 
 #accueil__pointsDeVente figure:nth-child(2) {
   position: relative;
+  margin-bottom: 120px;
   width: 340px;
   height: 340px;
 }
@@ -736,9 +756,6 @@ footer #footer__networkCopyright p {
     align-items: center;
     justify-content: space-evenly;
   }
-  #accueil__pointsDeVente div figure {
-    margin-bottom: 0px;
-  }
   #accueil__pointsDeVente div figure:nth-child(1) {
     width: 280px;
     height: 480px;
@@ -746,6 +763,7 @@ footer #footer__networkCopyright p {
   #accueil__pointsDeVente div figure:nth-child(2) {
     width: 200px;
     height: 200px;
+    margin-bottom: 0px;
   }
   #accueil__pointsDeVente div ul {
     font-size: 1.3rem;
@@ -815,7 +833,7 @@ footer #footer__networkCopyright p {
 }
 
 #accueil__pictogram h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 100;
   margin: 50px 0px;
 }

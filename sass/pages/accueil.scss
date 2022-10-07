@@ -49,7 +49,7 @@
     }
 
     /*** French Flag ***/
-
+    
     &__frenchFlag{            //line between heroBanner and description
         display: flex;
         &-blue{
@@ -64,6 +64,30 @@
         &-blue, &-white, &-red{
             padding: 10px 0px 10px 0px;
             width: 33.3333333333%;
+        }
+    }
+    
+    /**** Anchor****/
+
+    &__anchor{
+        position: sticky;
+        z-index: 3;
+        top: 85%;
+        left: 95%;
+        border: 3px solid rgb(53, 50, 50);
+        border-radius: 20px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        &-arrow{
+            width: 16px;
+            height: 16px;
+            border-top: 4px solid rgb(53, 50, 50);
+            border-right: 4px solid rgb(53, 50, 50);
+            transform: rotate(-45deg);
         }
     }
 
@@ -192,7 +216,7 @@
             padding-bottom: 100px;
 
             p{
-                font-size: 2.1rem;
+                font-size: 2.5rem;
             }
 
             h3, figure, p{
@@ -337,10 +361,6 @@
             padding: 70px 0px 150px 0px;
         }
 
-        figure{
-            margin-bottom: 80px;
-        }
-
         figure:nth-child(1){   //map and location points
             position: relative;
             width: 559px;
@@ -396,6 +416,7 @@
 
         figure:nth-child(2){   //cart
             position: relative;
+            margin-bottom: 120px;
             width: 340px;
             height: 340px;
 
@@ -444,8 +465,6 @@
                 justify-content: space-evenly;
 
                 figure{
-                    margin-bottom: 0px;
-
                     &:nth-child(1){
                         width: 280px;
                         height: 480px;
@@ -454,6 +473,7 @@
                     &:nth-child(2){
                         width: 200px;
                         height: 200px;
+                        margin-bottom: 0px;
                     }
                 }
 
@@ -528,7 +548,7 @@
         margin-bottom: 100px;
 
         h4{
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 100;
             margin: 50px 0px;
         }
