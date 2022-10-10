@@ -30,6 +30,7 @@
             font-weight: 100;
             animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;          //cf utils
         }
+
         @media (min-width: 800px) and (orientation: landscape){
             background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat; //change of image for computer format layout
             background-size: cover;
@@ -52,6 +53,7 @@
     
     &__frenchFlag{            //line between heroBanner and description
         display: flex;
+
         &-blue{
             background-color: blue;
         }
@@ -72,9 +74,9 @@
     &__anchor{
         position: sticky;
         z-index: 3;
-        top: 85%;
-        left: 95%;
-        border: 6px solid rgb(53, 50, 50);
+        top: 85vh;
+        left: 95vw;
+        border: 6px solid rgb(53, 50, 50);  
         border-radius: 40px;
         width: 100px;
         height: 100px;
@@ -111,6 +113,7 @@
         color: $colorPrimary;
         overflow-x: hidden;            //to hide the scrollbar caused by the animation of the bees
 
+            /*Font Size*/
         h3{
             font-size: 3rem;
         } 
@@ -136,6 +139,7 @@
 
         &-ruches{
             position: relative;
+            margin-bottom: -50px;  //to remove the space between the two parts
             
             &-where{
                 margin: 400px 0px;
@@ -220,6 +224,8 @@
             }
 
             @media (min-width: 800px) and (orientation: landscape){
+                margin-bottom: -20px;  //to remove the space between the two parts
+
                 > h3{
                     padding-left: 70px;
                     text-align: left;
@@ -265,6 +271,7 @@
                     position: relative;
                     width: 400px;
 
+                        /*Apiculteur's animation*/
                     &:hover{
                         #accueil__description-apiculteur-work-abeille1{
                             opacity: 1;
@@ -305,6 +312,7 @@
                     left: 0px;
                     top: 120px;
                 }
+                    /**/
 
                 p{
                     padding: 0px 70px;
@@ -359,11 +367,13 @@
         background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
         background-size: cover;
         height: 1400px;
+        margin-bottom: -65px;  //to remove the space between the two parts
 
         @media (min-width: 800px) and (orientation: landscape){
             background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;  //change of image for computer format layout
             background-size: cover;
             height: 700px;
+            margin-bottom: -32px;  //to remove the space between the two parts
         }
     }
 
@@ -396,7 +406,8 @@
             }
         }
 
-        figure:nth-child(1){   //map and location points
+            /*Map and localisation'points*/
+        figure:nth-child(1){
             position: relative;
             width: 559px;
             height: 960px;
@@ -449,7 +460,8 @@
             }
         }
 
-        figure:nth-child(2){   //cart
+            /*cart's animation*/
+        figure:nth-child(2){
             position: relative;
             margin-bottom: 120px;
             width: 340px;
@@ -555,6 +567,7 @@
         }
     }
 
+        /*Honey flow background*/
     &__honeyFlow{
         background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.png") no-repeat center;
         background-size: cover;
