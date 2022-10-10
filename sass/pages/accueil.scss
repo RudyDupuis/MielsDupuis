@@ -3,6 +3,10 @@
 @import "../layouts/header"; 
 @import "../layouts/footer";
 
+header{
+    position: absolute;
+}
+
 #accueil{
     position: relative;
     text-align: center;

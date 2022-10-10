@@ -1,0 +1,130 @@
+@import "../utils/utils";
+@import "../base/base";
+@import "../components/componets";
+@import "../layouts/header"; 
+@import "../layouts/footer"; 
+
+#mention_legales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin: 100px 0px;
+        font-size: 4rem;
+    }
+
+    ul{
+        margin: 100px 0px 200px 0px;
+        padding: 0px 50px;
+        font-size: 2.4rem;
+
+        li{
+            margin: 60px 0px;
+
+            strong{
+                color: $colorSecondary;
+            }
+            
+        }
+    }
+        /*Apiculteur's animation*/
+
+    figure{
+        position: relative;
+        width: 400px;
+        height: 400px;
+        background-color: $colorSecondary;
+        border-radius: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        &:hover{
+            #mention_legales__abeille1{
+                opacity: 1;
+                animation: shake 0.9s ease-in-out infinite;
+            }
+
+            #mention_legales__abeille2{
+                opacity: 1;
+                animation: shake 0.8s ease-in-out infinite;
+            }
+
+            #mention_legales__abeille3{
+                opacity: 1;
+                animation: shake 0.7s ease-in-out infinite;
+            }
+        }
+    }
+
+    &__abeille1, &__abeille2, &__abeille3 {    //hidden bees for hover animation
+        width: 55px;
+        height: 51px;
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__abeille1{
+        right: 15px;
+        transform: rotate(5deg);
+    }
+
+    &__abeille2{
+        left: 47px;
+        top: 248px;
+        transform: rotate(20deg);
+    }
+
+    &__abeille3{
+        left: 23px;
+        top: 120px;
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){
+        h1{
+            font-size: 2.5rem;
+            margin: 50px 0px 25px 0px;
+        }
+
+        ul{
+            font-size: 1.2rem;
+            margin: 25px 0px 50px 0px;
+
+            li{
+                margin: 20px 0px;
+            }
+        }
+
+        /*Apiculteur's animation*/
+
+        figure{
+            width: 150px;
+            height: 150px;
+
+            img:first-child{
+                width: 67px;
+                height: 79px;
+            }
+        }
+
+        &__abeille1, &__abeille2, &__abeille3 {
+            width: 25px;
+            height: 23px;
+        }
+
+        &__abeille1{
+            right: 6px;
+        }
+    
+        &__abeille2{
+            left: 14px;
+            top: 40px;
+        }
+    
+        &__abeille3{
+            left: 21px;
+            top: 92px;
+        }
+    }
+}

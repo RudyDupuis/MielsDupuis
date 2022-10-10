@@ -742,24 +742,3 @@ footer #footer__networkCopyright figure a:hover img {
     align-items: flex-end;
   }
 }
-
-h2 {
-  margin-left: 100px;
-  font-size: 3.5rem;
-}
-
-#miels, #bougies {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#miels .product, #bougies .product {
-  margin: 40px 40px;
-}
-
-@media (min-width: 800px) and (orientation: landscape) {
-  h2 {
-    font-size: 2rem;
-  }
-}

@@ -743,23 +743,117 @@ footer #footer__networkCopyright figure a:hover img {
   }
 }
 
-h2 {
-  margin-left: 100px;
-  font-size: 3.5rem;
-}
-
-#miels, #bougies {
+#mention_legales {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  /*Apiculteur's animation*/
 }
 
-#miels .product, #bougies .product {
-  margin: 40px 40px;
+#mention_legales h1 {
+  margin: 100px 0px;
+  font-size: 4rem;
+}
+
+#mention_legales ul {
+  margin: 100px 0px 200px 0px;
+  padding: 0px 50px;
+  font-size: 2.4rem;
+}
+
+#mention_legales ul li {
+  margin: 60px 0px;
+}
+
+#mention_legales ul li strong {
+  color: #44aa00ff;
+}
+
+#mention_legales figure {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #44aa00ff;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mention_legales figure:hover #mention_legales__abeille1 {
+  opacity: 1;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#mention_legales figure:hover #mention_legales__abeille2 {
+  opacity: 1;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#mention_legales figure:hover #mention_legales__abeille3 {
+  opacity: 1;
+  animation: shake 0.7s ease-in-out infinite;
+}
+
+#mention_legales__abeille1, #mention_legales__abeille2, #mention_legales__abeille3 {
+  width: 55px;
+  height: 51px;
+  position: absolute;
+  opacity: 0;
+}
+
+#mention_legales__abeille1 {
+  right: 15px;
+  transform: rotate(5deg);
+}
+
+#mention_legales__abeille2 {
+  left: 47px;
+  top: 248px;
+  transform: rotate(20deg);
+}
+
+#mention_legales__abeille3 {
+  left: 23px;
+  top: 120px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
-  h2 {
-    font-size: 2rem;
+  #mention_legales {
+    /*Apiculteur's animation*/
+  }
+  #mention_legales h1 {
+    font-size: 2.5rem;
+    margin: 50px 0px 25px 0px;
+  }
+  #mention_legales ul {
+    font-size: 1.2rem;
+    margin: 25px 0px 50px 0px;
+  }
+  #mention_legales ul li {
+    margin: 20px 0px;
+  }
+  #mention_legales figure {
+    width: 150px;
+    height: 150px;
+  }
+  #mention_legales figure img:first-child {
+    width: 67px;
+    height: 79px;
+  }
+  #mention_legales__abeille1, #mention_legales__abeille2, #mention_legales__abeille3 {
+    width: 25px;
+    height: 23px;
+  }
+  #mention_legales__abeille1 {
+    right: 6px;
+  }
+  #mention_legales__abeille2 {
+    left: 14px;
+    top: 40px;
+  }
+  #mention_legales__abeille3 {
+    left: 21px;
+    top: 92px;
   }
 }
