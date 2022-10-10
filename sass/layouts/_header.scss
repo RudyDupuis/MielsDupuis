@@ -20,11 +20,11 @@ header{
             white-space: nowrap;    //To keep the pictograms on the same line if the screen is very small
 
             &-compte:hover{
-                background: url(../assets/pictures/header/picto_compte-active.png) no-repeat center;
+                background: url(../assets/pictures/header/picto_compte-active.webp) no-repeat center;
             }
 
             &-panier:hover{
-                background: url(../assets/pictures/header/picto_panier-active.png) no-repeat center;
+                background: url(../assets/pictures/header/picto_panier-active.webp) no-repeat center;
             }
 
             a:last-child{
@@ -63,7 +63,7 @@ header{
                     height: 43px;
 
                     &:hover{
-                        background: url(../assets/pictures/header/picto_compte-active-desktop.png) no-repeat center;
+                        background: url(../assets/pictures/header/picto_compte-active-desktop.webp) no-repeat center;
                     }
                 }
 
@@ -72,7 +72,7 @@ header{
                     height: 40px;
 
                     &:hover{
-                        background: url(../assets/pictures/header/picto_panier-active-desktop.png) no-repeat center;
+                        background: url(../assets/pictures/header/picto_panier-active-desktop.webp) no-repeat center;
                     }
                 }
             }

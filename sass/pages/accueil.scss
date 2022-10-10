@@ -10,7 +10,7 @@
     /*** Hero Baner ***/
 
     &__heroBanner{
-        background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.png") no-repeat;
+        background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.webp") no-repeat;
         background-size: cover;
         color: $White;
         height: 98vh;
@@ -32,7 +32,7 @@
         }
 
         @media (min-width: 800px) and (orientation: landscape){
-            background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat; //change of image for computer format layout
+            background: url("../assets/pictures/accueil/fond_accueil_abeilles.webp") no-repeat; //change of image for computer format layout
             background-size: cover;
             text-align: left;
             min-height: 600px;
@@ -159,7 +159,7 @@
             }
 
             &-background{
-                background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.png") no-repeat;
+                background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.webp") no-repeat;
                 background-size: cover;
                 height: 90px;
 
@@ -232,7 +232,7 @@
                 }
 
                 &-background{
-                    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat; //change of image for computer format layout
+                    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.webp") no-repeat; //change of image for computer format layout
                     background-size: cover;
                 }
             }
@@ -364,13 +364,13 @@
     /*** Apiarie ***/
 
     &__apiarie{
-        background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
+        background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.webp") no-repeat center;
         background-size: cover;
         height: 1400px;
         margin-bottom: -65px;  //to remove the space between the two parts
 
         @media (min-width: 800px) and (orientation: landscape){
-            background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;  //change of image for computer format layout
+            background: url("../assets/pictures/accueil/fond_accueil_ruches.webp") no-repeat center;  //change of image for computer format layout
             background-size: cover;
             height: 700px;
             margin-bottom: -32px;  //to remove the space between the two parts
@@ -569,12 +569,12 @@
 
         /*Honey flow background*/
     &__honeyFlow{
-        background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.png") no-repeat center;
+        background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.webp") no-repeat center;
         background-size: cover;
         height: 486px;
 
         @media (min-width: 800px) and (orientation: landscape){
-            background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center; //change of image for computer format layout
+            background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.webp") no-repeat center; //change of image for computer format layout
             background-size: cover;
             height: 389px;
         }

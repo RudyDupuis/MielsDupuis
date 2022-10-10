@@ -405,6 +405,7 @@ template {
 @font-face {
   font-family: "BerlinSansFB";
   src: url("../assets/fonts/BRLNSR.woff") format("woff");
+  font-display: swap;
 }
 
 * {
@@ -447,11 +448,11 @@ header #header__image-picto {
 }
 
 header #header__image-picto-compte:hover {
-  background: url(../assets/pictures/header/picto_compte-active.png) no-repeat center;
+  background: url(../assets/pictures/header/picto_compte-active.webp) no-repeat center;
 }
 
 header #header__image-picto-panier:hover {
-  background: url(../assets/pictures/header/picto_panier-active.png) no-repeat center;
+  background: url(../assets/pictures/header/picto_panier-active.webp) no-repeat center;
 }
 
 header #header__image-picto a:last-child {
@@ -485,14 +486,14 @@ header #header__link {
     height: 43px;
   }
   header #header__image-picto-compte:hover {
-    background: url(../assets/pictures/header/picto_compte-active-desktop.png) no-repeat center;
+    background: url(../assets/pictures/header/picto_compte-active-desktop.webp) no-repeat center;
   }
   header #header__image-picto-panier {
     width: 29px;
     height: 40px;
   }
   header #header__image-picto-panier:hover {
-    background: url(../assets/pictures/header/picto_panier-active-desktop.png) no-repeat center;
+    background: url(../assets/pictures/header/picto_panier-active-desktop.webp) no-repeat center;
   }
   header #header__image a:last-child {
     margin-left: 25px;
@@ -665,7 +666,7 @@ footer #footer__networkCopyright figure a:hover img {
 }
 
 #accueil__heroBanner {
-  background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.png") no-repeat;
+  background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.webp") no-repeat;
   background-size: cover;
   color: #ffffffff;
   height: 98vh;
@@ -690,7 +691,7 @@ footer #footer__networkCopyright figure a:hover img {
 
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__heroBanner {
-    background: url("../assets/pictures/accueil/fond_accueil_abeilles.png") no-repeat;
+    background: url("../assets/pictures/accueil/fond_accueil_abeilles.webp") no-repeat;
     background-size: cover;
     text-align: left;
     min-height: 600px;
@@ -818,7 +819,7 @@ footer #footer__networkCopyright figure a:hover img {
 }
 
 #accueil__description-ruches-background {
-  background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.png") no-repeat;
+  background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.webp") no-repeat;
   background-size: cover;
   height: 90px;
 }
@@ -891,7 +892,7 @@ footer #footer__networkCopyright figure a:hover img {
     text-align: left;
   }
   #accueil__description-ruches-background {
-    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.png") no-repeat;
+    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.webp") no-repeat;
     background-size: cover;
   }
 }
@@ -1009,7 +1010,7 @@ footer #footer__networkCopyright figure a:hover img {
 }
 
 #accueil__apiarie {
-  background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.png") no-repeat center;
+  background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.webp") no-repeat center;
   background-size: cover;
   height: 1400px;
   margin-bottom: -65px;
@@ -1017,7 +1018,7 @@ footer #footer__networkCopyright figure a:hover img {
 
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__apiarie {
-    background: url("../assets/pictures/accueil/fond_accueil_ruches.png") no-repeat center;
+    background: url("../assets/pictures/accueil/fond_accueil_ruches.webp") no-repeat center;
     background-size: cover;
     height: 700px;
     margin-bottom: -32px;
@@ -1209,14 +1210,14 @@ footer #footer__networkCopyright figure a:hover img {
 }
 
 #accueil__honeyFlow {
-  background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.png") no-repeat center;
+  background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.webp") no-repeat center;
   background-size: cover;
   height: 486px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
   #accueil__honeyFlow {
-    background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.png") no-repeat center;
+    background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.webp") no-repeat center;
     background-size: cover;
     height: 389px;
   }
