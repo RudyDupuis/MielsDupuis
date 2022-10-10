@@ -1,0 +1,30 @@
+@import "../utils/utils";
+@import "../base/base";
+@import "../components/componets";
+@import "../layouts/header"; 
+@import "../layouts/footer";
+
+header{
+    position: relative;
+}
+
+h2{
+    margin-left: 100px;
+    font-size: 3.5rem;
+}
+
+#miels, #bougies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+    &__product{
+        margin: 40px 40px;
+    }
+}
+
+@media (min-width: 800px) and (orientation: landscape){
+    h2{
+        font-size: 2rem;
+    }
+}
