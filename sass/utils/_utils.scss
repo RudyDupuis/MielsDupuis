@@ -3,6 +3,15 @@ $colorSecondary: #44aa00ff;
 $White: #ffffffff;
 $Black: #000000ff;
 
+/** Functions **/
+
+@function resize($size, $division){
+  $newSize: $size / $division;
+  @return $newSize;
+}
+
+/** Keyframes **/
+
 @keyframes tracking-in-expand {          //letter spacing stretches back to normal display
     0%{
       letter-spacing: -0.5em;

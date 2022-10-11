@@ -1,3 +1,5 @@
+/** Functions **/
+/** Keyframes **/
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -915,7 +917,7 @@ header {
   padding-bottom: 100px;
 }
 
-#accueil__description-apiculteur h3, #accueil__description-apiculteur figure, #accueil__description-apiculteur p {
+#accueil__description-apiculteur h3, #accueil__description-apiculteur p {
   padding-top: 60px;
 }
 
@@ -928,51 +930,67 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /**/
-}
-
-#accueil__description-apiculteur-work figure {
-  position: relative;
-  width: 400px;
   /*Apiculteur's animation*/
+  /** Cf utils for function and keyframes **/
+  /** Animation apiculteur **/
+  /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
 }
 
-#accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille1 {
-  opacity: 1;
-  animation: shake 0.9s ease-in-out infinite;
+#accueil__description-apiculteur-work .animation-apiculteur {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-color: #44aa00ff;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille2 {
-  opacity: 1;
-  animation: shake 0.8s ease-in-out infinite;
+#accueil__description-apiculteur-work .animation-apiculteur img:first-child {
+  width: 225.9887px;
+  height: 268.45638px;
 }
 
-#accueil__description-apiculteur-work figure:hover #accueil__description-apiculteur-work-abeille3 {
-  opacity: 1;
-  animation: shake 0.7s ease-in-out infinite;
-}
-
-#accueil__description-apiculteur-work-abeille1, #accueil__description-apiculteur-work-abeille2, #accueil__description-apiculteur-work-abeille3 {
-  width: 55px;
-  height: 51px;
+#accueil__description-apiculteur-work .animation-apiculteur__abeille1, #accueil__description-apiculteur-work .animation-apiculteur__abeille2, #accueil__description-apiculteur-work .animation-apiculteur__abeille3 {
+  width: 55.02063px;
+  height: 51.02041px;
   position: absolute;
   opacity: 0;
 }
 
-#accueil__description-apiculteur-work-abeille1 {
-  right: 0px;
+#accueil__description-apiculteur-work .animation-apiculteur__abeille1 {
+  right: 14.99813px;
   transform: rotate(5deg);
 }
 
-#accueil__description-apiculteur-work-abeille2 {
-  left: 20px;
-  top: 20px;
+#accueil__description-apiculteur-work .animation-apiculteur__abeille2 {
+  left: 47.00353px;
+  top: 248.4472px;
   transform: rotate(20deg);
 }
 
-#accueil__description-apiculteur-work-abeille3 {
-  left: 0px;
-  top: 120px;
+#accueil__description-apiculteur-work .animation-apiculteur__abeille3 {
+  left: 23.00173px;
+  top: 120.12012px;
+}
+
+#accueil__description-apiculteur-work .animation-apiculteur:hover .animation-apiculteur__abeille1 {
+  opacity: 1;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#accueil__description-apiculteur-work .animation-apiculteur:hover .animation-apiculteur__abeille2 {
+  opacity: 1;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#accueil__description-apiculteur-work .animation-apiculteur:hover .animation-apiculteur__abeille3 {
+  opacity: 1;
+  animation: shake 0.7s ease-in-out infinite;
 }
 
 #accueil__description-apiculteur-work p {
@@ -991,12 +1009,59 @@ header {
     justify-content: center;
     align-items: center;
   }
-  #accueil__description-apiculteur-work figure {
-    width: 300px;
+  #accueil__description-apiculteur-work {
+    /*Apiculteur's animation*/
+    /** Cf utils for function and keyframes **/
+    /** Animation apiculteur **/
+    /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
   }
-  #accueil__description-apiculteur-work figure img:first-child {
-    width: 133px;
-    height: 158px;
+  #accueil__description-apiculteur-work .animation-apiculteur {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background-color: #44aa00ff;
+    border-radius: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur img:first-child {
+    width: 141.24294px;
+    height: 167.78523px;
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur__abeille1, #accueil__description-apiculteur-work .animation-apiculteur__abeille2, #accueil__description-apiculteur-work .animation-apiculteur__abeille3 {
+    width: 34.3879px;
+    height: 31.88776px;
+    position: absolute;
+    opacity: 0;
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur__abeille1 {
+    right: 9.37383px;
+    transform: rotate(5deg);
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur__abeille2 {
+    left: 29.3772px;
+    top: 155.2795px;
+    transform: rotate(20deg);
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur__abeille3 {
+    left: 14.37608px;
+    top: 75.07508px;
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur:hover .animation-apiculteur__abeille1 {
+    opacity: 1;
+    animation: shake 0.9s ease-in-out infinite;
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur:hover .animation-apiculteur__abeille2 {
+    opacity: 1;
+    animation: shake 0.8s ease-in-out infinite;
+  }
+  #accueil__description-apiculteur-work .animation-apiculteur:hover .animation-apiculteur__abeille3 {
+    opacity: 1;
+    animation: shake 0.7s ease-in-out infinite;
   }
   #accueil__description-apiculteur-work p {
     width: 400px;

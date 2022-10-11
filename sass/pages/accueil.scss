@@ -257,7 +257,7 @@ header{
             color: $White;
             padding-bottom: 100px;
 
-            h3, figure, p{
+            h3, p{
                 padding-top: 60px;
             }
 
@@ -271,52 +271,10 @@ header{
                 flex-direction: column;
                 align-items: center;
 
-                figure{
-                    position: relative;
-                    width: 400px;
+                /*Apiculteur's animation*/
 
-                        /*Apiculteur's animation*/
-                    &:hover{
-                        #accueil__description-apiculteur-work-abeille1{
-                            opacity: 1;
-                            animation: shake 0.9s ease-in-out infinite;
-                        }
-
-                        #accueil__description-apiculteur-work-abeille2{
-                            opacity: 1;
-                            animation: shake 0.8s ease-in-out infinite;
-                        }
-
-                        #accueil__description-apiculteur-work-abeille3{
-                            opacity: 1;
-                            animation: shake 0.7s ease-in-out infinite;
-                        }
-                    }
-                }
-
-                &-abeille1, &-abeille2, &-abeille3 {    //hidden bees for hover animation
-                    width: 55px;
-                    height: 51px;
-                    position: absolute;
-                    opacity: 0;
-                }
-
-                &-abeille1{
-                    right: 0px;
-                    transform: rotate(5deg);
-                }
-
-                &-abeille2{
-                    left: 20px;
-                    top: 20px;
-                    transform: rotate(20deg);
-                }
-
-                &-abeille3{
-                    left: 0px;
-                    top: 120px;
-                }
-                    /**/
+                $sizeAnimApiculteur: 400px;
+                @import "../components/animations";
 
                 p{
                     padding: 0px 70px;
@@ -340,14 +298,10 @@ header{
                 }
 
                 &-work{
-                    figure{
-                        width: 300px;
+                    /*Apiculteur's animation*/
 
-                        img:first-child{
-                            width: 133px;
-                            height: 158px;
-                        }
-                    }
+                    $sizeAnimApiculteur: 250px;
+                    @import "../components/animations";
 
                     p{
                         width: 400px;

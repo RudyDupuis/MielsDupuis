@@ -1,0 +1,65 @@
+/** Cf utils for function and keyframes **/
+
+
+/** Animation apiculteur **/
+
+/**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+
+.animation-apiculteur{
+    width: $sizeAnimApiculteur;
+    height: $sizeAnimApiculteur;
+    position: relative;
+    background-color: $colorSecondary;
+    border-radius: resize($sizeAnimApiculteur, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img:first-child{
+        width: resize($sizeAnimApiculteur, 1.77);
+        height: resize($sizeAnimApiculteur, 1.49);
+    }
+
+    &__abeille1, &__abeille2, &__abeille3 {    //hidden bees for hover animation
+        width: resize($sizeAnimApiculteur, 7.27);
+        height: resize($sizeAnimApiculteur, 7.84);
+        position: absolute;
+        opacity: 0;
+    }
+    
+    &__abeille1{
+        right: resize($sizeAnimApiculteur, 26.67);
+        transform: rotate(5deg);
+    }
+    
+    &__abeille2{
+        left: resize($sizeAnimApiculteur, 8.51);
+        top: resize($sizeAnimApiculteur, 1.61);
+        transform: rotate(20deg);
+    }
+    
+    &__abeille3{
+        left: resize($sizeAnimApiculteur, 17.39);
+        top: resize($sizeAnimApiculteur, 3.33);
+    }
+
+    &:hover{
+        .animation-apiculteur__abeille1{
+            opacity: 1;
+            animation: shake 0.9s ease-in-out infinite;
+        }
+
+        .animation-apiculteur__abeille2{
+            opacity: 1;
+            animation: shake 0.8s ease-in-out infinite;
+        }
+
+        .animation-apiculteur__abeille3{
+            opacity: 1;
+            animation: shake 0.7s ease-in-out infinite;
+        }
+    }
+}

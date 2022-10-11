@@ -3,3 +3,62 @@
 @import "../components/componets";
 @import "../layouts/header"; 
 @import "../layouts/footer";
+
+#conditions_generales_de_vente{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1{
+        margin: 100px 0px;
+        font-size: 4rem;
+    }
+
+    div{
+        padding: 30px 30px;
+
+        p, ul{
+            font-size: 2rem;
+        }
+        h2{
+           font-size: 2.4rem; 
+        }
+        
+        ul{
+            li{
+                margin: 20px 0px;
+            }  
+        }
+    }
+        /*Apiculteur's animation*/
+
+        $sizeAnimApiculteur: 400px;
+        @import "../components/animations";
+        
+    
+
+    @media (min-width: 800px) and (orientation: landscape){
+        h1{
+            font-size: 2.5rem;
+            margin: 50px 0px 25px 0px;
+        }
+
+        div{
+            width: 90%;
+
+            p, ol, ul{
+                font-size: 1rem;
+            }
+
+            h2{
+               font-size: 1.4rem; 
+            }
+        }
+
+        /*Apiculteur's animation*/
+
+        $sizeAnimApiculteur: 150px;
+        @import "../components/animations";
+
+    }
+}

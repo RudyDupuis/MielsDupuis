@@ -1,3 +1,5 @@
+/** Functions **/
+/** Keyframes **/
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -740,5 +742,163 @@ footer #footer__networkCopyright figure a:hover img {
   }
   footer #footer__networkCopyright p {
     align-items: flex-end;
+  }
+}
+
+#conditions_generales_de_vente {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*Apiculteur's animation*/
+  /** Cf utils for function and keyframes **/
+  /** Animation apiculteur **/
+  /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+}
+
+#conditions_generales_de_vente h1 {
+  margin: 100px 0px;
+  font-size: 4rem;
+}
+
+#conditions_generales_de_vente div {
+  padding: 30px 30px;
+}
+
+#conditions_generales_de_vente div p, #conditions_generales_de_vente div ul {
+  font-size: 2rem;
+}
+
+#conditions_generales_de_vente div h2 {
+  font-size: 2.4rem;
+}
+
+#conditions_generales_de_vente div ul li {
+  margin: 20px 0px;
+}
+
+#conditions_generales_de_vente .animation-apiculteur {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background-color: #44aa00ff;
+  border-radius: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#conditions_generales_de_vente .animation-apiculteur img:first-child {
+  width: 225.9887px;
+  height: 268.45638px;
+}
+
+#conditions_generales_de_vente .animation-apiculteur__abeille1, #conditions_generales_de_vente .animation-apiculteur__abeille2, #conditions_generales_de_vente .animation-apiculteur__abeille3 {
+  width: 55.02063px;
+  height: 51.02041px;
+  position: absolute;
+  opacity: 0;
+}
+
+#conditions_generales_de_vente .animation-apiculteur__abeille1 {
+  right: 14.99813px;
+  transform: rotate(5deg);
+}
+
+#conditions_generales_de_vente .animation-apiculteur__abeille2 {
+  left: 47.00353px;
+  top: 248.4472px;
+  transform: rotate(20deg);
+}
+
+#conditions_generales_de_vente .animation-apiculteur__abeille3 {
+  left: 23.00173px;
+  top: 120.12012px;
+}
+
+#conditions_generales_de_vente .animation-apiculteur:hover .animation-apiculteur__abeille1 {
+  opacity: 1;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#conditions_generales_de_vente .animation-apiculteur:hover .animation-apiculteur__abeille2 {
+  opacity: 1;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#conditions_generales_de_vente .animation-apiculteur:hover .animation-apiculteur__abeille3 {
+  opacity: 1;
+  animation: shake 0.7s ease-in-out infinite;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  #conditions_generales_de_vente {
+    /*Apiculteur's animation*/
+    /** Cf utils for function and keyframes **/
+    /** Animation apiculteur **/
+    /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+  }
+  #conditions_generales_de_vente h1 {
+    font-size: 2.5rem;
+    margin: 50px 0px 25px 0px;
+  }
+  #conditions_generales_de_vente div {
+    width: 90%;
+  }
+  #conditions_generales_de_vente div p, #conditions_generales_de_vente div ol, #conditions_generales_de_vente div ul {
+    font-size: 1rem;
+  }
+  #conditions_generales_de_vente div h2 {
+    font-size: 1.4rem;
+  }
+  #conditions_generales_de_vente .animation-apiculteur {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background-color: #44aa00ff;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #conditions_generales_de_vente .animation-apiculteur img:first-child {
+    width: 84.74576px;
+    height: 100.67114px;
+  }
+  #conditions_generales_de_vente .animation-apiculteur__abeille1, #conditions_generales_de_vente .animation-apiculteur__abeille2, #conditions_generales_de_vente .animation-apiculteur__abeille3 {
+    width: 20.63274px;
+    height: 19.13265px;
+    position: absolute;
+    opacity: 0;
+  }
+  #conditions_generales_de_vente .animation-apiculteur__abeille1 {
+    right: 5.6243px;
+    transform: rotate(5deg);
+  }
+  #conditions_generales_de_vente .animation-apiculteur__abeille2 {
+    left: 17.62632px;
+    top: 93.1677px;
+    transform: rotate(20deg);
+  }
+  #conditions_generales_de_vente .animation-apiculteur__abeille3 {
+    left: 8.62565px;
+    top: 45.04505px;
+  }
+  #conditions_generales_de_vente .animation-apiculteur:hover .animation-apiculteur__abeille1 {
+    opacity: 1;
+    animation: shake 0.9s ease-in-out infinite;
+  }
+  #conditions_generales_de_vente .animation-apiculteur:hover .animation-apiculteur__abeille2 {
+    opacity: 1;
+    animation: shake 0.8s ease-in-out infinite;
+  }
+  #conditions_generales_de_vente .animation-apiculteur:hover .animation-apiculteur__abeille3 {
+    opacity: 1;
+    animation: shake 0.7s ease-in-out infinite;
   }
 }

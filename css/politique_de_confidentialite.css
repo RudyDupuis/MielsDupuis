@@ -1,3 +1,5 @@
+/** Functions **/
+/** Keyframes **/
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -748,6 +750,12 @@ footer #footer__networkCopyright figure a:hover img {
   flex-direction: column;
   align-items: center;
   /*Apiculteur's animation*/
+  /** Cf utils for function and keyframes **/
+  /** Animation apiculteur **/
+  /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
 }
 
 #politique_de_confidentialite h1 {
@@ -790,14 +798,14 @@ footer #footer__networkCopyright figure a:hover img {
   list-style-type: circle;
 }
 
-#politique_de_confidentialite__instruction ul li {
-  margin: 10px 0px;
+#politique_de_confidentialite__instruction ul li, #politique_de_confidentialite__instruction ol li {
+  margin: 20px 0px;
 }
 
-#politique_de_confidentialite figure {
-  position: relative;
+#politique_de_confidentialite .animation-apiculteur {
   width: 400px;
   height: 400px;
+  position: relative;
   background-color: #44aa00ff;
   border-radius: 200px;
   display: flex;
@@ -805,47 +813,58 @@ footer #footer__networkCopyright figure a:hover img {
   align-items: center;
 }
 
-#politique_de_confidentialite figure:hover #politique_de_confidentialite__abeille1 {
-  opacity: 1;
-  animation: shake 0.9s ease-in-out infinite;
+#politique_de_confidentialite .animation-apiculteur img:first-child {
+  width: 225.9887px;
+  height: 268.45638px;
 }
 
-#politique_de_confidentialite figure:hover #politique_de_confidentialite__abeille2 {
-  opacity: 1;
-  animation: shake 0.8s ease-in-out infinite;
-}
-
-#politique_de_confidentialite figure:hover #politique_de_confidentialite__abeille3 {
-  opacity: 1;
-  animation: shake 0.7s ease-in-out infinite;
-}
-
-#politique_de_confidentialite__abeille1, #politique_de_confidentialite__abeille2, #politique_de_confidentialite__abeille3 {
-  width: 55px;
-  height: 51px;
+#politique_de_confidentialite .animation-apiculteur__abeille1, #politique_de_confidentialite .animation-apiculteur__abeille2, #politique_de_confidentialite .animation-apiculteur__abeille3 {
+  width: 55.02063px;
+  height: 51.02041px;
   position: absolute;
   opacity: 0;
 }
 
-#politique_de_confidentialite__abeille1 {
-  right: 15px;
+#politique_de_confidentialite .animation-apiculteur__abeille1 {
+  right: 14.99813px;
   transform: rotate(5deg);
 }
 
-#politique_de_confidentialite__abeille2 {
-  left: 47px;
-  top: 248px;
+#politique_de_confidentialite .animation-apiculteur__abeille2 {
+  left: 47.00353px;
+  top: 248.4472px;
   transform: rotate(20deg);
 }
 
-#politique_de_confidentialite__abeille3 {
-  left: 23px;
-  top: 120px;
+#politique_de_confidentialite .animation-apiculteur__abeille3 {
+  left: 23.00173px;
+  top: 120.12012px;
+}
+
+#politique_de_confidentialite .animation-apiculteur:hover .animation-apiculteur__abeille1 {
+  opacity: 1;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#politique_de_confidentialite .animation-apiculteur:hover .animation-apiculteur__abeille2 {
+  opacity: 1;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#politique_de_confidentialite .animation-apiculteur:hover .animation-apiculteur__abeille3 {
+  opacity: 1;
+  animation: shake 0.7s ease-in-out infinite;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
   #politique_de_confidentialite {
     /*Apiculteur's animation*/
+    /** Cf utils for function and keyframes **/
+    /** Animation apiculteur **/
+    /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
   }
   #politique_de_confidentialite h1 {
     font-size: 2.5rem;
@@ -870,27 +889,49 @@ footer #footer__networkCopyright figure a:hover img {
   #politique_de_confidentialite__instruction h3 {
     font-size: 1.4rem;
   }
-  #politique_de_confidentialite figure {
+  #politique_de_confidentialite .animation-apiculteur {
     width: 150px;
     height: 150px;
+    position: relative;
+    background-color: #44aa00ff;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #politique_de_confidentialite figure img:first-child {
-    width: 67px;
-    height: 79px;
+  #politique_de_confidentialite .animation-apiculteur img:first-child {
+    width: 84.74576px;
+    height: 100.67114px;
   }
-  #politique_de_confidentialite__abeille1, #politique_de_confidentialite__abeille2, #politique_de_confidentialite__abeille3 {
-    width: 25px;
-    height: 23px;
+  #politique_de_confidentialite .animation-apiculteur__abeille1, #politique_de_confidentialite .animation-apiculteur__abeille2, #politique_de_confidentialite .animation-apiculteur__abeille3 {
+    width: 20.63274px;
+    height: 19.13265px;
+    position: absolute;
+    opacity: 0;
   }
-  #politique_de_confidentialite__abeille1 {
-    right: 6px;
+  #politique_de_confidentialite .animation-apiculteur__abeille1 {
+    right: 5.6243px;
+    transform: rotate(5deg);
   }
-  #politique_de_confidentialite__abeille2 {
-    left: 14px;
-    top: 40px;
+  #politique_de_confidentialite .animation-apiculteur__abeille2 {
+    left: 17.62632px;
+    top: 93.1677px;
+    transform: rotate(20deg);
   }
-  #politique_de_confidentialite__abeille3 {
-    left: 21px;
-    top: 92px;
+  #politique_de_confidentialite .animation-apiculteur__abeille3 {
+    left: 8.62565px;
+    top: 45.04505px;
+  }
+  #politique_de_confidentialite .animation-apiculteur:hover .animation-apiculteur__abeille1 {
+    opacity: 1;
+    animation: shake 0.9s ease-in-out infinite;
+  }
+  #politique_de_confidentialite .animation-apiculteur:hover .animation-apiculteur__abeille2 {
+    opacity: 1;
+    animation: shake 0.8s ease-in-out infinite;
+  }
+  #politique_de_confidentialite .animation-apiculteur:hover .animation-apiculteur__abeille3 {
+    opacity: 1;
+    animation: shake 0.7s ease-in-out infinite;
   }
 }
