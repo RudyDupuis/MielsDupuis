@@ -1,0 +1,59 @@
+/** Cf utils for function and keyframes **/
+
+/**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+
+.selling-point-map{
+    position: relative;
+    width: resize($sizeMapHeight, 1.72);
+    height: $sizeMapHeight;
+
+    &__map{
+        width: resize($sizeMapHeight, 1.99);
+        height: resize($sizeMapHeight, 1.15);
+    }
+
+    &__point1, &__point2, &__point3, &__point4, &__point5, &__point6, &__point7, &__point8{
+        position: absolute;
+        width: resize($sizeMapHeight, 25.95);
+        height: resize($sizeMapHeight, 19.59);
+
+        &:hover{
+            scale: 150%;
+        }
+    }
+    &__point1{
+        top: resize($sizeMapHeight, 1.58);
+        left: resize($sizeMapHeight, 8.13);
+    }
+    &__point2{
+        top: resize($sizeMapHeight, 1.89);
+        left: resize($sizeMapHeight, 4.23);
+    }
+    &__point3{
+        top: resize($sizeMapHeight, 980);
+        left: resize($sizeMapHeight, -980);
+    }
+    &__point4{
+        top: resize($sizeMapHeight, -60);
+        left: resize($sizeMapHeight, 20);
+    }
+    &__point5{
+        top: resize($sizeMapHeight, 1.41);
+        left: resize($sizeMapHeight, 2.70);
+    }
+    &__point6{
+        top: resize($sizeMapHeight, 1.35);
+        left: resize($sizeMapHeight, 2.65);
+    }
+    &__point7{
+        top: resize($sizeMapHeight, 1.32);
+        left: resize($sizeMapHeight, 2.5);
+    }
+    &__point8{
+        top: resize($sizeMapHeight, 1.35);
+        left: resize($sizeMapHeight, 2.74);
+    }
+}

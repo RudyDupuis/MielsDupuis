@@ -1,34 +1,48 @@
 header{
     background-color: $White;
-    position: relative;
+    position: relative;   //position, z-index and width for hero baner homepage
     z-index: 2;
     width: 100%;
     border-bottom: 6px solid $colorPrimary;
-
-    a:hover{
-            color: $colorPrimary;
-    }
 
     #header__image{
         display:flex;
         justify-content: space-around;
         align-items: center;
-        margin-top: 40px;
-        margin-bottom: 50px;
+        margin: 20px 0px;
+        
+        & > a{     //logo
+            img{
+                position: relative;  //be first view
+                z-index: 2;
+                width: 121px;
+                height: 57px;
+            }
+        }
 
         &-picto{
             white-space: nowrap;    //To keep the pictograms on the same line if the screen is very small
 
-            &-compte:hover{
-                background: url(../assets/pictures/header/picto_compte-active.webp) no-repeat center;
+            &-compte{
+                width: 36px;
+                height: 43px;
+
+                &:hover{
+                    background: url(../assets/pictures/header/picto_compte-active.webp) no-repeat center;
+                }
             }
 
-            &-panier:hover{
-                background: url(../assets/pictures/header/picto_panier-active.webp) no-repeat center;
+            &-panier{
+                width: 29px;
+                height: 40px;
+
+                &:hover{
+                    background: url(../assets/pictures/header/picto_panier-active.webp) no-repeat center;
+                }
             }
 
             a:last-child{
-                margin-left: 50px;
+                margin-left: 20px;
             }
         }
     }
@@ -36,8 +50,11 @@ header{
     #header__link{
         display:flex;
         justify-content: space-evenly;
-        font-size: 2.3rem;
-        margin-bottom: 50px;
+        font-size: 1.1rem;
+
+        a:hover{
+            color: $colorPrimary;
+        }
     }
 
     @media (min-width: 800px) and (orientation: landscape){       //The links go below the rest
@@ -46,53 +63,32 @@ header{
         align-items: center;
 
         #header__image{
-            width: 70%;
-            margin-top: 20px;
-            margin-bottom: 10px;
-
-            & > a{
+            justify-content: space-between;
+            width: 50%;
+            
+            & > a{     //logo
                 img{
                     width: 173px;
                     height: 82px;
+                    margin-left: -86px;   //logo center
                 }
             }
 
             &-picto{
-                &-compte{
-                    width: 36px;
-                    height: 43px;
-
-                    &:hover{
-                        background: url(../assets/pictures/header/picto_compte-active-desktop.webp) no-repeat center;
-                    }
+                a:last-child{
+                    margin-right: 60px;
                 }
-
-                &-panier{
-                    width: 29px;
-                    height: 40px;
-
-                    &:hover{
-                        background: url(../assets/pictures/header/picto_panier-active-desktop.webp) no-repeat center;
-                    }
-                }
-            }
-
-            a:last-child{
-                margin-left: 25px;
             }
         }
 
         #header__link{
             justify-content: left;
-            width: 30%;
-            align-items: center;
-            margin-bottom: 0;
-            margin-top: 20px;
-            font-size: 1.1rem;
-            padding-left: 8%;
+            align-items: center;            
+            width: 50%;
 
             a:first-child{
-                margin-right: 10%;
+                margin-right: 20px;
+                margin-left: 60px;
             }
         }
     }

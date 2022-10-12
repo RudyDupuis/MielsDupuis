@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/accueil.css">
         <link rel="icon" type="image/png" href="assets/pictures/accueil/dessin_abeille-left.webp">
         <title>Accueil - MielsDupuis</title>
@@ -9,6 +10,7 @@
 
     <body>
         <header id="anchor-pos">
+
             <div id="header__image">
                 <a href="index.html"><img src="assets/pictures/header/logo_couleur.webp" alt="logo MielsDupuis"></a>
                 <figure id="header__image-picto">
@@ -16,10 +18,12 @@
                     <a href="#"><img src="assets/pictures/header/picto_panier.webp" alt="pictogramme panier" id="header__image-picto-panier"></a>
                 </figure>
             </div>
+
             <nav id="header__link">
                 <a href="boutique.html"><h3>Boutique</h3></a>
                 <a href="#"><h3>Articles</h3></a>
             </nav>
+
         </header>
 
         <div id="accueil">
@@ -44,8 +48,8 @@
             <!--- Anchor-->
 
             <a href="#anchor-pos">
-                <div id="accueil__anchor">
-                    <div id="accueil__anchor-arrow"></div>
+                <div class="anchor">
+                    <div class="anchor__arrow"></div>
                 </div>
             </a>
 
@@ -53,11 +57,27 @@
 
             <div id="accueil__description">
 
-                <!-- Ruches-->
+                <!-- Hive -->
 
-                <div id="accueil__description-ruches">
+                <div id="accueil__description-hive">
+
                     <h3>Je m'occupe de 60 ruches</h3>
-                    <div id="accueil__description-ruches-where">
+
+                    <div id="accueil__description-hive-animation-1">
+                        <!-- Bee animation-->
+                        <figure class="bee-animation">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="bee-animation__bee1">
+                            <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" class="bee-animation__bee2">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="bee-animation__bee3">
+                        </figure>
+                        <!-- Hive animation-->
+                        <figure class="hive-animation">
+                            <img src="assets/pictures/accueil/dessin_ruche.webp"  alt="dessin ruche" class="hive-animation__hive">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="hive-animation__bee">
+                        </figure>
+                    </div>
+
+                    <div id="accueil__description-hive-where">
                         <h3>Mes ruches sont situées :</h3>
                         <ul>
                             <li>Guesnes - 86420</li>
@@ -65,44 +85,57 @@
                             <li>La Chaussée - 86330</li>
                         </ul>
                     </div>
+
+                    <div id="accueil__description-hive-animation-2">
+                        <!-- Sunflower animation -->
+                        <figure class="sunflower-animation">
+                            <img src="assets/pictures/accueil/dessin_tournesol.webp"  alt="dessin tournesol" class="sunflower-animation__sunflower">
+                            <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" class="sunflower-animation__bee">
+                        </figure>
+                        <!-- Bee animation-->
+                        <figure class="bee-animation">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="bee-animation__bee1">
+                            <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" class="bee-animation__bee2">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="bee-animation__bee3">
+                        </figure>
+                    </div>
+
                         <!-- Hill background-->
-                    <div id="accueil__description-ruches-background"></div>
-                        <!-- Bee's animation-->
-                    <figure>
-                        <img src="assets/pictures/accueil/dessin_tournesol.webp"  alt="dessin tournesol" id="accueil__description-ruches-background-tournesol">
-                        <img src="assets/pictures/accueil/dessin_ruche.webp"  alt="dessin ruche" id="accueil__description-ruches-background-ruche">
-                        <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" id="accueil__description-ruches-background-abeille1">
-                        <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" id="accueil__description-ruches-background-abeille2">
-                        <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" id="accueil__description-ruches-background-abeille3">
-                        <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" id="accueil__description-ruches-background-abeille4">
-                        <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" id="accueil__description-ruches-background-abeille5">
-                        <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" id="accueil__description-ruches-background-abeille6">
-                    </figure>
+                    <div id="accueil__description-hive-background"></div>
                 </div>
 
-                <!-- Apiculteur-->
+                <!-- Beekeeper -->
 
-                <div id="accueil__description-apiculteur">
-                    <div id="accueil__description-apiculteur-desc">
-                        <div id="accueil__description-apiculteur-desc-card">
+                <div id="accueil__description-beekeeper">
+
+                    <div id="accueil__description-beekeeper-desc">
+
+                        <div id="accueil__description-beekeeper-desc-card">
                             <div>
                                 <h3>Rudy Dupuis</h3>
-                                <h4>Apiculteur depuis 2019</h4>
+                                <p>Apiculteur depuis 2019<p>
                             </div>
                             <figure><img src="assets/pictures/accueil/photo_apiculteur.webp" alt="photo apiculteur Rudy Dupuis"></figure>
                         </div>
+
                         <p>Passioné par les abeilles, <br> j'ai décidé d'en faire mon métier.</p>
+
                     </div>
 
-                    <div id="accueil__description-apiculteur-work">
-                        <figure class="animation-apiculteur">
-                            <img src="assets/pictures/accueil/dessin_apiculteur.webp" alt="dessin apiculteur" class="animation-apiculteur__apiculteur">
-                            <img src="assets/pictures/accueil/dessin_abeille-left.webp" alt="dessin abeille" class="animation-apiculteur__abeille1">
-                            <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="animation-apiculteur__abeille2">
-                            <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="animation-apiculteur__abeille3">
+                    <div id="accueil__description-beekeeper-work">
+
+                            <!-- Beekeeper animation-->
+                        <figure class="beekeeper-animation">
+                            <img src="assets/pictures/accueil/dessin_apiculteur.webp" alt="dessin apiculteur" class="beekeeper-animation__apiculteur">
+                            <img src="assets/pictures/accueil/dessin_abeille-left.webp" alt="dessin abeille" class="beekeeper-animation__abeille1">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="beekeeper-animation__abeille2">
+                            <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="beekeeper-animation__abeille3">
                         </figure>
+
                         <p>Je m'occupe de <strong>l'élevage des abeilles</strong>, de la <strong>récolte</strong>, de la <strong>mise en pot du miel</strong> et de tout ce qui touche à sa <strong>commercialisation</strong>.</p>
+                    
                     </div>
+
                 </div>
             </div>
 
@@ -110,27 +143,30 @@
 
             <div id="accueil__apiarie"></div>
 
-            <!-- Points de vente-->
+            <!-- Salling point-->
 
-            <div id="accueil__pointsDeVente">
+            <div id="accueil__salling-point">
+
                 <h2>Points de vente</h2>
+
                 <div>
-                        <!-- Map-->
-                    <figure>
-                        <img src="assets/pictures/accueil/points-de-vente_carte.webp" alt="carte des points de vente" id="accueil__pointsDeVente-map">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point1">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point2">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point3">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point4">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point5">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point6">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point7">
-                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" id="accueil__pointsDeVente-map-point8">
+                        <!-- Selling point Map-->
+                    <figure class="selling-point-map">
+                        <img src="assets/pictures/accueil/points-de-vente_carte.webp" alt="carte des points de vente" class="selling-point-map__map">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point1">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point2">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point3">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point4">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point5">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point6">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point7">
+                        <img src="assets/pictures/accueil/points-de-vente_carte-point.webp" alt="localisation point de vente" class="selling-point-map__point8">
                     </figure>
-                        <!-- Cart's animation-->
-                    <figure>
-                        <img src="assets/pictures/accueil/dessin_caddie-pots.webp" alt="dessin caddie" id="accueil__pointsDeVente-cartTub">
-                        <img src="assets/pictures/accueil/dessin_caddie.webp" alt="dessin caddie" id="accueil__pointsDeVente-cart">
+
+                        <!-- Cart animation-->
+                    <figure class="cart-animation">
+                        <img src="assets/pictures/accueil/dessin_caddie-pots.webp" alt="dessin caddie" class="cart-animation__tub">
+                        <img src="assets/pictures/accueil/dessin_caddie.webp" alt="dessin caddie" class="cart-animation__cart">
                     </figure>
                     
                     <ul>
@@ -145,64 +181,79 @@
                     </ul>
                 </div>
             </div>
+
                 <!-- Honey flow background-->
             <div id="accueil__honeyFlow"></div>
 
             <!-- Pictograms-->
 
             <div id="accueil__pictogram">
+
                 <div>
                     <figure><img src="assets/pictures/accueil/dessin_pot-de-miel.webp" alt="dessin pot de miel" id="accueil__pictogram-honey"></figure>
-                    <h4>Miel extrait et mis en pot<br> par l'apiculteur</h4>
+                    <p>Miel extrait et mis en pot<br> par l'apiculteur</p>
                 </div>
+
                 <div>
                     <figure><img src="assets/pictures/accueil/dessin_carte-bancaire.webp" alt="dessin carte bancaire" id="accueil__pictogram-bankCard"></figure>
-                    <h4>Paiement en ligne sécurisé</h4>
+                    <p>Paiement en ligne sécurisé</p>
                 </div>
+
                 <div>
                     <figure><img src="assets/pictures/accueil/dessin_carton.webp" alt="dessin carton" id="accueil__pictogram-cardboard"></figure>
-                    <h4>Expédition dans toute<br> la France Métropolitaine</h4>
+                    <p>Expédition dans toute<br> la France Métropolitaine</p>
                 </div>
+                
             </div>
         </div>
 
         <footer>
             <div id="footer">
+
                 <div id="footer__link">
 
-                    <div id="footer__link-rateContact">
-                        <a href="https://www.google.com/search?client=firefox-b-d&q=mielsdupuis+#lrd=0x44da7e0f25b776b5:0x60333535cb6f9bf6,1,,," target="_blank" rel="nofollow"><h3>
+                    <ul>
+                       <li><a href="https://www.google.com/search?client=firefox-b-d&q=mielsdupuis+#lrd=0x44da7e0f25b776b5:0x60333535cb6f9bf6,1,,," target="_blank" rel="nofollow">
                             Avis Google 
                             <img src="assets/pictures/footer/etoile-google-pleine.webp" alt="etoile notation">
                             <img src="assets/pictures/footer/etoile-google-pleine.webp" alt="etoile notation">
                             <img src="assets/pictures/footer/etoile-google-pleine.webp" alt="etoile notation">
                             <img src="assets/pictures/footer/etoile-google-pleine.webp" alt="etoile notation">
                             <img src="assets/pictures/footer/etoile-google-pleine.webp" alt="etoile notation">
-                        </h3></a>
-                        <a href="#"><h3>Contact</h3></a> 
-                    </div>
+                        </a></li>
+                        <li><a href="#">Contact</a></li> 
+                    </ul>
 
                     <div id="footer__link-rod"></div>
+                    
                     <ul>
                         <li><a href="mention_legales.html">Mentions légales</a></li>
                         <li><a href="conditions_generales_de_vente.html">Conditions générales de vente</a></li>
                         <li><a href="politique_de_confidentialite.html">Politique de confidentialité</a></li>
                     </ul>
+
                 </div>
 
                 <div id="footer__networkCopyright">
+
                     <figure>
                         <a href="https://www.instagram.com/mielsdupuis" target="_blank" rel="nofollow"><img src="assets/pictures/footer/logo_instagramme.webp" alt="logo instagramme"></a>
                         <a href="https://www.facebook.com/MielsDupuis" target="_blank" rel="nofollow"><img src="assets/pictures/footer/logo_facebook.webp" alt="logo facebook"></a>
                     </figure>
+
                     <p>© 2022 MielsDupuis - Site créé par Rudy Dupuis</p>
+
                 </div>
+
             </div>
+
                 <!-- Flowers background-->
+
             <figure>
                 <img src="assets/pictures/footer/dessin_acacia.webp" alt="dessin fleurs d'acacia" id="dessinAcacia">
                 <img src="assets/pictures/footer/dessin_ronce.webp" alt="dessin fleur de ronce" id="dessinRonce">
             </figure>
+
         </footer>
     </body>
 </html>

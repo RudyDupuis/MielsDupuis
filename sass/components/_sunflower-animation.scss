@@ -1,0 +1,30 @@
+/** Cf utils for function and keyframes **/
+
+/**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+
+
+.sunflower-animation{
+    width: $sizeSunflowerAnim;
+    height: $sizeSunflowerAnim;
+    position: relative;
+
+    &__sunflower{
+        position: absolute;
+        width: resize($sizeSunflowerAnim, 1.83);
+        height: resize($sizeSunflowerAnim, 1.1);
+        left: resize($sizeSunflowerAnim, 15);
+        bottom: resize($sizeSunflowerAnim, -100);
+    }
+
+    &__bee{ 
+        position: absolute;
+        width: resize($sizeSunflowerAnim, 3.16);
+        height: resize($sizeSunflowerAnim, 3.37);
+        right: resize($sizeSunflowerAnim, 5);
+        top: resize($sizeSunflowerAnim, 7.5);
+        animation: shake 2s ease-in-out infinite;
+    }
+}

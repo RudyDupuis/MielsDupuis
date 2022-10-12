@@ -27,10 +27,10 @@ $Black: #000000ff;
 
 @keyframes fly {                   //bees fly from one end of the screen to the other
     0% {
-        transform: translateX(-1300px);
+        transform: translateX(-60vw);
     }
     100% {
-        transform: translateX(1300px);
+        transform: translateX(60vw);
     }  
 }
 

@@ -1,0 +1,30 @@
+/** Cf utils for function and keyframes **/
+
+/**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+
+
+.hive-animation{
+    width: $sizeHiveAnim;
+    height: $sizeHiveAnim;
+    position: relative;
+
+    &__hive{
+        position: absolute;
+        width: resize($sizeHiveAnim, 1.76);
+        height: resize($sizeHiveAnim, 1.76);
+        right: resize($sizeHiveAnim, 30);
+        bottom: resize($sizeHiveAnim, 3);
+    }
+
+    &__bee{ 
+        position: absolute;
+        width: resize($sizeHiveAnim, 6.32);
+        height: resize($sizeHiveAnim, 6.74);
+        left: resize($sizeHiveAnim, 5);
+        top: resize($sizeHiveAnim, 1.87);
+        animation: shake 2s ease-in-out infinite;
+    }
+}
