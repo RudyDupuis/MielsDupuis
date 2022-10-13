@@ -9,10 +9,6 @@
 *Put  overflow-x: hidden;  in the container to hide the scrollbar caused by the animation of the bees.
 **/
 
-$flyDuration1: 9s + random(7s);
-$flyDuration2: 12s + random(5s);
-$flyDuration3: 5s + random(7s);
-
 .bee-animation{
     width: $sizeBeeAnim;
     height: $sizeBeeAnim;
@@ -27,15 +23,15 @@ $flyDuration3: 5s + random(7s);
 
     &__bee1{
         top: resize($sizeBeeAnim, 75);
-        animation: fly $flyDuration1 infinite;
+        animation: fly 8s infinite ease-in;
     }
     &__bee2{
         top: resize($sizeBeeAnim, 2.88);
-        animation: fly $flyDuration2 infinite reverse;
+        animation: fly 17s infinite reverse ease-out;
     }
     &__bee3{
         top: resize($sizeBeeAnim, 1.5);
-        animation: fly $flyDuration3 infinite;
+        animation: fly 13s infinite ease-in-out;
     }
 }
 

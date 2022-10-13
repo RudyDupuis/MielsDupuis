@@ -15,10 +15,10 @@
 
 @keyframes fly {
   0% {
-    transform: translateX(-60vw);
+    transform: translateX(-80vw);
   }
   100% {
-    transform: translateX(60vw);
+    transform: translateX(80vw);
   }
 }
 
@@ -83,7 +83,7 @@ a {
   color: #000000ff;
 }
 
-figure {
+figure, body {
   margin: 0;
 }
 
@@ -95,8 +95,8 @@ figure {
   left: 95vw;
   border: 3px solid #353232;
   border-radius: 20px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,8 +104,8 @@ figure {
 }
 
 .anchor__arrow {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-top: 4px solid #353232;
   border-right: 4px solid #353232;
   transform: rotate(-45deg);
@@ -117,25 +117,30 @@ figure {
 }
 
 .product h3, .product p, .product input {
-  font-size: 2.7rem;
+  font-size: 1.1rem;
 }
 
 .product img {
-  width: 300px;
-  height: 375px;
-  margin-bottom: -180px;
+  width: 180px;
+  height: 225px;
+  margin-bottom: -120px;
 }
 
 .product__description {
-  padding: 180px 20px 40px 20px;
-  border-radius: 30px;
-  width: 450px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 120px 20px 20px 20px;
 }
 
 .product__description-inputs {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.product [type="image"] {
+  width: 25px;
+  height: 34px;
 }
 
 .product [type="image"]:active {
@@ -148,7 +153,7 @@ figure {
 
 .product:hover [type="button"] {
   color: #000000ff;
-  border: 5px solid #000000ff;
+  border: 3px solid #000000ff;
 }
 
 .product:hover [type="button"]:active {
@@ -156,35 +161,12 @@ figure {
   color: #ffffffff;
 }
 
-@media (min-width: 800px) and (orientation: landscape) {
-  .product h3, .product p, .product input {
-    font-size: 1.1rem;
-  }
-  .product img {
-    width: 180px;
-    height: 225px;
-    margin-bottom: -120px;
-  }
-  .product__description {
-    width: 200px;
-    border-radius: 20px;
-    padding: 120px 20px 20px 20px;
-  }
-  .product [type="image"] {
-    width: 25px;
-    height: 34px;
-  }
-  .product:hover [type="button"] {
-    border: 3px solid #000000ff;
-  }
-}
-
 /*** Button ***/
 [type="button"] {
   background-color: transparent;
   color: #44aa00ff;
   padding: 5px 30px;
-  border: 5px solid #44aa00ff;
+  border: 3px solid #44aa00ff;
 }
 
 [type="button"]:hover {
@@ -194,12 +176,6 @@ figure {
 [type="button"]:active {
   background-color: #44aa00ff;
   color: #ffffffff;
-}
-
-@media (min-width: 800px) and (orientation: landscape) {
-  [type="button"] {
-    border: 3px solid #44aa00ff;
-  }
 }
 
 header {
@@ -218,6 +194,8 @@ header #header__image {
 }
 
 header #header__image > a img {
+  position: relative;
+  z-index: 2;
   width: 121px;
   height: 57px;
 }
@@ -421,207 +399,87 @@ footer #footer__networkCopyright figure a:hover img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*Apiculteur's animation*/
   /** Cf utils for function and keyframes **/
   /**
 *The variable is used to choose a size, 
 *then thanks to the size() function all the measurements in px are resized to remain proportional.
 **/
-  /** Cart's animation **/
-  /*.animation-cart{
-    position: relative;
-    width: $sizeAnimCart;
-    height: $sizeAnimCart;
-
-    &__cart, &__cart-tub{
-       position: absolute;
-        left: resize($sizeAnimCart, 68);
-        bottom: resize($sizeAnimCart, 11.33);
-        width: resize($sizeAnimCart, 1.18);
-        height: resize($sizeAnimCart, 1.30); 
-    }
-
-    &:hover{                                 //cf utils
-        .animation-cart__cart-tub{
-            animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
-        }
-
-        .animation-cart__cart{
-                animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
-        }
-    }
-}
-
-/** Selling point's Map **/
-  /*.selling-point-map{
-    position: relative;
-    width: resize($sizeAnimMapHeight, 1.72);
-    height: $sizeAnimMapHeight;
-
-    &__map{
-        width: resize($sizeAnimMapHeight, 1.99);
-        height: resize($sizeAnimMapHeight, 1.15);
-    }
-
-    &__point1, &__point2, &__point3, &__point4, &__point5, &__point6, &__point7, &__point8{
-        position: absolute;
-        width: resize($sizeAnimMapHeight, 25.95);
-        height: resize($sizeAnimMapHeight, 19.59);
-
-        &:hover{
-            scale: 150%;
-        }
-    }
-    &__point1{
-        top: resize($sizeAnimMapHeight, 1.58);
-        left: resize($sizeAnimMapHeight, 8.13);
-    }
-    &__point2{
-        top: resize($sizeAnimMapHeight, 1.89);
-        left: resize($sizeAnimMapHeight, 4.23);
-    }
-    &__point3{
-        top: resize($sizeAnimMapHeight, 980);
-        left: resize($sizeAnimMapHeight, -980);
-    }
-    &__point4{
-        top: resize($sizeAnimMapHeight, -60);
-        left: resize($sizeAnimMapHeight, 20);
-    }
-    &__point5{
-        top: resize($sizeAnimMapHeight, 1.41);
-        left: resize($sizeAnimMapHeight, 2.70);
-    }
-    &__point6{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.65);
-    }
-    &__point7{
-        top: resize($sizeAnimMapHeight, 1.32);
-        left: resize($sizeAnimMapHeight, 2.5);
-    }
-    &__point8{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.74);
-    }
-}*/
 }
 
 #mention_legales h1 {
-  margin: 100px 0px;
-  font-size: 4rem;
+  font-size: 2rem;
+  margin: 50px 0px;
+}
+
+#mention_legales .beekeeper-animation {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background-color: #44aa00ff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mention_legales .beekeeper-animation img:first-child {
+  width: 45.19774px;
+  height: 53.69128px;
+}
+
+#mention_legales .beekeeper-animation__abeille1, #mention_legales .beekeeper-animation__abeille2, #mention_legales .beekeeper-animation__abeille3 {
+  width: 11.00413px;
+  height: 10.20408px;
+  position: absolute;
+  opacity: 0;
+}
+
+#mention_legales .beekeeper-animation__abeille1 {
+  right: 2.99963px;
+  transform: rotate(5deg);
+}
+
+#mention_legales .beekeeper-animation__abeille2 {
+  left: 9.40071px;
+  top: 49.68944px;
+  transform: rotate(20deg);
+}
+
+#mention_legales .beekeeper-animation__abeille3 {
+  left: 4.60035px;
+  top: 24.02402px;
+}
+
+#mention_legales .beekeeper-animation:hover .beekeeper-animation__abeille1 {
+  opacity: 1;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#mention_legales .beekeeper-animation:hover .beekeeper-animation__abeille2 {
+  opacity: 1;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#mention_legales .beekeeper-animation:hover .beekeeper-animation__abeille3 {
+  opacity: 1;
+  animation: shake 0.7s ease-in-out infinite;
 }
 
 #mention_legales ul {
-  margin: 100px 0px 200px 0px;
-  padding: 0px 50px;
-  font-size: 2.4rem;
+  font-size: 1.1rem;
+  margin: 50px 0px;
+  padding: 0px 20px;
+  text-align: end;
 }
 
 #mention_legales ul li {
-  margin: 60px 0px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #mention_legales ul li strong {
   color: #44aa00ff;
-}
-
-@media (min-width: 800px) and (orientation: landscape) {
-  #mention_legales {
-    /*Apiculteur's animation*/
-    /** Cf utils for function and keyframes **/
-    /**
-*The variable is used to choose a size, 
-*then thanks to the size() function all the measurements in px are resized to remain proportional.
-**/
-    /** Cart's animation **/
-    /*.animation-cart{
-    position: relative;
-    width: $sizeAnimCart;
-    height: $sizeAnimCart;
-
-    &__cart, &__cart-tub{
-       position: absolute;
-        left: resize($sizeAnimCart, 68);
-        bottom: resize($sizeAnimCart, 11.33);
-        width: resize($sizeAnimCart, 1.18);
-        height: resize($sizeAnimCart, 1.30); 
-    }
-
-    &:hover{                                 //cf utils
-        .animation-cart__cart-tub{
-            animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
-        }
-
-        .animation-cart__cart{
-                animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
-        }
-    }
-}
-
-/** Selling point's Map **/
-    /*.selling-point-map{
-    position: relative;
-    width: resize($sizeAnimMapHeight, 1.72);
-    height: $sizeAnimMapHeight;
-
-    &__map{
-        width: resize($sizeAnimMapHeight, 1.99);
-        height: resize($sizeAnimMapHeight, 1.15);
-    }
-
-    &__point1, &__point2, &__point3, &__point4, &__point5, &__point6, &__point7, &__point8{
-        position: absolute;
-        width: resize($sizeAnimMapHeight, 25.95);
-        height: resize($sizeAnimMapHeight, 19.59);
-
-        &:hover{
-            scale: 150%;
-        }
-    }
-    &__point1{
-        top: resize($sizeAnimMapHeight, 1.58);
-        left: resize($sizeAnimMapHeight, 8.13);
-    }
-    &__point2{
-        top: resize($sizeAnimMapHeight, 1.89);
-        left: resize($sizeAnimMapHeight, 4.23);
-    }
-    &__point3{
-        top: resize($sizeAnimMapHeight, 980);
-        left: resize($sizeAnimMapHeight, -980);
-    }
-    &__point4{
-        top: resize($sizeAnimMapHeight, -60);
-        left: resize($sizeAnimMapHeight, 20);
-    }
-    &__point5{
-        top: resize($sizeAnimMapHeight, 1.41);
-        left: resize($sizeAnimMapHeight, 2.70);
-    }
-    &__point6{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.65);
-    }
-    &__point7{
-        top: resize($sizeAnimMapHeight, 1.32);
-        left: resize($sizeAnimMapHeight, 2.5);
-    }
-    &__point8{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.74);
-    }
-}*/
-  }
-  #mention_legales h1 {
-    font-size: 2.5rem;
-    margin: 50px 0px 25px 0px;
-  }
-  #mention_legales ul {
-    font-size: 1.2rem;
-    margin: 25px 0px 50px 0px;
-  }
-  #mention_legales ul li {
-    margin: 20px 0px;
-  }
+  white-space: nowrap;
+  margin-right: 30px;
 }

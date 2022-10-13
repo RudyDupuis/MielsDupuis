@@ -15,10 +15,10 @@
 
 @keyframes fly {
   0% {
-    transform: translateX(-60vw);
+    transform: translateX(-80vw);
   }
   100% {
-    transform: translateX(60vw);
+    transform: translateX(80vw);
   }
 }
 
@@ -83,7 +83,7 @@ a {
   color: #000000ff;
 }
 
-figure {
+figure, body {
   margin: 0;
 }
 
@@ -95,8 +95,8 @@ figure {
   left: 95vw;
   border: 3px solid #353232;
   border-radius: 20px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,8 +104,8 @@ figure {
 }
 
 .anchor__arrow {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-top: 4px solid #353232;
   border-right: 4px solid #353232;
   transform: rotate(-45deg);
@@ -117,25 +117,30 @@ figure {
 }
 
 .product h3, .product p, .product input {
-  font-size: 2.7rem;
+  font-size: 1.1rem;
 }
 
 .product img {
-  width: 300px;
-  height: 375px;
-  margin-bottom: -180px;
+  width: 180px;
+  height: 225px;
+  margin-bottom: -120px;
 }
 
 .product__description {
-  padding: 180px 20px 40px 20px;
-  border-radius: 30px;
-  width: 450px;
+  width: 200px;
+  border-radius: 20px;
+  padding: 120px 20px 20px 20px;
 }
 
 .product__description-inputs {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.product [type="image"] {
+  width: 25px;
+  height: 34px;
 }
 
 .product [type="image"]:active {
@@ -148,7 +153,7 @@ figure {
 
 .product:hover [type="button"] {
   color: #000000ff;
-  border: 5px solid #000000ff;
+  border: 3px solid #000000ff;
 }
 
 .product:hover [type="button"]:active {
@@ -156,35 +161,12 @@ figure {
   color: #ffffffff;
 }
 
-@media (min-width: 800px) and (orientation: landscape) {
-  .product h3, .product p, .product input {
-    font-size: 1.1rem;
-  }
-  .product img {
-    width: 180px;
-    height: 225px;
-    margin-bottom: -120px;
-  }
-  .product__description {
-    width: 200px;
-    border-radius: 20px;
-    padding: 120px 20px 20px 20px;
-  }
-  .product [type="image"] {
-    width: 25px;
-    height: 34px;
-  }
-  .product:hover [type="button"] {
-    border: 3px solid #000000ff;
-  }
-}
-
 /*** Button ***/
 [type="button"] {
   background-color: transparent;
   color: #44aa00ff;
   padding: 5px 30px;
-  border: 5px solid #44aa00ff;
+  border: 3px solid #44aa00ff;
 }
 
 [type="button"]:hover {
@@ -194,12 +176,6 @@ figure {
 [type="button"]:active {
   background-color: #44aa00ff;
   color: #ffffffff;
-}
-
-@media (min-width: 800px) and (orientation: landscape) {
-  [type="button"] {
-    border: 3px solid #44aa00ff;
-  }
 }
 
 header {
@@ -218,6 +194,8 @@ header #header__image {
 }
 
 header #header__image > a img {
+  position: relative;
+  z-index: 2;
   width: 121px;
   height: 57px;
 }
@@ -421,211 +399,95 @@ footer #footer__networkCopyright figure a:hover img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*Apiculteur's animation*/
   /** Cf utils for function and keyframes **/
   /**
 *The variable is used to choose a size, 
 *then thanks to the size() function all the measurements in px are resized to remain proportional.
 **/
-  /** Cart's animation **/
-  /*.animation-cart{
-    position: relative;
-    width: $sizeAnimCart;
-    height: $sizeAnimCart;
-
-    &__cart, &__cart-tub{
-       position: absolute;
-        left: resize($sizeAnimCart, 68);
-        bottom: resize($sizeAnimCart, 11.33);
-        width: resize($sizeAnimCart, 1.18);
-        height: resize($sizeAnimCart, 1.30); 
-    }
-
-    &:hover{                                 //cf utils
-        .animation-cart__cart-tub{
-            animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
-        }
-
-        .animation-cart__cart{
-                animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
-        }
-    }
-}
-
-/** Selling point's Map **/
-  /*.selling-point-map{
-    position: relative;
-    width: resize($sizeAnimMapHeight, 1.72);
-    height: $sizeAnimMapHeight;
-
-    &__map{
-        width: resize($sizeAnimMapHeight, 1.99);
-        height: resize($sizeAnimMapHeight, 1.15);
-    }
-
-    &__point1, &__point2, &__point3, &__point4, &__point5, &__point6, &__point7, &__point8{
-        position: absolute;
-        width: resize($sizeAnimMapHeight, 25.95);
-        height: resize($sizeAnimMapHeight, 19.59);
-
-        &:hover{
-            scale: 150%;
-        }
-    }
-    &__point1{
-        top: resize($sizeAnimMapHeight, 1.58);
-        left: resize($sizeAnimMapHeight, 8.13);
-    }
-    &__point2{
-        top: resize($sizeAnimMapHeight, 1.89);
-        left: resize($sizeAnimMapHeight, 4.23);
-    }
-    &__point3{
-        top: resize($sizeAnimMapHeight, 980);
-        left: resize($sizeAnimMapHeight, -980);
-    }
-    &__point4{
-        top: resize($sizeAnimMapHeight, -60);
-        left: resize($sizeAnimMapHeight, 20);
-    }
-    &__point5{
-        top: resize($sizeAnimMapHeight, 1.41);
-        left: resize($sizeAnimMapHeight, 2.70);
-    }
-    &__point6{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.65);
-    }
-    &__point7{
-        top: resize($sizeAnimMapHeight, 1.32);
-        left: resize($sizeAnimMapHeight, 2.5);
-    }
-    &__point8{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.74);
-    }
-}*/
 }
 
 #conditions_generales_de_vente h1 {
-  margin: 100px 0px;
-  font-size: 4rem;
+  font-size: 2rem;
+  margin: 50px 0px;
+}
+
+#conditions_generales_de_vente .beekeeper-animation {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background-color: #44aa00ff;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#conditions_generales_de_vente .beekeeper-animation img:first-child {
+  width: 45.19774px;
+  height: 53.69128px;
+}
+
+#conditions_generales_de_vente .beekeeper-animation__abeille1, #conditions_generales_de_vente .beekeeper-animation__abeille2, #conditions_generales_de_vente .beekeeper-animation__abeille3 {
+  width: 11.00413px;
+  height: 10.20408px;
+  position: absolute;
+  opacity: 0;
+}
+
+#conditions_generales_de_vente .beekeeper-animation__abeille1 {
+  right: 2.99963px;
+  transform: rotate(5deg);
+}
+
+#conditions_generales_de_vente .beekeeper-animation__abeille2 {
+  left: 9.40071px;
+  top: 49.68944px;
+  transform: rotate(20deg);
+}
+
+#conditions_generales_de_vente .beekeeper-animation__abeille3 {
+  left: 4.60035px;
+  top: 24.02402px;
+}
+
+#conditions_generales_de_vente .beekeeper-animation:hover .beekeeper-animation__abeille1 {
+  opacity: 1;
+  animation: shake 0.9s ease-in-out infinite;
+}
+
+#conditions_generales_de_vente .beekeeper-animation:hover .beekeeper-animation__abeille2 {
+  opacity: 1;
+  animation: shake 0.8s ease-in-out infinite;
+}
+
+#conditions_generales_de_vente .beekeeper-animation:hover .beekeeper-animation__abeille3 {
+  opacity: 1;
+  animation: shake 0.7s ease-in-out infinite;
 }
 
 #conditions_generales_de_vente div {
   padding: 30px 30px;
 }
 
+#conditions_generales_de_vente div p:first-child {
+  font-style: italic;
+}
+
 #conditions_generales_de_vente div p, #conditions_generales_de_vente div ul {
-  font-size: 2rem;
+  font-size: 1rem;
+  list-style-type: disc;
+}
+
+#conditions_generales_de_vente div p li, #conditions_generales_de_vente div ul li {
+  margin: 10px 0px;
 }
 
 #conditions_generales_de_vente div h2 {
-  font-size: 2.4rem;
-}
-
-#conditions_generales_de_vente div ul li {
-  margin: 20px 0px;
+  font-size: 1.4rem;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
-  #conditions_generales_de_vente {
-    /*Apiculteur's animation*/
-    /** Cf utils for function and keyframes **/
-    /**
-*The variable is used to choose a size, 
-*then thanks to the size() function all the measurements in px are resized to remain proportional.
-**/
-    /** Cart's animation **/
-    /*.animation-cart{
-    position: relative;
-    width: $sizeAnimCart;
-    height: $sizeAnimCart;
-
-    &__cart, &__cart-tub{
-       position: absolute;
-        left: resize($sizeAnimCart, 68);
-        bottom: resize($sizeAnimCart, 11.33);
-        width: resize($sizeAnimCart, 1.18);
-        height: resize($sizeAnimCart, 1.30); 
-    }
-
-    &:hover{                                 //cf utils
-        .animation-cart__cart-tub{
-            animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
-        }
-
-        .animation-cart__cart{
-                animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
-        }
-    }
-}
-
-/** Selling point's Map **/
-    /*.selling-point-map{
-    position: relative;
-    width: resize($sizeAnimMapHeight, 1.72);
-    height: $sizeAnimMapHeight;
-
-    &__map{
-        width: resize($sizeAnimMapHeight, 1.99);
-        height: resize($sizeAnimMapHeight, 1.15);
-    }
-
-    &__point1, &__point2, &__point3, &__point4, &__point5, &__point6, &__point7, &__point8{
-        position: absolute;
-        width: resize($sizeAnimMapHeight, 25.95);
-        height: resize($sizeAnimMapHeight, 19.59);
-
-        &:hover{
-            scale: 150%;
-        }
-    }
-    &__point1{
-        top: resize($sizeAnimMapHeight, 1.58);
-        left: resize($sizeAnimMapHeight, 8.13);
-    }
-    &__point2{
-        top: resize($sizeAnimMapHeight, 1.89);
-        left: resize($sizeAnimMapHeight, 4.23);
-    }
-    &__point3{
-        top: resize($sizeAnimMapHeight, 980);
-        left: resize($sizeAnimMapHeight, -980);
-    }
-    &__point4{
-        top: resize($sizeAnimMapHeight, -60);
-        left: resize($sizeAnimMapHeight, 20);
-    }
-    &__point5{
-        top: resize($sizeAnimMapHeight, 1.41);
-        left: resize($sizeAnimMapHeight, 2.70);
-    }
-    &__point6{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.65);
-    }
-    &__point7{
-        top: resize($sizeAnimMapHeight, 1.32);
-        left: resize($sizeAnimMapHeight, 2.5);
-    }
-    &__point8{
-        top: resize($sizeAnimMapHeight, 1.35);
-        left: resize($sizeAnimMapHeight, 2.74);
-    }
-}*/
-  }
-  #conditions_generales_de_vente h1 {
-    font-size: 2.5rem;
-    margin: 50px 0px 25px 0px;
-  }
   #conditions_generales_de_vente div {
     width: 90%;
-  }
-  #conditions_generales_de_vente div p, #conditions_generales_de_vente div ol, #conditions_generales_de_vente div ul {
-    font-size: 1rem;
-  }
-  #conditions_generales_de_vente div h2 {
-    font-size: 1.4rem;
   }
 }

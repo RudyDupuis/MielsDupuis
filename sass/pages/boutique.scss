@@ -4,9 +4,25 @@
 @import "../layouts/header"; 
 @import "../layouts/footer";
 
-h2{
-    margin-left: 100px;
-    font-size: 3.5rem;
+.shop-title{
+    display: flex;
+    justify-content: center;
+
+    &:first-child{      
+        margin-top: 60px;
+    }
+
+    h2{
+        font-size: 2rem; 
+    }
+
+    $sizeCartAnim: 80px;
+    @import "../components/cart-animation";
+
+    @media (min-width: 800px) and (orientation: landscape){
+        justify-content: flex-start;
+        margin-left: 100px;
+    }
 }
 
 #miels, #bougies{
@@ -16,11 +32,5 @@ h2{
     
     .product{
         margin: 40px 40px;
-    }
-}
-
-@media (min-width: 800px) and (orientation: landscape){
-    h2{
-        font-size: 2rem;
     }
 }

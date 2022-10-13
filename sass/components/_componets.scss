@@ -7,16 +7,16 @@
     left: 95vw;
     border: 3px solid rgb(53, 50, 50);  
     border-radius: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: -55px; //remove space
 
     &__arrow{
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
         border-top: 4px solid rgb(53, 50, 50);
         border-right: 4px solid rgb(53, 50, 50);
         transform: rotate(-45deg);
@@ -29,19 +29,19 @@
     text-align: center;
 
     h3, p, input{
-        font-size: 2.7rem;
+        font-size: 1.1rem;
     }
 
     img{
-        width: 300px;
-        height: 375px;
-        margin-bottom: -180px; //to compensate description's padding
+        width: 180px;
+        height: 225px;
+        margin-bottom: -120px; //to compensate description's padding
     }
 
     &__description{
-        padding: 180px 20px 40px 20px;
-        border-radius: 30px;
-        width: 450px;
+        width: 200px;
+        border-radius: 20px;
+        padding: 120px 20px 20px 20px;
 
         &-inputs{
             display: flex;
@@ -51,6 +51,9 @@
     }
 
     [type="image"]{
+        width: 25px;
+        height: 34px;
+
         &:active{
             opacity: .5;
         }
@@ -63,43 +66,13 @@
 
         [type="button"]{
             color: $Black;
-            border: 5px solid $Black;
+            border: 3px solid $Black;
 
             &:active{
                 background-color: $Black;
                 color: $White;
             }
         }
-    }
-
-    @media (min-width: 800px) and (orientation: landscape){
-        h3, p, input{
-            font-size: 1.1rem;
-        }
-
-        img{
-            width: 180px;
-            height: 225px;
-            margin-bottom: -120px; //to compensate description's padding
-        }
-
-        &__description{
-            width: 200px;
-            border-radius: 20px;
-            padding: 120px 20px 20px 20px;
-        }
-
-        [type="image"]{
-            width: 25px;
-            height: 34px;
-        }
-
-        &:hover{
-            [type="button"]{
-                border: 3px solid $Black;
-            }
-        }
-
     }
 }
 
@@ -109,7 +82,7 @@
     background-color: transparent;
     color: $colorSecondary;
     padding: 5px 30px;
-    border: 5px solid $colorSecondary;
+    border: 3px solid $colorSecondary;
   
     &:hover{
       cursor: pointer;
@@ -118,10 +91,6 @@
     &:active{
         background-color: $colorSecondary;
         color: $White;
-    }
-
-    @media (min-width: 800px) and (orientation: landscape){
-        border: 3px solid $colorSecondary;
     }
 }
 

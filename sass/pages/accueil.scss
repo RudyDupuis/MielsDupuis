@@ -16,7 +16,7 @@ header{                     //header remains at the top of the hero baner which 
     /*** Hero Baner ***/
 
     &__heroBanner{
-        background: url("../assets/pictures/accueil/fond_accueil_abeilles-mobile.webp") no-repeat;
+        background: url("../assets/pictures/accueil/fond_accueil_abeilles.webp") no-repeat (30% 50%);
         background-size: cover;
         color: $White;
         height: 99vh;
@@ -37,8 +37,6 @@ header{                     //header remains at the top of the hero baner which 
         }
 
         @media (min-width: 800px) and (orientation: landscape){
-            background: url("../assets/pictures/accueil/fond_accueil_abeilles.webp") no-repeat; //change of image for computer format layout
-            background-size: cover;
             text-align: left;
 
             h1{
@@ -112,6 +110,20 @@ header{                     //header remains at the top of the hero baner which 
                     display: flex;
                     justify-content: flex-end;
 
+                    .bee-animation{                 //desinchronize the bees
+                        z-index: 2;
+                        
+                        &__bee1{
+                            animation: fly 10s infinite;
+                        }
+                        &__bee2{
+                            animation: fly 14s infinite reverse;
+                        }
+                        &__bee3{
+                            animation: fly 15s infinite;
+                        }
+                    }
+
                 }
                 &-2{
                     display: flex;
@@ -122,9 +134,9 @@ header{                     //header remains at the top of the hero baner which 
             /** Hill background**/
 
             &-background{
-                background: url("../assets/pictures/accueil/fond_accueil_dessin-coline-mobile.webp") no-repeat;
+                background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.webp") no-repeat;
                 background-size: cover;
-                height: 40px;
+                height: 100px;
                 margin-bottom: -5px;   //remove space    
             }
 
@@ -158,12 +170,6 @@ header{                     //header remains at the top of the hero baner which 
                 &-where{
                     text-align: right;
                     padding-right: 300px;
-                }
-
-                &-background{
-                    background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.webp") no-repeat; //change of image for computer format layout
-                    background-size: cover;
-                    height: 100px
                 }
             }
         }
@@ -230,14 +236,9 @@ header{                     //header remains at the top of the hero baner which 
     /*** Apiarie ***/
 
     &__apiarie{
-        background: url("../assets/pictures/accueil/fond_accueil_ruches-mobile.webp") no-repeat center;
+        background: url("../assets/pictures/accueil/fond_accueil_ruches.webp") no-repeat fixed center;
         background-size: cover;
         height: 600px;
-
-        @media (min-width: 800px) and (orientation: landscape){
-            background: url("../assets/pictures/accueil/fond_accueil_ruches.webp") no-repeat center;  //change of image for computer format layout
-            background-size: cover;
-        }
     }
 
     /*** Salling point ***/
@@ -293,14 +294,12 @@ header{                     //header remains at the top of the hero baner which 
 
         /*Honey flow background*/
     &__honeyFlow{
-        background: url("../assets/pictures/accueil/fond_accueil_dessin-miel-mobile.webp") no-repeat center;
+        background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.webp") no-repeat center;
         background-size: cover;
         height: 190px;
         margin-top: -5px;   //remove space
 
         @media (min-width: 800px) and (orientation: landscape){
-            background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.webp") no-repeat center; //change of image for computer format layout
-            background-size: cover;
             height: 310px;
             margin-top: -100px;
         }
