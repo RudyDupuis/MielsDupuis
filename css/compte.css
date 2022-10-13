@@ -465,12 +465,17 @@ footer #footer__networkCopyright figure a:hover img {
   }
 }
 
-#contact {
+#compte {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   font-size: 1.1rem;
-  margin-bottom: 50px;
+  margin: 50px 0px;
+  /** Cf utils for function and keyframes **/
+  /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
   /** Cf utils for function and keyframes **/
   /**
 *The variable is used to choose a size, 
@@ -478,18 +483,42 @@ footer #footer__networkCopyright figure a:hover img {
 **/
 }
 
-#contact h1 {
-  font-size: 2rem;
+#compte h2 {
+  margin-left: 20px;
+}
+
+#compte form label, #compte form [type="submit"], #compte form div {
+  margin: 20px 0px 5px 0px;
+}
+
+#compte form div label {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+#compte__login, #compte__register {
+  width: 100%;
+}
+
+#compte__login div, #compte__register div {
+  display: flex;
+}
+
+#compte__login div h2, #compte__register div h2 {
+  margin-right: 80px;
+}
+
+#compte__register {
   margin-top: 50px;
 }
 
-#contact .sunflower-animation {
+#compte .sunflower-animation {
   width: 100px;
   height: 100px;
   position: relative;
 }
 
-#contact .sunflower-animation__sunflower {
+#compte .sunflower-animation__sunflower {
   position: absolute;
   width: 54.64481px;
   height: 90.90909px;
@@ -497,7 +526,7 @@ footer #footer__networkCopyright figure a:hover img {
   bottom: -1px;
 }
 
-#contact .sunflower-animation__bee {
+#compte .sunflower-animation__bee {
   position: absolute;
   width: 31.64557px;
   height: 29.67359px;
@@ -506,24 +535,40 @@ footer #footer__networkCopyright figure a:hover img {
   animation: shake 2s ease-in-out infinite;
 }
 
-#contact figure {
-  margin-right: 50%;
+#compte .hive-animation {
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
 
-#contact form label, #contact form [type="submit"], #contact form div {
-  margin: 20px 0px 5px 0px;
+#compte .hive-animation__hive {
+  position: absolute;
+  width: 56.81818px;
+  height: 56.81818px;
+  right: 3.33333px;
+  bottom: 33.33333px;
 }
 
-#contact form div label {
-  font-size: 0.9rem;
-  margin: 0;
+#compte .hive-animation__bee {
+  position: absolute;
+  width: 15.82278px;
+  height: 14.8368px;
+  left: 20px;
+  top: 53.47594px;
+  animation: shake 2s ease-in-out infinite;
+}
+
+#compte .hive-animation {
+  margin-top: 15px;
+  margin-bottom: -15px;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
-  #contact figure {
-    margin-right: 500px;
+  #compte__login, #compte__register {
+    margin-top: 0;
+    width: 400px;
   }
-  #contact form {
-    width: 600px;
+  #compte__login {
+    margin-right: 50px;
   }
 }

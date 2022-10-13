@@ -548,6 +548,45 @@ textarea:focus {
   outline: 0;
 }
 
+/*** Form ***/
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  box-shadow: 1px 1px 1px gray;
+  padding: 20px;
+}
+
+form span {
+  color: #ffca18ff;
+}
+
+form a {
+  color: #44aa00ff;
+}
+
+form a:hover {
+  color: #ffca18ff;
+}
+
+form [type="submit"] {
+  color: #000000ff;
+  border: 3px solid #ffca18ff;
+  width: 200px;
+  align-self: center;
+}
+
+form [type="submit"]:active {
+  background-color: #ffca18ff;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  form form {
+    padding: 20px 40px;
+  }
+}
+
 header {
   background-color: #ffffffff;
   position: relative;

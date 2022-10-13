@@ -465,65 +465,66 @@ footer #footer__networkCopyright figure a:hover img {
   }
 }
 
-#contact {
+#articles {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.1rem;
-  margin-bottom: 50px;
+  text-align: center;
+  overflow-x: hidden;
   /** Cf utils for function and keyframes **/
   /**
 *The variable is used to choose a size, 
 *then thanks to the size() function all the measurements in px are resized to remain proportional.
 **/
+  /**
+*Put  overflow-x: hidden;  in the container to hide the scrollbar caused by the animation of the bees.
+**/
 }
 
-#contact h1 {
-  font-size: 2rem;
-  margin-top: 50px;
+#articles h1 {
+  font-size: 1.8rem;
 }
 
-#contact .sunflower-animation {
-  width: 100px;
-  height: 100px;
+#articles .bee-animation {
+  width: 150px;
+  height: 150px;
   position: relative;
 }
 
-#contact .sunflower-animation__sunflower {
+#articles .bee-animation__bee1, #articles .bee-animation__bee2, #articles .bee-animation__bee3 {
   position: absolute;
-  width: 54.64481px;
-  height: 90.90909px;
-  left: 6.66667px;
-  bottom: -1px;
+  width: 47.46835px;
+  height: 44.51039px;
+  right: 50%;
 }
 
-#contact .sunflower-animation__bee {
-  position: absolute;
-  width: 31.64557px;
-  height: 29.67359px;
-  right: 20px;
-  top: 13.33333px;
-  animation: shake 2s ease-in-out infinite;
+#articles .bee-animation__bee1 {
+  top: 2px;
+  animation: fly 8s infinite ease-in;
 }
 
-#contact figure {
-  margin-right: 50%;
+#articles .bee-animation__bee2 {
+  top: 52.08333px;
+  animation: fly 17s infinite reverse ease-out;
 }
 
-#contact form label, #contact form [type="submit"], #contact form div {
-  margin: 20px 0px 5px 0px;
+#articles .bee-animation__bee3 {
+  top: 100px;
+  animation: fly 13s infinite ease-in-out;
 }
 
-#contact form div label {
-  font-size: 0.9rem;
-  margin: 0;
+#articles figure {
+  margin: 50px 0px;
 }
 
-@media (min-width: 800px) and (orientation: landscape) {
-  #contact figure {
-    margin-right: 500px;
-  }
-  #contact form {
-    width: 600px;
-  }
+#articles figure:last-child .bee-animation__bee1 {
+  animation: fly 10s infinite;
+}
+
+#articles figure:last-child .bee-animation__bee2 {
+  animation: fly 14s infinite reverse;
+}
+
+#articles figure:last-child .bee-animation__bee3 {
+  animation: fly 15s infinite;
 }

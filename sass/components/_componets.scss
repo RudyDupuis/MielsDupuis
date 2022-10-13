@@ -125,6 +125,48 @@ textarea{
       border: 2px solid $colorSecondary;
       outline: 0;                   //remove shadow
     }
-  }
+}
+
+/*** Form ***/
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    border-radius: 40px;
+    box-shadow: 1px 1px 1px gray;
+    padding: 20px;
+
+    span{                       //span for *
+        color: $colorPrimary;
+    }
+
+    a{
+        color: $colorSecondary;
+
+        &:hover{
+            color: $colorPrimary;
+        }
+    }
+
+    [type="submit"]{
+        color: $Black;
+        border: 3px solid $colorPrimary;
+        width: 200px;
+        align-self: center;
+
+        &:active{
+            background-color: $colorPrimary;
+        }
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){
+        form{
+            padding: 20px 40px;
+        }
+    }
+}
+
+
 
 

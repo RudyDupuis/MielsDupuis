@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/mention_legales.css">
+        <link rel="stylesheet" href="css/compte.css">
         <link rel="icon" type="image/png" href="assets/pictures/accueil/dessin_abeille-left.webp">
-        <title>Mention légales</title>
+        <title>Compte - MielsDupuis</title>
     </head>
 
     <body>
@@ -26,28 +26,68 @@
 
         </header>
 
-        <!-- Mention Légales -->
+        <div id="compte">
 
-        <div id="mention_legales">
+            <div id="compte__login">
 
-            <h1>Mentions légales</h1>
+                <div>
+                    <h2>Se connecter</h2>
+    
+                    <!-- Sunflower animation -->
+                    <figure class="sunflower-animation">
+                        <img src="assets/pictures/accueil/dessin_tournesol.webp"  alt="dessin tournesol" class="sunflower-animation__sunflower">
+                        <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" class="sunflower-animation__bee">
+                    </figure>
+                </div>
 
-            <!-- Beekeeper animation-->
-            <figure class="beekeeper-animation">
-                <img src="assets/pictures/accueil/dessin_apiculteur.webp" alt="dessin apiculteur" class="beekeeper-animation__apiculteur">
-                <img src="assets/pictures/accueil/dessin_abeille-left.webp" alt="dessin abeille" class="beekeeper-animation__abeille1">
-                <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="beekeeper-animation__abeille2">
-                <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="beekeeper-animation__abeille3">
-            </figure>
+    
+                <form>
+                    <label>Identifiant ou e-mail <span>*</span></label>
+                    <input type="text" name="name" class="inputField" required>
+        
+                    <label>Mot de passe <span>*</span></label>
+                    <input type="password" name="topic" class="inputField" required>
+        
+                    <div>
+                        <input type="checkbox">
+                        <label>Se souvenir de moi</label>
+                    </div>
+        
+                    <input type="submit" value="Se connecter">
+                </form>
 
-            <ul>
-                <li><strong>SIRET:</strong>849 488 622 000 10</li>
-                <li><strong>TVA:</strong> FR 108 494 886 22</li>
-                <li><strong>Raison Sociale:</strong> Dupuis Rudy</li>
-                <li><strong>Siège social:</strong> 15 rue de la bruyère, les chauleries, 86420 Guesnes</li>
-                <li><strong>Téléphone:</strong> 07 87 64 43 49</li>
-                <li><strong>Mail:</strong> dupuisrudyapi@gmail.com</li>
-            </ul>
+            </div>
+
+            <div id="compte__register">
+
+                <div>
+                    <h2>S'enregistrer</h2>
+
+                    <!-- Hive animation-->
+                    <figure class="hive-animation">
+                        <img src="assets/pictures/accueil/dessin_ruche.webp"  alt="dessin ruche" class="hive-animation__hive">
+                        <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="hive-animation__bee">
+                    </figure>
+                </div>
+
+                <form>
+                    <label>Identifiant <span>*</span></label>
+                    <input type="text" name="name" class="inputField" required>
+
+                    <label>E-mail <span>*</span></label>
+                    <input type="text" name="name" class="inputField" required>
+        
+                    <label>Mot de passe <span>*</span></label>
+                    <input type="password" name="topic" class="inputField" required>
+        
+                    <div>
+                        <input type="checkbox" required>
+                        <label>J’ai lu et j'accepte la <a href="politique_de_confidentialite.html" target="_blank">politique de confidentialité</a> <span>*</span></label>
+                    </div>
+        
+                    <input type="submit" value="S'enregistrer">
+                </form>
+            </div>
 
         </div>
 
