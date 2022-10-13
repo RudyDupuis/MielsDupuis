@@ -477,6 +477,15 @@ footer #footer__networkCopyright figure a:hover img {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  overflow-x: hidden;
+  /** Cf utils for function and keyframes **/
+  /**
+*The variable is used to choose a size, 
+*then thanks to the size() function all the measurements in px are resized to remain proportional.
+**/
+  /**
+*Put  overflow-x: hidden;  in the container to hide the scrollbar caused by the animation of the bees.
+**/
 }
 
 #panier h1 {
@@ -486,6 +495,46 @@ footer #footer__networkCopyright figure a:hover img {
 #panier h2 {
   font-size: 1.4rem;
   margin-left: 50px;
+}
+
+#panier .bee-animation {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+#panier .bee-animation__bee1, #panier .bee-animation__bee2, #panier .bee-animation__bee3 {
+  position: absolute;
+  width: 31.64557px;
+  height: 29.67359px;
+  right: 50%;
+}
+
+#panier .bee-animation__bee1 {
+  top: 1.33333px;
+  animation: fly 8s infinite ease-in;
+}
+
+#panier .bee-animation__bee2 {
+  top: 34.72222px;
+  animation: fly 17s infinite reverse ease-out;
+}
+
+#panier .bee-animation__bee3 {
+  top: 66.66667px;
+  animation: fly 13s infinite ease-in-out;
+}
+
+#panier__desinchronize-bees .bee-animation__bee1 {
+  animation: fly 10s infinite;
+}
+
+#panier__desinchronize-bees .bee-animation__bee2 {
+  animation: fly 14s infinite reverse;
+}
+
+#panier__desinchronize-bees .bee-animation__bee3 {
+  animation: fly 15s infinite;
 }
 
 #panier table {
