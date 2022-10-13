@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/compte.css">
+        <link rel="stylesheet" href="css/panier.css">
         <link rel="icon" type="image/png" href="assets/pictures/accueil/dessin_abeille-left.webp">
-        <title>Compte - MielsDupuis</title>
+        <title>Panier - MielsDupuis</title>
     </head>
 
     <body>
@@ -26,69 +26,71 @@
 
         </header>
 
-        <div id="compte">
+        <div id="panier">
+            <h1>Panier</h1>
 
-            <div id="compte__login">
+            <table>
 
-                <div>
-                    <h2>Se connecter</h2>
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th>Produit</th>
+                    <th>Prix</th>
+                    <th>Quantité</th>
+                    <th>Sous-total</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td data-label="" class="panier__cross"><input type="image" src="assets/pictures/panier/cross.png" alt="Croix de suppression"></td>
+                        <td data-label="" class="panier__image"><img src="assets/pictures/boutique/ColzaPot1Kg.png" alt="Miel de colza 1Kg"></td>
+                        <td data-label="Produit: " class="panier__name">Miel de Colza - 1kg</td>
+                        <td data-label="Prix: " class="panier__price">10,00 €</td>
+                        <td data-label="Quantité: " class="panier__number"><input type="number"></td>
+                        <td data-label="Sous-total: " class="panier__subtotal">1200,00 €</td>
+                    </tr>
     
-                    <!-- Sunflower animation -->
-                    <figure class="sunflower-animation">
-                        <img src="assets/pictures/accueil/dessin_tournesol.webp"  alt="dessin tournesol" class="sunflower-animation__sunflower">
-                        <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" class="sunflower-animation__bee">
-                    </figure>
-                </div>
+                    <tr>
+                        <td data-label="" class="panier__cross"><input type="image" src="assets/pictures/panier/cross.png" alt="Croix de suppression"></td>
+                        <td data-label="" class="panier__image"><img src="assets/pictures/boutique/ColzaPot1Kg.png" alt="Miel de colza 1Kg"></td>
+                        <td data-label="Produit: " class="panier__name">Miel de Colza - 1kg</td>
+                        <td data-label="Prix: " class="panier__price">10,00 €</td>
+                        <td data-label="Quantité: " class="panier__number"><input type="number"></td>
+                        <td data-label="Sous-total: " class="panier__subtotal">1200,00 €</td>
+                    </tr>
+                </tbody>
 
-    
-                <form>
-                    <label>Identifiant ou e-mail <span>*</span></label>
-                    <input type="text" name="name" class="inputField" required>
-        
-                    <label>Mot de passe <span>*</span></label>
-                    <input type="password" name="topic" class="inputField" required>
-        
-                    <div>
-                        <input type="checkbox">
-                        <label>Se souvenir de moi</label>
-                    </div>
-        
-                    <input type="submit" value="Se connecter">
-                </form>
+                <tfoot>
+                    <td colspan="2" id="panier__code"><input type="text" placeholder="Code Promo"></td>
+                    <td id="panier__use-code"><input type="submit" value="Utiliser"></td>
+                    <td></td>
+                    <td colspan="2" id="panier__update"><input type="submit" value="Mettre à jour le panier"></td>
+                </tfoot>
 
-            </div>
+            </table>
 
-            <div id="compte__register">
+            <h2>Total Panier</h2>
 
-                <div>
-                    <h2>S'enregistrer</h2>
+            <table>
 
-                    <!-- Hive animation-->
-                    <figure class="hive-animation">
-                        <img src="assets/pictures/accueil/dessin_ruche.webp"  alt="dessin ruche" class="hive-animation__hive">
-                        <img src="assets/pictures/accueil/dessin_abeille-right.webp"  alt="dessin abeille" class="hive-animation__bee">
-                    </figure>
-                </div>
+                <thead>
+                    <th>Sous-total</th>
+                    <th>Expédition</th>
+                    <th>Total</th>
+                </thead>
+                
+                <tbody>
+                    <td data-label="Sous-total: ">2400,00 €</td>
+                    <td data-label="Expédition: ">5,00 €</td>
+                    <td data-label="Total: ">2405,00 €</td>
+                </tbody>
 
-                <form>
-                    <label>Identifiant <span>*</span></label>
-                    <input type="text" name="name" class="inputField" required>
+                <tfooter>
+                    <td></td>
+                    <td colspan="2" id="panier__validate"><input type="submit" value="Valider la commande"></td>
+                </tfooter>
 
-                    <label>E-mail <span>*</span></label>
-                    <input type="text" name="name" class="inputField" required>
-        
-                    <label>Mot de passe <span>*</span></label>
-                    <input type="password" name="topic" class="inputField" required>
-        
-                    <div>
-                        <input type="checkbox" required>
-                        <label>J’ai lu et j'accepte la <a href="politique_de_confidentialite.html" target="_blank">politique de confidentialité</a> <span>*</span></label>
-                    </div>
-        
-                    <input type="submit" value="S'enregistrer">
-                </form>
-            </div>
-
+            </table>
         </div>
 
         <footer>

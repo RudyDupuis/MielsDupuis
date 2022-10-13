@@ -472,105 +472,135 @@ footer #footer__networkCopyright figure a:hover img {
   }
 }
 
-#compte {
+#panier {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 50px 0px;
-  /** Cf utils for function and keyframes **/
-  /**
-*The variable is used to choose a size, 
-*then thanks to the size() function all the measurements in px are resized to remain proportional.
-**/
-  /** Cf utils for function and keyframes **/
-  /**
-*The variable is used to choose a size, 
-*then thanks to the size() function all the measurements in px are resized to remain proportional.
-**/
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
 }
 
-#compte h2 {
-  margin-left: 20px;
+#panier h1 {
+  font-size: 2rem;
 }
 
-#compte form div label {
-  margin: 0;
-  font-size: 0.9rem;
+#panier h2 {
+  font-size: 1.4rem;
+  margin-left: 50px;
 }
 
-#compte__login, #compte__register {
-  width: 100%;
+#panier table {
+  text-align: left;
+  border-collapse: collapse;
+  border: 1px solid lightgray;
 }
 
-#compte__login div, #compte__register div {
-  display: flex;
+#panier table th {
+  height: 50px;
+  width: 150px;
 }
 
-#compte__login div h2, #compte__register div h2 {
-  margin-right: 80px;
+#panier table tfoot tr {
+  height: 70px;
 }
 
-#compte__register {
-  margin-top: 50px;
+#panier table:last-child {
+  text-align: center;
+  margin-left: 350px;
 }
 
-#compte .sunflower-animation {
-  width: 100px;
-  height: 100px;
-  position: relative;
+#panier .panier__cross {
+  text-align: center;
 }
 
-#compte .sunflower-animation__sunflower {
-  position: absolute;
-  width: 54.64481px;
-  height: 90.90909px;
-  left: 6.66667px;
-  bottom: -1px;
+#panier .panier__cross input {
+  width: 25px;
+  height: 25px;
 }
 
-#compte .sunflower-animation__bee {
-  position: absolute;
-  width: 31.64557px;
-  height: 29.67359px;
-  right: 20px;
-  top: 13.33333px;
-  animation: shake 2s ease-in-out infinite;
+#panier .panier__image img {
+  width: 45px;
+  height: 56.25px;
 }
 
-#compte .hive-animation {
-  width: 100px;
-  height: 100px;
-  position: relative;
+#panier .panier__name {
+  width: 250px;
 }
 
-#compte .hive-animation__hive {
-  position: absolute;
-  width: 56.81818px;
-  height: 56.81818px;
-  right: 3.33333px;
-  bottom: 33.33333px;
+#panier .panier__number input {
+  width: 40px;
+  height: 23px;
+  outline: 0;
+  border: 1px solid lightgray;
 }
 
-#compte .hive-animation__bee {
-  position: absolute;
-  width: 15.82278px;
-  height: 14.8368px;
-  left: 20px;
-  top: 53.47594px;
-  animation: shake 2s ease-in-out infinite;
+#panier__code {
+  text-align: right;
 }
 
-#compte .hive-animation {
-  margin-top: 15px;
-  margin-bottom: -15px;
+#panier__code input {
+  width: 150px;
+  height: 23px;
+  outline: 0;
+  border: 1px solid lightgray;
 }
 
-@media (min-width: 800px) and (orientation: landscape) {
-  #compte__login, #compte__register {
-    margin-top: 0;
-    width: 400px;
+#panier__validate {
+  padding: 20px 0px;
+}
+
+#panier__use-code input, #panier__update input, #panier__validate input {
+  border: 2px solid #ffca18ff;
+  color: #000000ff;
+  font-size: 1rem;
+}
+
+#panier__use-code input:active, #panier__update input:active, #panier__validate input:active {
+  background-color: #ffca18ff;
+}
+
+@media (max-width: 800px) {
+  #panier h2 {
+    margin-left: 0;
   }
-  #compte__login {
-    margin-right: 50px;
+  #panier table {
+    width: 95%;
+  }
+  #panier table:last-child {
+    margin-left: 0;
+  }
+  #panier table thead {
+    display: none;
+  }
+  #panier table tr {
+    display: block;
+  }
+  #panier table td {
+    display: block;
+    text-align: right;
+    margin: 15px 10px;
+  }
+  #panier table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  #panier table tfoot tr {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+  }
+  #panier .panier__cross {
+    border-top: 1px solid lightgray;
+    text-align: left;
+    padding-top: 10px;
+  }
+  #panier .panier__name {
+    width: auto;
+  }
+  #panier__validate {
+    padding: 0px;
   }
 }

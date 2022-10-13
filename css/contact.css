@@ -202,6 +202,7 @@ textarea {
   resize: none;
   background-color: transparent;
   padding: 5px;
+  height: 200px;
 }
 
 textarea:focus {
@@ -212,6 +213,7 @@ textarea:focus {
 /*** Form ***/
 form {
   display: flex;
+  font-size: 1.1rem;
   flex-direction: column;
   background-color: whitesmoke;
   border-radius: 40px;
@@ -231,7 +233,12 @@ form a:hover {
   color: #ffca18ff;
 }
 
+form label, form [type="submit"], form div {
+  margin: 20px 0px 5px 0px;
+}
+
 form [type="submit"] {
+  font-size: 1.1rem;
   color: #000000ff;
   border: 3px solid #ffca18ff;
   width: 200px;
@@ -469,7 +476,6 @@ footer #footer__networkCopyright figure a:hover img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.1rem;
   margin-bottom: 50px;
   /** Cf utils for function and keyframes **/
   /**
@@ -508,10 +514,6 @@ footer #footer__networkCopyright figure a:hover img {
 
 #contact figure {
   margin-right: 50%;
-}
-
-#contact form label, #contact form [type="submit"], #contact form div {
-  margin: 20px 0px 5px 0px;
 }
 
 #contact form div label {

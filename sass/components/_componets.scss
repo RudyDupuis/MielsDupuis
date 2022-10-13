@@ -120,6 +120,7 @@ textarea{
     resize: none;
     background-color: transparent;
     padding: 5px;
+    height: 200px;
 
     &:focus{
       border: 2px solid $colorSecondary;
@@ -131,6 +132,7 @@ textarea{
 
 form{
     display: flex;
+    font-size: 1.1rem;
     flex-direction: column;
     background-color: rgb(245, 245, 245);
     border-radius: 40px;
@@ -149,7 +151,12 @@ form{
         }
     }
 
+    label, [type="submit"], div {
+        margin: 20px 0px 5px 0px;
+    }
+
     [type="submit"]{
+        font-size: 1.1rem;
         color: $Black;
         border: 3px solid $colorPrimary;
         width: 200px;

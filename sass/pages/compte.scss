@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 1.1rem;
     margin: 50px 0px;
 
     h2{
@@ -16,10 +15,6 @@
     }
     
     form{
-        label, [type="submit"], div {
-            margin: 20px 0px 5px 0px;
-        }
-
         div label{    //label checkbox
             margin: 0;
             font-size: 0.9rem;

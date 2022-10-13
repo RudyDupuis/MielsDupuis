@@ -541,6 +541,7 @@ textarea {
   resize: none;
   background-color: transparent;
   padding: 5px;
+  height: 200px;
 }
 
 textarea:focus {
@@ -551,6 +552,7 @@ textarea:focus {
 /*** Form ***/
 form {
   display: flex;
+  font-size: 1.1rem;
   flex-direction: column;
   background-color: whitesmoke;
   border-radius: 40px;
@@ -570,7 +572,12 @@ form a:hover {
   color: #ffca18ff;
 }
 
+form label, form [type="submit"], form div {
+  margin: 20px 0px 5px 0px;
+}
+
 form [type="submit"] {
+  font-size: 1.1rem;
   color: #000000ff;
   border: 3px solid #ffca18ff;
   width: 200px;
