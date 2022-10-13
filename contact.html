@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/mention_legales.css">
+        <link rel="stylesheet" href="css/contact.css">
         <link rel="icon" type="image/png" href="assets/pictures/accueil/dessin_abeille-left.webp">
-        <title>Mention légales</title>
+        <title>Contact - MielsDupuis</title>
     </head>
 
     <body>
@@ -26,29 +26,36 @@
 
         </header>
 
-        <!-- Mention Légales -->
+        <div id="contact">
 
-        <div id="mention_legales">
+            <h1>Me contacter</h1>
 
-            <h1>Mentions légales</h1>
-
-            <!-- Beekeeper animation-->
-            <figure class="beekeeper-animation">
-                <img src="assets/pictures/accueil/dessin_apiculteur.webp" alt="dessin apiculteur" class="beekeeper-animation__apiculteur">
-                <img src="assets/pictures/accueil/dessin_abeille-left.webp" alt="dessin abeille" class="beekeeper-animation__abeille1">
-                <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="beekeeper-animation__abeille2">
-                <img src="assets/pictures/accueil/dessin_abeille-right.webp" alt="dessin abeille" class="beekeeper-animation__abeille3">
+            <!-- Sunflower animation -->
+            <figure class="sunflower-animation">
+                <img src="assets/pictures/accueil/dessin_tournesol.webp"  alt="dessin tournesol" class="sunflower-animation__sunflower">
+                <img src="assets/pictures/accueil/dessin_abeille-left.webp"  alt="dessin abeille" class="sunflower-animation__bee">
             </figure>
 
-            <ul>
-                <li><strong>SIRET:</strong>849 488 622 000 10</li>
-                <li><strong>TVA:</strong> FR 108 494 886 22</li>
-                <li><strong>Raison Sociale:</strong> Dupuis Rudy</li>
-                <li><strong>Siège social:</strong> 15 rue de la bruyère, les chauleries, 86420 Guesnes</li>
-                <li><strong>Téléphone:</strong> 07 87 64 43 49</li>
-                <li><strong>Mail:</strong> dupuisrudyapi@gmail.com</li>
-            </ul>
-
+            <form>
+                <label>Nom et Prénom <span>*</span></label>
+                <input type="text" name="name" class="inputField" required>
+    
+                <label>Sujet</label>
+                <input type="text" name="topic" class="inputField">
+    
+                <label>Email <span>*</span></label>
+                <input type="email" class="inputField" required>
+    
+                <label>Message <span>*</span></label>
+                <textarea required></textarea>
+    
+                <div>
+                    <input type="checkbox" required>
+                    <label>J’ai lu et j'accepte la <a href="politique_de_confidentialite.html" target="_blank">politique de confidentialité</a> <span>*</span></label>
+                </div>
+    
+                <input type="submit">
+            </form>
         </div>
 
         <footer>

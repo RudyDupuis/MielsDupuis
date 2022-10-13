@@ -426,10 +426,11 @@ footer #footer__networkCopyright figure a:hover img {
   }
 }
 
-#politique_de_confidentialite {
+#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.1rem;
   /** Cf utils for function and keyframes **/
   /**
 *The variable is used to choose a size, 
@@ -437,115 +438,86 @@ footer #footer__networkCopyright figure a:hover img {
 **/
 }
 
-#politique_de_confidentialite h1 {
+#contact h1 {
   font-size: 2rem;
-  margin: 50px 0px;
-  text-align: center;
+  margin-top: 50px;
 }
 
-#politique_de_confidentialite .beekeeper-animation {
-  width: 80px;
-  height: 80px;
+#contact .sunflower-animation {
+  width: 100px;
+  height: 100px;
   position: relative;
-  background-color: #44aa00ff;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-#politique_de_confidentialite .beekeeper-animation img:first-child {
-  width: 45.19774px;
-  height: 53.69128px;
-}
-
-#politique_de_confidentialite .beekeeper-animation__abeille1, #politique_de_confidentialite .beekeeper-animation__abeille2, #politique_de_confidentialite .beekeeper-animation__abeille3 {
-  width: 11.00413px;
-  height: 10.20408px;
+#contact .sunflower-animation__sunflower {
   position: absolute;
-  opacity: 0;
+  width: 54.64481px;
+  height: 90.90909px;
+  left: 6.66667px;
+  bottom: -1px;
 }
 
-#politique_de_confidentialite .beekeeper-animation__abeille1 {
-  right: 2.99963px;
-  transform: rotate(5deg);
+#contact .sunflower-animation__bee {
+  position: absolute;
+  width: 31.64557px;
+  height: 29.67359px;
+  right: 20px;
+  top: 13.33333px;
+  animation: shake 2s ease-in-out infinite;
 }
 
-#politique_de_confidentialite .beekeeper-animation__abeille2 {
-  left: 9.40071px;
-  top: 49.68944px;
-  transform: rotate(20deg);
+#contact figure {
+  margin-right: 50%;
 }
 
-#politique_de_confidentialite .beekeeper-animation__abeille3 {
-  left: 4.60035px;
-  top: 24.02402px;
-}
-
-#politique_de_confidentialite .beekeeper-animation:hover .beekeeper-animation__abeille1 {
-  opacity: 1;
-  animation: shake 0.9s ease-in-out infinite;
-}
-
-#politique_de_confidentialite .beekeeper-animation:hover .beekeeper-animation__abeille2 {
-  opacity: 1;
-  animation: shake 0.8s ease-in-out infinite;
-}
-
-#politique_de_confidentialite .beekeeper-animation:hover .beekeeper-animation__abeille3 {
-  opacity: 1;
-  animation: shake 0.7s ease-in-out infinite;
-}
-
-#politique_de_confidentialite h2 {
-  font-size: 1.8rem;
-}
-
-#politique_de_confidentialite > ul {
-  font-size: 1.1rem;
-  padding: 0px 20px;
-  text-align: end;
-}
-
-#politique_de_confidentialite > ul li {
-  margin: 20px 0px;
+#contact form {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  box-shadow: 1px 1px 1px gray;
+  padding: 20px;
+  width: 90%;
+  margin-bottom: 50px;
 }
 
-#politique_de_confidentialite > ul li strong {
+#contact form span {
+  color: #ffca18ff;
+}
+
+#contact form a {
   color: #44aa00ff;
-  white-space: nowrap;
-  margin-right: 30px;
 }
 
-#politique_de_confidentialite__instruction {
-  padding: 30px 30px;
-  border-top: 2px solid #000000ff;
+#contact form a:hover {
+  color: #ffca18ff;
 }
 
-#politique_de_confidentialite__instruction p:first-child {
-  font-style: italic;
+#contact form label, #contact form [type="submit"], #contact form div {
+  margin: 20px 0px 5px 0px;
 }
 
-#politique_de_confidentialite__instruction p, #politique_de_confidentialite__instruction ol, #politique_de_confidentialite__instruction ul {
+#contact form div label {
   font-size: 1rem;
 }
 
-#politique_de_confidentialite__instruction h3 {
-  font-size: 1.4rem;
+#contact form [type="submit"] {
+  color: #000000ff;
+  border: 3px solid #ffca18ff;
+  width: 200px;
+  align-self: center;
 }
 
-#politique_de_confidentialite__instruction ul {
-  list-style-type: circle;
-}
-
-#politique_de_confidentialite__instruction ul li, #politique_de_confidentialite__instruction ol li {
-  margin: 20px 0px;
+#contact form [type="submit"]:active {
+  background-color: #ffca18ff;
 }
 
 @media (min-width: 800px) and (orientation: landscape) {
-  #politique_de_confidentialite__instruction {
-    width: 90%;
+  #contact figure {
+    margin-right: 500px;
+  }
+  #contact form {
+    width: 600px;
+    padding: 20px 40px;
   }
 }

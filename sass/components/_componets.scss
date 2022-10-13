@@ -78,7 +78,7 @@
 
 /*** Button ***/
 
-[type="button"]{
+[type="button"], [type="submit"]{
     background-color: transparent;
     color: $colorSecondary;
     padding: 5px 30px;
@@ -94,7 +94,37 @@
     }
 }
 
+/***Input field ***/
 
+.inputField{
+    background-color: transparent;
+    outline: 0;                   //remove shadow
+    border: none;
+    border-bottom: 2px solid $colorPrimary;
+    padding: 5px;
+  
+    &:focus{
+        border-bottom: 2px solid $colorSecondary;
+        
+        &:invalid{
+            border-bottom: 2px solid red;
+        }
+    } 
+}
 
+/*** Textarea ***/
+
+textarea{
+    border: 2px solid $colorPrimary;
+    border-radius: 10px;
+    resize: none;
+    background-color: transparent;
+    padding: 5px;
+
+    &:focus{
+      border: 2px solid $colorSecondary;
+      outline: 0;                   //remove shadow
+    }
+  }
 
 

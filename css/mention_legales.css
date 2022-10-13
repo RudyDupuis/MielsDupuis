@@ -162,20 +162,51 @@ figure, body {
 }
 
 /*** Button ***/
-[type="button"] {
+[type="button"], [type="submit"] {
   background-color: transparent;
   color: #44aa00ff;
   padding: 5px 30px;
   border: 3px solid #44aa00ff;
 }
 
-[type="button"]:hover {
+[type="button"]:hover, [type="submit"]:hover {
   cursor: pointer;
 }
 
-[type="button"]:active {
+[type="button"]:active, [type="submit"]:active {
   background-color: #44aa00ff;
   color: #ffffffff;
+}
+
+/***Input field ***/
+.inputField {
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  border-bottom: 2px solid #ffca18ff;
+  padding: 5px;
+}
+
+.inputField:focus {
+  border-bottom: 2px solid #44aa00ff;
+}
+
+.inputField:focus:invalid {
+  border-bottom: 2px solid red;
+}
+
+/*** Textarea ***/
+textarea {
+  border: 2px solid #ffca18ff;
+  border-radius: 10px;
+  resize: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+textarea:focus {
+  border: 2px solid #44aa00ff;
+  outline: 0;
 }
 
 header {
