@@ -525,15 +525,15 @@ footer #footer__networkCopyright figure a:hover img {
   animation: fly 13s infinite ease-in-out;
 }
 
-#panier__desinchronize-bees .bee-animation__bee1 {
+#panier figure:nth-child(2) .bee-animation__bee1 {
   animation: fly 10s infinite;
 }
 
-#panier__desinchronize-bees .bee-animation__bee2 {
+#panier figure:nth-child(2) .bee-animation__bee2 {
   animation: fly 14s infinite reverse;
 }
 
-#panier__desinchronize-bees .bee-animation__bee3 {
+#panier figure:nth-child(2) .bee-animation__bee3 {
   animation: fly 15s infinite;
 }
 
@@ -593,10 +593,6 @@ footer #footer__networkCopyright figure a:hover img {
   border: 1px solid lightgray;
 }
 
-#panier__validate {
-  padding: 20px 0px;
-}
-
 #panier__use-code input, #panier__update input, #panier__validate input {
   border: 2px solid #ffca18ff;
   color: #000000ff;
@@ -616,6 +612,9 @@ footer #footer__networkCopyright figure a:hover img {
   }
   #panier table:last-child {
     margin-left: 0;
+  }
+  #panier table:last-child tfoot td:first-child {
+    margin: 0;
   }
   #panier table thead {
     display: none;

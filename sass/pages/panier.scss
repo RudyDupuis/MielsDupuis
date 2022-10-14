@@ -23,7 +23,7 @@
     $sizeBeeAnim: 100px;
     @import "../components/bee-animation";
  
-    &__desinchronize-bees{
+    figure:nth-child(2){
         .bee-animation{                 //desinchronize the bees     
             &__bee1{
                 animation: fly 10s infinite;
@@ -99,10 +99,6 @@
         }
     }
 
-    &__validate{
-        padding: 20px 0px;
-    }
-
     &__use-code, &__update, &__validate{
         input{
             border: 2px solid $colorPrimary;
@@ -125,8 +121,13 @@
 
             &:last-child{
                 margin-left: 0;    //remouve align.
-            }
 
+                tfoot{
+                    td:first-child{
+                        margin: 0;
+                    }
+                }
+            }
 
             thead {
                 display: none;
