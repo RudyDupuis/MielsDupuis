@@ -1,0 +1,232 @@
+/*** Selling point map ***/
+
+@mixin selling-point-map($size) {
+    .selling-point-map{
+        position: relative;
+        width: resize($size, 1.72);
+        height: $size;
+    
+        &__map{
+            width: resize($size, 1.99);
+            height: resize($size, 1.15);
+        }
+    
+        &__point1, &__point2, &__point3, &__point4, &__point5, &__point6, &__point7, &__point8{
+            position: absolute;
+            width: resize($size, 25.95);
+            height: resize($size, 19.59);
+    
+            &:hover{
+                scale: 150%;
+            }
+        }
+        &__point1{
+            top: resize($size, 1.58);
+            left: resize($size, 8.13);
+        }
+        &__point2{
+            top: resize($size, 1.89);
+            left: resize($size, 4.23);
+        }
+        &__point3{
+            top: resize($size, 980);
+            left: resize($size, -980);
+        }
+        &__point4{
+            top: resize($size, -60);
+            left: resize($size, 20);
+        }
+        &__point5{
+            top: resize($size, 1.41);
+            left: resize($size, 2.70);
+        }
+        &__point6{
+            top: resize($size, 1.35);
+            left: resize($size, 2.65);
+        }
+        &__point7{
+            top: resize($size, 1.32);
+            left: resize($size, 2.5);
+        }
+        &__point8{
+            top: resize($size, 1.35);
+            left: resize($size, 2.74);
+        }
+    }
+}
+
+                                /**** ANIMATIONS ****/
+
+/*** Bee animation ***/
+
+/**
+*Put  overflow-x: hidden;  in the container to hide the scrollbar caused by the animation of the bees.
+**/
+
+@mixin bee-animation ($size, $flyDuration) {
+    .bee-animation{
+        width: $size;
+        height: $size;
+        position: relative;
+    
+        &__bee1, &__bee2, &__bee3{
+            position: absolute;
+            width: resize($size, 3.16);
+            height: resize($size, 3.37);
+            right: 50%;
+        }
+    
+        &__bee1{
+            top: resize($size, 75);
+            animation: fly $flyDuration infinite ease-in;
+        }
+        &__bee2{
+            top: resize($size, 2.88);
+            animation: fly ($flyDuration + 5) infinite reverse ease-out;
+        }
+        &__bee3{
+            top: resize($size, 1.5);
+            animation: fly ($flyDuration + 2) infinite ease-in-out;
+        }
+    }
+}
+
+/*** Hive animation ***/
+
+@mixin hive-animation($size) {
+    .hive-animation{
+        width: $size;
+        height: $size;
+        position: relative;
+    
+        &__hive{
+            position: absolute;
+            width: resize($size, 1.76);
+            height: resize($size, 1.76);
+            right: resize($size, 30);
+            bottom: resize($size, 3);
+        }
+    
+        &__bee{ 
+            position: absolute;
+            width: resize($size, 6.32);
+            height: resize($size, 6.74);
+            left: resize($size, 5);
+            top: resize($size, 1.87);
+            animation: shake 2s ease-in-out infinite;
+        }
+    }
+}
+
+/*** Sunflower animation ***/
+
+@mixin sunflower-animation($size) {
+    .sunflower-animation{
+        width: $size;
+        height: $size;
+        position: relative;
+    
+        &__sunflower{
+            position: absolute;
+            width: resize($size, 1.83);
+            height: resize($size, 1.1);
+            left: resize($size, 15);
+            bottom: resize($size, -100);
+        }
+    
+        &__bee{ 
+            position: absolute;
+            width: resize($size, 3.16);
+            height: resize($size, 3.37);
+            right: resize($size, 5);
+            top: resize($size, 7.5);
+            animation: shake 2s ease-in-out infinite;
+        }
+    }
+}
+
+/*** Beekeeper animation ***/
+
+@mixin beekeeper-animation($size) {
+    .beekeeper-animation{
+        width: $size;
+        height: $size;
+        position: relative;
+        background-color: $colorSecondary;
+        border-radius: resize($size, 2);
+        @extend %flex-justifyContentsCenter-alignItemsCenter;
+    
+        img:first-child{
+            width: resize($size, 1.77);
+            height: resize($size, 1.49);
+        }
+    
+        &__abeille1, &__abeille2, &__abeille3 {    //hidden bees for hover animation
+            width: resize($size, 7.27);
+            height: resize($size, 7.84);
+            position: absolute;
+            opacity: 0;
+        }
+        
+        &__abeille1{
+            right: resize($size, 26.67);
+            transform: rotate(5deg);
+        }
+        
+        &__abeille2{
+            left: resize($size, 8.51);
+            top: resize($size, 1.61);
+            transform: rotate(20deg);
+        }
+        
+        &__abeille3{
+            left: resize($size, 17.39);
+            top: resize($size, 3.33);
+        }
+    
+        &:hover{
+            .beekeeper-animation__abeille1{
+                opacity: 1;
+                animation: shake 0.9s ease-in-out infinite;
+            }
+    
+            .beekeeper-animation__abeille2{
+                opacity: 1;
+                animation: shake 0.8s ease-in-out infinite;
+            }
+    
+            .beekeeper-animation__abeille3{
+                opacity: 1;
+                animation: shake 0.7s ease-in-out infinite;
+            }
+        }
+    }
+}
+
+/*** Cart animation ***/
+
+@mixin cart-animation($size) {
+    .cart-animation{
+        position: relative;
+        width: $size;
+        height: $size;
+    
+        &__cart, &__tub{
+           position: absolute;
+            left: resize($size, 68);
+            bottom: resize($size, 11.33);
+            width: resize($size, 1.18);
+            height: resize($size, 1.30); 
+        }
+    
+        &:hover{                                 //cf utils
+            .cart-animation__tub{
+                animation: fall-tub 2s cubic-bezier(.8,1.15,.9,1.01);
+            }
+    
+            .cart-animation__cart{
+                    animation: mouving-cart 2s cubic-bezier(.84,1.47,.9,1.01);
+            }
+        }
+    }
+}

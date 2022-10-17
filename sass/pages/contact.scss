@@ -1,42 +1,37 @@
 @import "../utils/utils";
+@import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
-@import "../layouts/footer";
+@import "../layouts/footer"; 
 
-#contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#body{
+    @extend %flex-column-alignItemsCenter;
     margin-bottom: 50px;
-
-    h1{
-        font-size: 2rem;
-        margin-top: 50px;
-    }
-
-    $sizeSunflowerAnim: 100px;
-    @import "../components/sunflower-animation";
 
     figure{
         margin-right: 50%;
-    }
-
-    form{
-        div label{    //label checkbox
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-    }
-
-    @media (min-width: 800px) and (orientation: landscape){
-        figure{
+    
+        @media (min-width: 800px) and (orientation: landscape){
             margin-right: 500px;
         }
+    }
+}
 
-        form{
-            width: 600px;
-        }
+h1{
+    margin-top: 50px;
+}
+
+@include sunflower-animation(100px);
+
+form{
+    div{
+        display: flex;
+    }
+    
+    @media (min-width: 800px) and (orientation: landscape){
+        width: 600px;
     }
 }

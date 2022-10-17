@@ -2,366 +2,318 @@
 @import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
-@import "../layouts/footer";
+@import "../layouts/footer"; 
 
 header{                     //header remains at the top of the hero baner which is the size of the screen
     position: absolute;
 }
 
-#accueil{
+#body{
     position: relative;
     text-align: center;
+}
 
-    /*** Hero Baner ***/
+/*** Hero Baner ***/
 
-    &__heroBanner{
-        background: url("../assets/pictures/accueil/fond_accueil_abeilles.webp") no-repeat (30% 50%);
-        background-size: cover;
-        color: $White;
-        height: 99vh;
-        min-height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
+#hero-banner{
+    background: url("../assets/pictures/accueil/fond_accueil_abeilles.webp") no-repeat (30% 50%);
+    background-size: cover;
+    color: $White;
+    height: 99vh;
+    min-height: 600px;
+    @extend %flex-column-justifyContentsCenter;
+
+    h1{
+        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;      //cf utils
+    }
+
+    h2{
+        font-weight: 100;
+        margin: 10px 5px;
+        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;          //cf utils
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){
+        text-align: left;
 
         h1{
-            font-size: 2rem;
-            animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;      //cf utils
+            margin-left: 100px;
         }
-        h2{
-            font-size: 1.5rem;
-            font-weight: 100;
-            margin: 10px 0px;
-            animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;          //cf utils
-        }
-
-        @media (min-width: 800px) and (orientation: landscape){
-            text-align: left;
-
-            h1{
-                margin-left: 100px;
-            }
-
-            h2{
-                margin-left: 120px;
-            }
-        }
-    }
-
-    /*** French Flag ***/
-    
-    &__frenchFlag{            //line between heroBanner and description
-        display: flex;
-
-        &-blue{
-            background-color: blue;
-        }
-        &-white{
-            background-color: white;
-        }
-        &-red{
-            background-color: red;
-        }
-        &-blue, &-white, &-red{
-            padding: 5px 0px;
-            width: 33.3333333333%;
-        }
-    }
-
-    /*** Description ***/
-
-    &__description{
-        color: $colorPrimary;
-        overflow-x: hidden; //hide the scrollbar caused by the animation of the bees
-
-            h3{
-                font-size: 1.3rem;
-            }
-            p{
-                font-size: 1.1rem;
-            }
-
-        /** Hive **/
-        &-hive{
-            padding-top: 40px;
-            
-            
-            &-where{
-                h3{
-                    margin-bottom: 0px;
-                }
-
-                ul{
-                    padding: 0px;
-                    font-size: 1.2rem;
-                }
-            }
-
-            $sizeHiveAnim: 150px;
-            $sizeBeeAnim: 100px;
-            $sizeSunflowerAnim: 150px; 
-            @import "../components/hive-animation";
-            @import "../components/bee-animation";
-            @import "../components/sunflower-animation";
-
-            &-animation{
-                &-1{
-                    display: flex;
-                    justify-content: flex-end;
-
-                    .bee-animation{                 //desinchronize the bees
-                        z-index: 2;
-                        
-                        &__bee1{
-                            animation: fly 10s infinite;
-                        }
-                        &__bee2{
-                            animation: fly 14s infinite reverse;
-                        }
-                        &__bee3{
-                            animation: fly 15s infinite;
-                        }
-                    }
-
-                }
-                &-2{
-                    display: flex;
-                    margin-bottom: -15px;  //sunflowers in the hill
-                }
-            }
-            
-            /** Hill background**/
-
-            &-background{
-                background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.webp") no-repeat;
-                background-size: cover;
-                height: 100px;
-                margin-bottom: -5px;   //remove space    
-            }
-
-            @media (min-width: 800px) and (orientation: landscape){
-                position: relative;
-
-                > h3{
-                    text-align: left;
-                    padding-left: 70px;
-                }
-
-                &-animation{
-                    &-1{
-                        position: absolute;
-                        right: 70px;
-
-                        figure:first-child{   //center bee animation
-                            margin-right: 35vw;
-                        }
-                    }
-
-                    &-2{
-                        margin-top: -100px;
-
-                        figure:last-child{    //center bee animation
-                            margin-left: 35vw;
-                        }
-                    }
-                }
-
-                &-where{
-                    text-align: right;
-                    padding-right: 300px;
-                }
-            }
-        }
-
-        /*** Beekeeper ***/
-
-        &-beekeeper{
-            position: relative;   //be first view
-            z-index: 2;
-            background-color: $colorSecondary;
-            color: $White;
-            padding-bottom: 40px;
-
-            &-desc{
-                h3{
-                    margin-top: 0px;        //to remove the space between the two parts
-                }
-
-                img{         //photo beekeeper
-                    width: 300px;
-                    height: 226px;
-                }
-            }
-
-            &-work{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                $sizebeekeeperAnim: 200px;
-                @import "../components/beekeeper-animation";
-            }
-
-            @media (min-width: 800px) and (orientation: landscape){
-                &-desc{
-                    img{
-                        margin-left: 50px;
-                    }
-
-                    &-card{
-                        text-align: left;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
-
-                &-work{
-                    p{
-                        width: 400px;
-                    }
-                }
-            }
-
-            @media (min-width: 1000px){     //for better transition
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    justify-content: space-evenly;
-            }
-        }
-    }
-    
-    /*** Apiarie ***/
-
-    &__apiarie{
-        background: url("../assets/pictures/accueil/fond_accueil_ruches.webp") no-repeat fixed center;
-        background-size: cover;
-        height: 600px;
-    }
-
-    /*** Salling point ***/
-
-    &__salling-point{
-        background-color: $colorPrimary;
-        padding-top: 1px;                   //to remove the space between the two parts
 
         h2{
-            font-size: 2.4rem;
-            color: $White;
-            margin-bottom: 50px;
-        }
-
-        div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            figure:nth-child(2){
-                margin: 40px 0px;
-            }
-        }
-
-        $sizeMapHeight: 400px;
-        $sizeCartAnim: 150px;
-        @import "../components/selling-point-map";
-        @import "../components/cart-animation";
-        
-        ul{
-            font-size: 1.3rem;
-            padding: 0px;
-
-            a:hover{
-                color: $White;
-            }
-
-            span{
-                color: $White;
-            }
-        }
-
-        @media (min-width: 800px) and (orientation: landscape){
-            div{
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: center;
-                align-items: center;
-                justify-content: space-evenly;  
-            }
-        }
-    }
-
-        /*Honey flow background*/
-    &__honeyFlow{
-        background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.webp") no-repeat center;
-        background-size: cover;
-        height: 190px;
-        margin-top: -5px;   //remove space
-
-        @media (min-width: 800px) and (orientation: landscape){
-            height: 310px;
-            margin-top: -100px;
-        }
-    }
-
-    /*** Pictogram ***/
-
-    &__pictogram{
-        p{
-            font-size: 1.3rem;
-        }
-
-        &-honey{       
-            width: resize(134px, 1.5);
-            height: resize(197px, 1.5);
-        }
-
-        &-bankCard{       
-            width: resize(221px, 1.5);
-            height: resize(123px, 1.5);
-        }
-
-        &-cardboard{    
-            width: rezise(176px, 1.5);
-            height: resize(203px, 1.5);
-        }
-
-        @media (min-width: 800px) and (orientation: landscape){
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            div{
-                text-align: center;
-            }
-
-            &-honey{       
-                width: 134px;
-                height: 197px;
-            }
-    
-            &-bankCard{       
-                width: 221px;
-                height: 123px;
-            }
-    
-            &-cardboard{    
-                width: 176px;
-                height: 203px;
-            }
+            margin-left: 120px;
         }
     }
 }
 
+/*** French Flag ***/
 
+#french-flag{            //line between heroBanner and description
+    display: flex;
 
+    &__blue{
+        background-color: blue;
+    }
+    &__white{
+        background-color: white;
+    }
+    &__red{
+        background-color: red;
+    }
+    &__blue, &__white, &__red{
+        padding: 5px 0px;
+        width: 33.3333333333%;
+    }
+}
 
+/*** Description ***/
 
+#description{
+    color: $colorPrimary;
+    overflow-x: hidden; //hide the scrollbar caused by the animation of the bees
+}
 
+/** Hive **/
 
+#hive{
+    padding-top: 40px;
+    
+    &__where{
+        h3{
+            margin-bottom: 0px;
+        }
 
+        ul{
+            padding: 0px;
+        }
+    }
 
+    &__animation{
+        &1{
+            display: flex;
+            justify-content: flex-end;
+            @include bee-animation(100px, 10s);
+            @include hive-animation(150px);
 
+            figure:first-child{
+                @extend %relative-zIndex2;
+            }
+        }
+        &2{
+            display: flex;
+            margin-bottom: -15px;  //sunflowers in the hill
+            @include bee-animation(100px, 8s);
+            @include sunflower-animation(150px);
+        }
+    }
+    
+    /** Hill background**/
 
+    &__background{
+        background: url("../assets/pictures/accueil/fond_accueil_dessin-coline.webp") no-repeat;
+        background-size: cover;
+        height: 100px;
+        margin-bottom: -5px;   //remove space    
+    }
 
+    @media (min-width: 800px) and (orientation: landscape){
+        position: relative;
+
+        > h3{
+            text-align: left;
+            padding-left: 70px;
+        }
+
+        &__animation{
+            &1{
+                position: absolute;
+                right: 70px;
+
+                figure:first-child{   //center bee animation
+                    margin-right: 35vw;
+                }
+            }
+
+            &2{
+                margin-top: -100px;
+
+                figure:last-child{    //center bee animation
+                    margin-left: 35vw;
+                }
+            }
+        }
+
+        &__where{
+            text-align: right;
+            padding-right: 300px;
+        }
+    }
+}
+
+/*** Beekeeper ***/
+
+#beekeeper{
+    @extend %relative-zIndex2;   //be first view
+    background-color: $colorSecondary;
+    color: $White;
+    padding-bottom: 40px;
+
+    &__description{
+        h3{
+            margin-top: 0px;        //to remove the space between the two parts
+        }
+
+        img{         //photo beekeeper
+            width: 300px;
+            height: 226px;
+        }
+    }
+
+    &__work{
+        @extend %flex-column-alignItemsCenter;
+        @include beekeeper-animation(200px);
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){
+        &__description{
+            img{
+                margin-left: 50px;
+            }
+
+            &-card{
+                text-align: left;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__work{
+            p{
+                width: 400px;
+            }
+        }
+    }
+
+    @media (min-width: 1000px){     //for better transition
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+    }
+}
+
+/*** Apiarie ***/
+
+#apiarie{
+    background: url("../assets/pictures/accueil/fond_accueil_ruches.webp") no-repeat fixed center;
+    background-size: cover;
+    height: 600px;
+}
+
+/*** Salling point ***/
+
+#salling-point{
+    background-color: $colorPrimary;
+    padding-top: 1px;                   //to remove the space between the two parts
+
+    h2{
+        font-size: 2.4rem;
+        color: $White;
+        margin-bottom: 50px;
+    }
+
+    div{
+        @extend %flex-column-alignItemsCenter;
+
+        figure:nth-child(2){
+            margin: 40px 0px;
+        }
+    }
+
+    @include cart-animation(150px);
+    @include selling-point-map(400px);
+    
+    ul{
+        padding: 0px;
+
+        a:hover{
+            color: $White;
+        }
+
+        span{
+            color: $White;
+        }
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){
+        div{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;  
+        }
+    }
+}
+
+/*Honey flow background*/
+
+#honey-flow{
+    background: url("../assets/pictures/accueil/fond_accueil_dessin-miel.webp") no-repeat center;
+    background-size: cover;
+    height: 190px;
+    margin-top: -5px;   //remove space
+
+    @media (min-width: 800px) and (orientation: landscape){
+        height: 310px;
+        margin-top: -100px;
+    }
+}
+
+/*** Pictogram ***/
+
+#pictogram{
+    &__honey{       
+        width: resize(134px, 1.5);
+        height: resize(197px, 1.5);
+    }
+
+    &__bankCard{       
+        width: resize(221px, 1.5);
+        height: resize(123px, 1.5);
+    }
+
+    &__cardboard{    
+        width: rezise(176px, 1.5);
+        height: resize(203px, 1.5);
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        div{
+            text-align: center;
+        }
+
+        &__honey{       
+            width: 134px;
+            height: 197px;
+        }
+
+        &__bankCard{       
+            width: 221px;
+            height: 123px;
+        }
+
+        &__cardboard{    
+            width: 176px;
+            height: 203px;
+        }
+    }
+}

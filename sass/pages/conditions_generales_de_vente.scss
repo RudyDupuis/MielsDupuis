@@ -1,23 +1,15 @@
 @import "../utils/utils";
+@import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
-@import "../layouts/footer";
+@import "../layouts/footer"; 
 
-#conditions_generales_de_vente{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h1{
-        font-size: 2rem;
-        margin: 50px 0px;
-        text-align: center;
-    }
-
-    $sizebeekeeperAnim: 80px;
-    @import "../components/beekeeper-animation";
-
+#body{
+    @extend %flex-column-alignItemsCenter;
+   
     div{
         padding: 30px 30px;
 
@@ -25,24 +17,23 @@
             font-style: italic;
         }
 
-        p, ul{
-            font-size: 1rem;
+        ul{
             list-style-type: disc;
 
             li{
                 margin: 10px 0px;
             }
         }
-        h2{
-            font-size: 1.4rem; 
-        }
-    }
-        
-    
 
-    @media (min-width: 800px) and (orientation: landscape){
-        div{
-            width: 90%;
+        @media (min-width: 800px) and (orientation: landscape){
+           width: 90%; 
         }
     }
 }
+
+h1{
+    margin: 50px 0px;
+    text-align: center;
+}
+
+@include beekeeper-animation(80px);

@@ -1,39 +1,24 @@
 @import "../utils/utils";
+@import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
-@import "../layouts/footer";
+@import "../layouts/footer"; 
 
-#articles{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#body{
+    @extend %flex-column-justifyContentsCenter-alignItemsCenter;
     overflow-x: hidden;     //to hide the scrollbar caused by the animation of the bees.
 
     h1{
-        font-size: 1.8rem;
-    }
-
-    $sizeBeeAnim: 150px;
-    @import "../components/bee-animation";
-
-    figure{
+        font-size: 1.6rem;
         margin: 50px 0px;
     }
 
-    figure:last-child{
-        .bee-animation{                 //desinchronize the bees     
-            &__bee1{
-                animation: fly 10s infinite;
-            }
-            &__bee2{
-                animation: fly 14s infinite reverse;
-            }
-            &__bee3{
-                animation: fly 15s infinite;
-            }
-        }
-    }
+    @include bee-animation(150px, 10s);
 
+    figure:last-child{
+        @include bee-animation(150px, 8s);
+    }
 }

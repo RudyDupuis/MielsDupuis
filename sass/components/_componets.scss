@@ -9,9 +9,7 @@
     border-radius: 20px;
     width: 40px;
     height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex-justifyContentsCenter-alignItemsCenter;
     margin-bottom: -55px; //remove space
 
     &__arrow{
@@ -28,7 +26,7 @@
 .product{
     text-align: center;
 
-    h3, p, input{
+    h3{
         font-size: 1.1rem;
     }
 
@@ -44,9 +42,9 @@
         padding: 120px 20px 20px 20px;
 
         &-inputs{
-            display: flex;
-            align-items: center;
+            @extend %flex-alignItemsCenter;
             justify-content: space-around;
+            font-size: 0.9rem;
         }
     }
 
@@ -132,7 +130,6 @@ textarea{
 
 form{
     display: flex;
-    font-size: 1.1rem;
     flex-direction: column;
     background-color: rgb(245, 245, 245);
     border-radius: 40px;
@@ -155,8 +152,16 @@ form{
         margin: 20px 0px 5px 0px;
     }
 
+    .checkbox-label{
+        margin: 0px 10px;
+        font-size: 0.9rem;
+    
+        a{
+            font-size: 0.9rem;
+        }
+    }
+
     [type="submit"]{
-        font-size: 1.1rem;
         color: $Black;
         border: 3px solid $colorPrimary;
         width: 200px;

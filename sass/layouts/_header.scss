@@ -1,95 +1,96 @@
 header{
     background-color: $White;
-    position: relative;   //position, z-index and width for hero baner homepage
-    z-index: 2;
+    @extend %relative-zIndex2;   //position, z-index and width for hero baner homepage
     width: 100%;
     border-bottom: 6px solid $colorPrimary;
-
-    #header__image{
-        display:flex;
-        justify-content: space-around;
+    
+    @media (min-width: 800px) and (orientation: landscape){       //The links go below the rest
+        display: flex;
+        flex-direction: row-reverse;
         align-items: center;
-        margin: 20px 0px;
+    }
+}
+
+#header__image{
+    @extend %flex-alignItemsCenter;
+    justify-content: space-around;
+    margin: 20px 0px;
         
+    & > a{     //logo
+        img{
+            @extend %relative-zIndex2;  //be first view
+            width: 121px;
+            height: 57px;
+        }
+    }
+
+    &-picto{
+        white-space: nowrap;    //To keep the pictograms on the same line if the screen is very small
+
+        &-compte{
+            width: 36px;
+            height: 43px;
+
+            &:hover{
+                background: url(../assets/pictures/header/picto_compte-active.webp) no-repeat center;
+            }
+        }
+
+        &-panier{
+            width: 29px;
+            height: 40px;
+
+            &:hover{
+                background: url(../assets/pictures/header/picto_panier-active.webp) no-repeat center;
+            }
+        }
+
+        a:last-child{
+            margin-left: 20px;
+        }  
+    }
+
+    @media (min-width: 800px) and (orientation: landscape){       //The links go below the rest
+        justify-content: space-between;
+        width: 50%;
+            
         & > a{     //logo
             img{
-                position: relative;  //be first view
-                z-index: 2;
-                width: 121px;
-                height: 57px;
+                width: 173px;
+                height: 82px;
+                margin-left: -86px;   //logo center
             }
         }
 
         &-picto{
-            white-space: nowrap;    //To keep the pictograms on the same line if the screen is very small
-
-            &-compte{
-                width: 36px;
-                height: 43px;
-
-                &:hover{
-                    background: url(../assets/pictures/header/picto_compte-active.webp) no-repeat center;
-                }
-            }
-
-            &-panier{
-                width: 29px;
-                height: 40px;
-
-                &:hover{
-                    background: url(../assets/pictures/header/picto_panier-active.webp) no-repeat center;
-                }
-            }
-
             a:last-child{
-                margin-left: 20px;
+                margin-right: 60px;
             }
         }
     }
+}
 
-    #header__link{
-        display:flex;
-        justify-content: space-evenly;
-        font-size: 1.1rem;
+#header__link{
+    display:flex;
+    justify-content: space-evenly;
 
-        a:hover{
+    a{
+        margin: 20px 0px;
+        font-weight: bold;
+
+        &:hover{
             color: $colorPrimary;
         }
     }
 
     @media (min-width: 800px) and (orientation: landscape){       //The links go below the rest
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
+        justify-content: left;
+        align-items: center;            
+        width: 50%;
 
-        #header__image{
-            justify-content: space-between;
-            width: 50%;
-            
-            & > a{     //logo
-                img{
-                    width: 173px;
-                    height: 82px;
-                    margin-left: -86px;   //logo center
-                }
-            }
-
-            &-picto{
-                a:last-child{
-                    margin-right: 60px;
-                }
-            }
-        }
-
-        #header__link{
-            justify-content: left;
-            align-items: center;            
-            width: 50%;
-
-            a:first-child{
-                margin-right: 20px;
-                margin-left: 60px;
-            }
+        a:first-child{
+            margin-right: 20px;
+            margin-left: 60px;
         }
     }
 }

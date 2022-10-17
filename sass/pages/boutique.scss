@@ -1,23 +1,20 @@
 @import "../utils/utils";
+@import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
-@import "../layouts/footer";
+@import "../layouts/footer"; 
 
 .shop-title{
-    display: flex;
-    justify-content: center;
+    @extend %flex-justifyContentsCenter;
 
     &:first-child{      
         margin-top: 60px;
     }
 
-    h2{
-        font-size: 2rem; 
-    }
-
-    $sizeCartAnim: 80px;
-    @import "../components/cart-animation";
+    @include cart-animation(80px);
 
     @media (min-width: 800px) and (orientation: landscape){
         justify-content: flex-start;

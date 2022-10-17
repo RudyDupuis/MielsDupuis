@@ -1,0 +1,43 @@
+/*** Position ***/
+
+%relative-zIndex2{
+    position: relative;
+    z-index: 2;
+}
+
+/*** Flexbox ***/
+
+%flex-alignItemsCenter{
+    display: flex;
+    align-items: center;
+}
+
+%flex-justifyContentsCenter{
+    display: flex;
+    justify-content: center;
+}
+
+%flex-column-alignItemsCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+%flex-column-justifyContentsCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+%flex-justifyContentsCenter-alignItemsCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-column-justifyContentsCenter-alignItemsCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}

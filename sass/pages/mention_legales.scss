@@ -1,24 +1,16 @@
 @import "../utils/utils";
+@import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
 @import "../layouts/footer"; 
 
-#mention_legales{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h1{
-        font-size: 2rem;
-        margin: 50px 0px;
-    }
-
-    $sizebeekeeperAnim: 80px;
-    @import "../components/beekeeper-animation";
+#body{
+    @extend %flex-column-alignItemsCenter;
 
     ul{
-        font-size: 1.1rem;
         margin: 50px 0px;
         padding: 0px 20px;
         text-align: end;
@@ -36,3 +28,10 @@
         }
     }
 }
+
+h1{
+    font-size: 2rem;
+    margin: 50px 0px;
+}
+
+@include beekeeper-animation(80px);

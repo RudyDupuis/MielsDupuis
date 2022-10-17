@@ -1,64 +1,56 @@
 @import "../utils/utils";
+@import "../vendors/normalize";
 @import "../base/base";
 @import "../components/componets";
+@import "../components/mixins";
+@import "../components/placeholders";
 @import "../layouts/header"; 
-@import "../layouts/footer";
+@import "../layouts/footer"; 
 
-#compte{
-    display: flex;
-    justify-content: center;
+#body{
+    @extend %flex-justifyContentsCenter;
     flex-wrap: wrap;
-    margin: 50px 0px;
+    margin: 50px 0px;  
+}
 
-    h2{
-        margin-left: 20px;
-    }
-    
-    form{
-        div label{    //label checkbox
-            margin: 0;
-            font-size: 0.9rem;
-        }
+h2{
+    margin-left: 20px;
+}
 
-    }
+@include sunflower-animation(100px);
+@include hive-animation(100px);
 
-    &__login, &__register{
-        width: 100%;
+.hive-animation{
+    margin-top: 15px;
+    margin-bottom: -15px;
+}
 
-        div{
-           display: flex;
+#login, #register{
+    width: 100%;
 
-           h2{
-            margin-right: 80px;
-           }
-        }
-    }
+    div{
+       display: flex;
 
-    &__register{
-        margin-top: 50px;
+       h2{
+        margin-right: 80px;
+       }
     }
 
-    $sizeSunflowerAnim: 100px;
-    $sizeHiveAnim: 100px;
-    @import "../components/sunflower-animation";
-    @import "../components/hive-animation";
-
-    .hive-animation{
-        margin-top: 15px;
-        margin-bottom: -15px;
-    }
-
-    
-    
     @media (min-width: 800px) and (orientation: landscape){
-        &__login, &__register{
-            margin-top: 0;
-            width: 400px;
-        }
+        width: 400px;
+    }
+}
 
-        &__login{
-            margin-right: 50px;
-        }
+#login{
+    @media (min-width: 800px) and (orientation: landscape){
+        margin-right: 50px;
+    }  
+}
 
+#register{
+    margin-top: 50px;
+
+    @media (min-width: 800px) and (orientation: landscape){
+        margin-top: 0px;
     }
 }
