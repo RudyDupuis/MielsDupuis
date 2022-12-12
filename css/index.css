@@ -913,14 +913,14 @@ header {
 }
 
 #headerClose img {
-  width: 173px;
-  height: 82px;
+  width: 121px;
+  height: 57px;
   margin-left: 5vw;
 }
 
 #headerClose-button {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 3px solid #ffffffff;
   border-radius: 10%;
   cursor: pointer;
@@ -929,10 +929,25 @@ header {
 
 #headerClose-button div {
   height: 3px;
-  width: 35px;
+  width: 28px;
   border-radius: 20%;
   background: #ffffffff;
-  margin: 11px auto;
+  margin: 8px auto;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  #headerClose img {
+    width: 173px;
+    height: 82px;
+  }
+  #headerClose-button {
+    width: 50px;
+    height: 50px;
+  }
+  #headerClose-button div {
+    width: 35px;
+    margin: 11px auto;
+  }
 }
 
 #body {
@@ -1310,10 +1325,6 @@ header {
   position: absolute;
   width: 15.41426px;
   height: 20.41858px;
-}
-
-#salling-point .selling-point-map__point1:hover, #salling-point .selling-point-map__point2:hover, #salling-point .selling-point-map__point3:hover, #salling-point .selling-point-map__point4:hover, #salling-point .selling-point-map__point5:hover, #salling-point .selling-point-map__point6:hover, #salling-point .selling-point-map__point7:hover, #salling-point .selling-point-map__point8:hover {
-  scale: 150%;
 }
 
 #salling-point .selling-point-map__point1 {
