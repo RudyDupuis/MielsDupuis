@@ -12,6 +12,21 @@ $Black: #000000ff;
 
 /** Keyframes **/
 
+@keyframes click-here {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-5deg);
+  }
+  75%{
+    transform: rotate(5deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes tracking-in-expand {          //letter spacing stretches back to normal display
     0%{
       letter-spacing: -0.5em;

@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Vente direct de miel. Apiculteur récoltant dans le Poitou-Charentes. Miel français de Colza, Tournesol, Fleurs et d'Acacia.">
-        <link rel="stylesheet" href="css/accueil.css">
+        <link rel="stylesheet" href="css/index.css">
         <link rel="icon" type="image/png" href="assets/pictures/accueil/dessin_abeille-left.webp">
         <title>Accueil - MielsDupuis</title>
     </head>
@@ -27,36 +27,43 @@
 
         </header>
 
-        <div id="body">
+        <div id="headerClose">
+            <img src="assets/pictures/header/logo-blanc.webp" alt="Inscription MielsDupuis avec le logo en forme d'abeille">
+            <div id="headerClose-button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <main id="body">
 
             <!-- Hero Banner-->
 
-            <div id="hero-banner">
+            <section id="hero-banner">
                 <h1>Vente directe producteur</h1>
                 <h2>Miels et produits de la ruche</h2>
                 <h2>Récoltés, confectionnés et expédiés par l'apiculteur</h2>
                 <h2>En Poitou-Charentes</h2>
-            </div>
+            </section>
             
             <!-- French Flag-->
             
-            <div id="french-flag">
+            <section id="french-flag">
                 <div id="french-flag__blue"></div>
                 <div id="french-flag__white"></div>
                 <div id="french-flag__red"></div>
-            </div>
+            </section>
 
             <!--- Anchor-->
 
-            <a href="#anchor-pos">
-                <div class="anchor">
-                    <div class="anchor__arrow"></div>
-                </div>
+            <a href="#anchor-pos" class="anchor">
+                <div class="anchor__arrow"></div>
             </a>
 
             <!-- Description-->
 
-            <div id="description">
+            <section id="description">
 
                 <!-- Hive -->
 
@@ -138,15 +145,15 @@
                     </div>
 
                 </div>
-            </div>
+            </section>
 
             <!-- Apiarie-->
 
-            <div id="apiarie"></div>
+            <section id="apiarie"></section>
 
             <!-- Salling point-->
 
-            <div id="salling-point">
+            <section id="salling-point">
 
                 <h2>Points de vente</h2>
 
@@ -170,7 +177,7 @@
                         <img src="assets/pictures/accueil/dessin_caddie.webp" alt="Dessin d'un caddie" class="cart-animation__cart">
                     </figure>
                     
-                    <ul>
+                    <ul class="selling-point-link">
                         <li><a href="https://goo.gl/maps/593N4FNDbLXMr2Th6" target="_blank" rel="nofollow">Super U <span>-</span> Vouillé</a></li>
                         <li><a href="https://goo.gl/maps/tiZ1KQWftJzQy6kY8" target="_blank" rel="nofollow">Super U <span>-</span> Neuville</a></li>
                         <li><a href="https://goo.gl/maps/2fnRnuot6vMwsT9q6" target="_blank" rel="nofollow">Super U <span>-</span> Loudun</a></li>
@@ -181,14 +188,14 @@
                         <li><a href="https://g.page/Maisonmerling-Poitiers?share" target="_blank" rel="nofollow">Maison Merling <span>-</span> Poitiers</a></li>
                     </ul>
                 </div>
-            </div>
+            </section>
 
                 <!-- Honey flow background-->
             <div id="honey-flow"></div>
 
             <!-- Pictograms-->
 
-            <div id="pictogram">
+            <section id="pictogram">
 
                 <div>
                     <figure><img src="assets/pictures/accueil/dessin_pot-de-miel.webp" alt="Dessin d'un pot de miel" id="pictogram__honey"></figure>
@@ -205,8 +212,8 @@
                     <p>Expédition dans toute<br> la France Métropolitaine</p>
                 </div>
                 
-            </div>
-        </div>
+            </section>
+        </main>
 
         <footer>
             <div id="footer-text">
@@ -256,5 +263,7 @@
             </figure>
 
         </footer>
+
+        <script src="js/index.js"></script>
     </body>
 </html>

@@ -15,10 +15,6 @@
             position: absolute;
             width: resize($size, 25.95);
             height: resize($size, 19.59);
-    
-            &:hover{
-                scale: 150%;
-            }
         }
         &__point1{
             top: resize($size, 1.58);

@@ -1,5 +1,20 @@
 /** Functions **/
 /** Keyframes **/
+@keyframes click-here {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -448,11 +463,15 @@ ul, h4 {
 }
 
 /**** Anchor****/
+html {
+  scroll-behavior: smooth;
+}
+
 .anchor {
   position: sticky;
   z-index: 3;
-  top: 85vh;
-  left: 95vw;
+  top: 85%;
+  left: 96%;
   border: 3px solid #353232;
   border-radius: 20px;
   width: 40px;
@@ -878,6 +897,42 @@ footer {
 
 header {
   position: absolute;
+  transform: translatey(-200px);
+  transition: all 1s ease-in-out;
+}
+
+#headerClose {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  transition: all .5s ease-in-out;
+}
+
+#headerClose img {
+  width: 173px;
+  height: 82px;
+  margin-left: 5vw;
+}
+
+#headerClose-button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #ffffffff;
+  border-radius: 10%;
+  cursor: pointer;
+  margin-right: 5vw;
+}
+
+#headerClose-button div {
+  height: 3px;
+  width: 35px;
+  border-radius: 20%;
+  background: #ffffffff;
+  margin: 11px auto;
 }
 
 #body {

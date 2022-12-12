@@ -1,10 +1,13 @@
 /**** Anchor****/
+html{
+    scroll-behavior: smooth;
+}
 
 .anchor{
     position: sticky;
     z-index: 3;
-    top: 85vh;
-    left: 95vw;
+    top: 85%;
+    left: 96%;
     border: 3px solid rgb(53, 50, 50);  
     border-radius: 20px;
     width: 40px;

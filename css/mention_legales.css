@@ -1,5 +1,20 @@
 /** Functions **/
 /** Keyframes **/
+@keyframes click-here {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -448,11 +463,15 @@ ul, h4 {
 }
 
 /**** Anchor****/
+html {
+  scroll-behavior: smooth;
+}
+
 .anchor {
   position: sticky;
   z-index: 3;
-  top: 85vh;
-  left: 95vw;
+  top: 85%;
+  left: 96%;
   border: 3px solid #353232;
   border-radius: 20px;
   width: 40px;
