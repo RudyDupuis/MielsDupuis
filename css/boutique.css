@@ -654,7 +654,7 @@ header, #header__image > a img, #footer-text {
 }
 
 /*** Flexbox ***/
-.product__description-inputs, #header__image {
+.product__description-inputs, #header__image, .learnMore__price, .learnMore__caract {
   display: flex;
   align-items: center;
 }
@@ -664,7 +664,7 @@ header, #header__image > a img, #footer-text {
   justify-content: center;
 }
 
-#footer-link {
+#footer-link, .learnMore__img {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -674,6 +674,13 @@ header, #header__image > a img, #footer-text {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.learnMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 header {
@@ -935,4 +942,68 @@ footer {
 
 #miels .product, #bougies .product {
   margin: 40px 40px;
+}
+
+.learnMore {
+  background: rgba(255, 255, 255, 0.919);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+  overflow: scroll;
+}
+
+.learnMore__price {
+  justify-content: space-evenly;
+  color: #44aa00ff;
+}
+
+.learnMore__desc {
+  padding: 20px;
+}
+
+.learnMore__caract {
+  justify-content: space-evenly;
+  color: #44aa00ff;
+}
+
+.learnMore [type="image"] {
+  width: 31px;
+  height: 41px;
+}
+
+.learnMore [type="image"]:active {
+  opacity: .5;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  .learnMore {
+    flex-direction: row;
+    overflow: hidden;
+    height: 100%;
+  }
+  .learnMore__desc {
+    width: 30%;
+  }
+}
+
+.learnMore__cross {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.learnMore__cross img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (min-width: 800px) and (orientation: landscape) {
+  .learnMore__cross {
+    top: 50px;
+    right: 50px;
+  }
 }
