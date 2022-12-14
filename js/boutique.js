@@ -177,8 +177,7 @@ learnMoreButton.forEach(button => {
         learnMore.style.display = "flex";
 
         if (window.matchMedia("(max-width: 800px)").matches) {
-            learnMore.style.background = "white";
-            background.style.display = "none";
+            learnMore.style.top = window.scrollY + "px";
         }
 
         if (button.classList[1] == "miels") {
@@ -193,8 +192,4 @@ learnMoreButton.forEach(button => {
 
 cross.addEventListener('click', ()=> {
     learnMore.style.display = "none";
-
-    if (window.matchMedia("(max-width: 800px)").matches) {
-        background.style.display = "block";
-    }
 })

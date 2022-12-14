@@ -952,7 +952,12 @@ footer {
   left: 0;
   z-index: 5;
   display: none;
-  overflow: scroll;
+  border-top: 5px solid #ffca18ff;
+  border-bottom: 5px solid #ffca18ff;
+}
+
+.learnMore__img h3 {
+  padding: 50px 50px 0px 50px;
 }
 
 .learnMore__img img {
@@ -986,9 +991,9 @@ footer {
 @media (min-width: 800px) and (orientation: landscape) {
   .learnMore {
     flex-direction: row;
-    overflow: hidden;
     height: 100%;
     position: fixed;
+    border: none;
   }
   .learnMore__desc {
     width: 30%;
