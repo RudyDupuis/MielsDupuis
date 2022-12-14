@@ -1,7 +1,7 @@
 /** Products **/
 
 let colzaKg = {
-    img : 'assets/pictures/boutique/ColzaPot1Kg.webp',
+    img : 'assets/pictures/boutique/colzapot1kg.webp',
     alt : `Photo d'un pot de miel de Colza`,
     title: 'Miel de Colza - 1kg',
     price: '10.00 €',
@@ -11,7 +11,7 @@ let colzaKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let tournesolKg = {
-    img : 'assets/pictures/boutique/TournesolPot1Kg.webp',
+    img : 'assets/pictures/boutique/tournesolpot1kg.webp',
     alt : `Photo d'un pot de miel de Tournesol`,
     title: 'Miel de Tournesol - 1kg',
     price: '10.00 €',
@@ -21,7 +21,7 @@ let tournesolKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let fleursKg = {
-    img : 'assets/pictures/boutique/FleursPot1Kg.webp',
+    img : 'assets/pictures/boutique/fleurspot1kg.webp',
     alt : `Photo d'un pot de miel de Fleurs`,
     title: 'Miel de Fleurs - 1kg',
     price: '12.00 €',
@@ -31,7 +31,7 @@ let fleursKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let acaciaKg = {
-    img : 'assets/pictures/boutique/AcaciaPot1Kg.webp',
+    img : 'assets/pictures/boutique/acaciapot1kg.webp',
     alt : `Photo d'un pot de miel d'Acacia`,
     title: `Miel d'Acacia - 1kg`,
     price: '16.00 €',
@@ -41,7 +41,7 @@ let acaciaKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let colzaG = {
-    img : 'assets/pictures/boutique/ColzaPot500g.webp',
+    img : 'assets/pictures/boutique/colzapot500g.webp',
     alt : `Photo d'un pot de miel de Colza`,
     title: 'Miel de Colza - 500g',
     price: '5.50 €',
@@ -51,7 +51,7 @@ let colzaG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let tournesolG = {
-    img : 'assets/pictures/boutique/TournesolPot500g.webp',
+    img : 'assets/pictures/boutique/tournesolpot500g.webp',
     alt : `Photo d'un pot de miel de Tournesol`,
     title: 'Miel de Tournesol - 500g',
     desc : `Miel de tournesol aussi appellé « miel d’été » est le dernier miel de la saison. Il est composé en grande majorité de fleurs de Tournesol mais aussi de toutes les autres fleurs d’été. C’est un miel dur avec un goût léger. Je suis sûr que vous allez l’adorer !`,
@@ -62,7 +62,7 @@ let tournesolG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let fleursG = {
-    img : 'assets/pictures/boutique/FleursPot500g.webp',
+    img : 'assets/pictures/boutique/fleurspot500g.webp',
     alt : `Photo d'un pot de miel de Fleurs`,
     title: 'Miel de Fleurs - 500g',
     price: '6.50 €',
@@ -72,7 +72,7 @@ let fleursG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let acaciaG = {
-    img : 'assets/pictures/boutique/AcaciaPot500g.webp',
+    img : 'assets/pictures/boutique/acaciapot500g.webp',
     alt : `Photo d'un pot de miel d'Acacia`,
     title: `Miel d'Acacia - 500g`,
     price: '8.50 €',
@@ -82,7 +82,7 @@ let acaciaG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let mielEtNoisettes = {
-    img : 'assets/pictures/boutique/MieletNoisettesPot480g.webp',
+    img : 'assets/pictures/boutique/mieletnoisettespot480g.webp',
     alt : `Photo d'un pot de pâte à tartiner au miel et noisettes`,
     title: 'Pâte à tartiner au miel et noisettes - 480g',
     price: '6.50 €',
@@ -92,7 +92,7 @@ let mielEtNoisettes = {
     advice : `<strong>Conservation :</strong><br>Avec l’ajout de noisette la date de durabilité minimal (DDM) est de 6 mois après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre.  `
 }
 let bougiePot = {
-    img : 'assets/pictures/boutique/BougiePot.webp',
+    img : 'assets/pictures/boutique/bougiepot.webp',
     alt : `Photo d'un pot de bougie aux huiles essentielles`,
     title: 'Bougie aux huiles essentielles',
     price: '6.00 €',
@@ -102,7 +102,7 @@ let bougiePot = {
     advice : `<strong>Conseils :</strong><br>Fermer le pot pour l’éteindre évite de faire de la fumée. <br><br><strong>Attention :</strong><br>Ne pas laisser proche d’objet inflammable. Pot en verre très chaud. Huiles essentielles déconseillées aux femmes enceintes. Peut provoquer des allergies. `
 }
 let bougieLongue = {
-    img : 'assets/pictures/boutique/BougieLongue.webp',
+    img : 'assets/pictures/boutique/bougielongue.webp',
     alt : `Photo d'un lot de 5 bougies longues`,
     title: 'Lot de 5 bougies longues',
     price: '4.00 €',
