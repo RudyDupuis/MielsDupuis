@@ -42,7 +42,6 @@
     @extend %flex-column-justifyContentsCenter-alignItemsCenter;
     display: none;
     border-top: 5px solid $colorPrimary;
-    border-bottom: 5px solid $colorPrimary;
 
     &__img{
         @extend %flex-column-alignItemsCenter;
