@@ -32,14 +32,10 @@
     }
 }
 
-// *{
-//     outline: 2px solid red;
-// }
-
 .learnMore{
     background: rgba(255, 255, 255, 0.919);
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
@@ -49,6 +45,11 @@
 
     &__img{
         @extend %flex-column-alignItemsCenter;
+
+        img{
+            width: 324px;
+            height: 405px;
+        }
     }
 
     &__price{
@@ -80,6 +81,7 @@
         flex-direction: row;
         overflow: hidden;
         height: 100%;
+        position: fixed;
 
         &__desc{
             width: 30%;

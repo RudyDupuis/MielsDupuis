@@ -1,7 +1,7 @@
 /** Products **/
 
 let colzaKg = {
-    img : 'assets/pictures/boutique/ColzaPot1Kg.png',
+    img : 'assets/pictures/boutique/ColzaPot1Kg.webp',
     alt : `Photo d'un pot de miel de Colza`,
     title: 'Miel de Colza - 1kg',
     price: '10.00 €',
@@ -11,7 +11,7 @@ let colzaKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let tournesolKg = {
-    img : 'assets/pictures/boutique/TournesolPot1Kg.png',
+    img : 'assets/pictures/boutique/TournesolPot1Kg.webp',
     alt : `Photo d'un pot de miel de Tournesol`,
     title: 'Miel de Tournesol - 1kg',
     price: '10.00 €',
@@ -21,7 +21,7 @@ let tournesolKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let fleursKg = {
-    img : 'assets/pictures/boutique/FleursPot1Kg.png',
+    img : 'assets/pictures/boutique/FleursPot1Kg.webp',
     alt : `Photo d'un pot de miel de Fleurs`,
     title: 'Miel de Fleurs - 1kg',
     price: '12.00 €',
@@ -31,7 +31,7 @@ let fleursKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let acaciaKg = {
-    img : 'assets/pictures/boutique/AcaciaPot1Kg.png',
+    img : 'assets/pictures/boutique/AcaciaPot1Kg.webp',
     alt : `Photo d'un pot de miel d'Acacia`,
     title: `Miel d'Acacia - 1kg`,
     price: '16.00 €',
@@ -41,7 +41,7 @@ let acaciaKg = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let colzaG = {
-    img : 'assets/pictures/boutique/ColzaPot500g.png',
+    img : 'assets/pictures/boutique/ColzaPot500g.webp',
     alt : `Photo d'un pot de miel de Colza`,
     title: 'Miel de Colza - 500g',
     price: '5.50 €',
@@ -51,7 +51,7 @@ let colzaG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let tournesolG = {
-    img : 'assets/pictures/boutique/TournesolPot500g.png',
+    img : 'assets/pictures/boutique/TournesolPot500g.webp',
     alt : `Photo d'un pot de miel de Tournesol`,
     title: 'Miel de Tournesol - 500g',
     desc : `Miel de tournesol aussi appellé « miel d’été » est le dernier miel de la saison. Il est composé en grande majorité de fleurs de Tournesol mais aussi de toutes les autres fleurs d’été. C’est un miel dur avec un goût léger. Je suis sûr que vous allez l’adorer !`,
@@ -62,7 +62,7 @@ let tournesolG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let fleursG = {
-    img : 'assets/pictures/boutique/FleursPot500g.png',
+    img : 'assets/pictures/boutique/FleursPot500g.webp',
     alt : `Photo d'un pot de miel de Fleurs`,
     title: 'Miel de Fleurs - 500g',
     price: '6.50 €',
@@ -72,7 +72,7 @@ let fleursG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let acaciaG = {
-    img : 'assets/pictures/boutique/AcaciaPot500g.png',
+    img : 'assets/pictures/boutique/AcaciaPot500g.webp',
     alt : `Photo d'un pot de miel d'Acacia`,
     title: `Miel d'Acacia - 500g`,
     price: '8.50 €',
@@ -82,7 +82,7 @@ let acaciaG = {
     advice : `<strong>Conservation :</strong><br>La date de durabilité minimal (DDM) est de 2 ans après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre. `
 }
 let mielEtNoisettes = {
-    img : 'assets/pictures/boutique/MieletNoisettesPot480g.png',
+    img : 'assets/pictures/boutique/MieletNoisettesPot480g.webp',
     alt : `Photo d'un pot de pâte à tartiner au miel et noisettes`,
     title: 'Pâte à tartiner au miel et noisettes - 480g',
     price: '6.50 €',
@@ -92,7 +92,7 @@ let mielEtNoisettes = {
     advice : `<strong>Conservation :</strong><br>Avec l’ajout de noisette la date de durabilité minimal (DDM) est de 6 mois après la mise en pot. Pour une bonne conservation du miel, gardez le pot fermé dans un endroit frais et sombre.  `
 }
 let bougiePot = {
-    img : 'assets/pictures/boutique/BougiePot.png',
+    img : 'assets/pictures/boutique/BougiePot.webp',
     alt : `Photo d'un pot de bougie aux huiles essentielles`,
     title: 'Bougie aux huiles essentielles',
     price: '6.00 €',
@@ -102,7 +102,7 @@ let bougiePot = {
     advice : `<strong>Conseils :</strong><br>Fermer le pot pour l’éteindre évite de faire de la fumée. <br><br><strong>Attention :</strong><br>Ne pas laisser proche d’objet inflammable. Pot en verre très chaud. Huiles essentielles déconseillées aux femmes enceintes. Peut provoquer des allergies. `
 }
 let bougieLongue = {
-    img : 'assets/pictures/boutique/BougieLongue.png',
+    img : 'assets/pictures/boutique/BougieLongue.webp',
     alt : `Photo d'un lot de 5 bougies longues`,
     title: 'Lot de 5 bougies longues',
     price: '4.00 €',
@@ -112,15 +112,17 @@ let bougieLongue = {
     advice : `<strong>Attention :</strong><br>Ne pas laisser proche d’objet inflammable. `
 }
 
-const honeyPlace = document.getElementById("miels");
-const candlePlace = document.getElementById("bougies");
-const honeys = [colzaKg, tournesolKg, fleursKg, acaciaKg, colzaG, tournesolG, fleursG, acaciaG, mielEtNoisettes];
-const candles = [bougiePot, bougieLongue];
+/** Products Cards Display **/
+
+const honeyCategory = document.getElementById("miels");
+const candleCategory = document.getElementById("bougies");
+const honeysData = [colzaKg, tournesolKg, fleursKg, acaciaKg, colzaG, tournesolG, fleursG, acaciaG, mielEtNoisettes];
+const candlesData = [bougiePot, bougieLongue];
 
 function createProductCard(amount, place){
     for (let i = 0; i < amount.length; i++) {
         place.innerHTML = place.innerHTML + 
-    `<div class="product">
+    `<div class="product cat-${place.id}">
         <img src="" alt="">
         <div class="product__description">
             <h3></h3>
@@ -134,53 +136,65 @@ function createProductCard(amount, place){
     }
 }
 
-createProductCard(honeys, honeyPlace);
-createProductCard(candles, candlePlace);
+createProductCard(honeysData, honeyCategory);
+createProductCard(candlesData, candleCategory);
 
-const productsData = [colzaKg, tournesolKg, fleursKg, acaciaKg, colzaG, tournesolG, fleursG, acaciaG, mielEtNoisettes, bougiePot, bougieLongue];
-const productsPlace = document.querySelectorAll('.product');
+const honeysPlacesList = document.querySelectorAll('.cat-miels');
+const candlesPlacesList = document.querySelectorAll('.cat-bougies');
 
-for (let i = 0; i < productsPlace.length; i++) {
-    productsPlace[i].children[0].src = productsData[i].img;
-    productsPlace[i].children[0].alt = productsData[i].alt;
-    productsPlace[i].children[1].children[0].textContent = productsData[i].title;
-    productsPlace[i].children[1].children[1].textContent = productsData[i].price;    
+function addDataInProductCard(place, data){
+    for (let i = 0; i < data.length; i++) {
+        place[i].children[0].src = data[i].img;
+        place[i].children[0].alt = data[i].alt;
+        place[i].children[1].children[0].textContent = data[i].title;
+        place[i].children[1].children[1].textContent = data[i].price;    
+    }
 }
+
+addDataInProductCard(honeysPlacesList, honeysData);
+addDataInProductCard(candlesPlacesList, candlesData);
+
+/** Products Pages Display **/
 
 const learnMore = document.querySelector('.learnMore');
 const learnMoreButton = document.querySelectorAll('.learnMore-button');
 const cross = document.querySelector('.learnMore__cross');
+const background = document.querySelector("main");
 
-cross.addEventListener('click', ()=> {
-    learnMore.style.display = "none";
-})
-
-function createProductPage(category, product) {
-    learnMore.children[1].children[1].src = category[product].img;
-    learnMore.children[1].children[1].alt = category[product].alt;
-    learnMore.children[1].children[0].textContent = category[product].title;
-    learnMore.children[2].children[0].children[0].textContent = category[product].price;
-    learnMore.children[2].children[1].textContent = category[product].desc;
-    learnMore.children[2].children[2].children[0].innerHTML = category[product].caract1;
-    learnMore.children[2].children[2].children[1].innerHTML = category[product].caract2;
-    learnMore.children[2].children[3].innerHTML = category[product].advice;
+function createProductPage(data, product) {
+    learnMore.children[1].children[1].src = data[product].img;
+    learnMore.children[1].children[1].alt = data[product].alt;
+    learnMore.children[1].children[0].textContent = data[product].title;
+    learnMore.children[2].children[0].children[0].textContent = data[product].price;
+    learnMore.children[2].children[1].textContent = data[product].desc;
+    learnMore.children[2].children[2].children[0].innerHTML = data[product].caract1;
+    learnMore.children[2].children[2].children[1].innerHTML = data[product].caract2;
+    learnMore.children[2].children[3].innerHTML = data[product].advice;
 }
 
 learnMoreButton.forEach(button => {
     button.addEventListener('click', () => {
         learnMore.style.display = "flex";
+
+        if (window.matchMedia("(max-width: 800px)").matches) {
+            learnMore.style.background = "white";
+            background.style.display = "none";
+        }
+
         if (button.classList[1] == "miels") {
-            createProductPage(honeys, button.classList[2]);
+            createProductPage(honeysData, button.classList[2]);
         }
         if (button.classList[1] == "bougies"){
-            createProductPage(candles, button.classList[2]);
+            createProductPage(candlesData, button.classList[2]);
         }
     })
     
 })
 
-// document.querySelector(`.learnMore-button-miels0`).addEventListener('click',() => {
-//     console.log('run');
-//     learnMore.style.display = "flex";
-//     createProductPage(amount, i);
-// })
+cross.addEventListener('click', ()=> {
+    learnMore.style.display = "none";
+
+    if (window.matchMedia("(max-width: 800px)").matches) {
+        background.style.display = "block";
+    }
+})

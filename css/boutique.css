@@ -947,12 +947,17 @@ footer {
 .learnMore {
   background: rgba(255, 255, 255, 0.919);
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 5;
   display: none;
   overflow: scroll;
+}
+
+.learnMore__img img {
+  width: 324px;
+  height: 405px;
 }
 
 .learnMore__price {
@@ -983,6 +988,7 @@ footer {
     flex-direction: row;
     overflow: hidden;
     height: 100%;
+    position: fixed;
   }
   .learnMore__desc {
     width: 30%;
