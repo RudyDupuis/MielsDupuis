@@ -1,94 +1,83 @@
-/** Products Cards Display **/
-
 const honeyCategory = document.getElementById("miels");
 const candleCategory = document.getElementById("bougies");
-const honeysData = [colzaKg, tournesolKg, fleursKg, acaciaKg, colzaG, tournesolG, fleursG, acaciaG, mielEtNoisettes];
-const candlesData = [bougiePot, bougieLongue];
 
-function createProductCard(amount, place){
-    for (let i = 0; i < amount.length; i++) {
-        place.innerHTML = place.innerHTML + 
-    `<div class="product cat-${place.id}">
-        <img src="" alt="">
+products
+.sort((a, b) => a.title.localeCompare(b.title))
+.map(product => {
+    let place;
+
+    if(product.category == "honey"){
+        place = honeyCategory;
+    }
+    else if(product.category == "candle"){
+        place = candleCategory;
+    }
+
+    place.innerHTML += 
+    `<div class="product ${product.id}">
+        <img src="${product.img}" alt="${product.alt}">
         <div class="product__description">
-            <h3></h3>
-            <p></p>
+            <h3>${product.title}</h3>
+            <p>${product.price}</p>
             <div class="product__description-inputs">
-                <input type="button" value="En savoir plus" class="learnMore-button ${place.id} ${i}">
+                <input type="button" value="En savoir plus">
                 <input type="image" src="assets/pictures/header/picto_panier.webp" alt="Dessin d'un panier (ajouter au panier)">
             </div>
         </div>
     </div>`;
-    }
-}
+})
 
-createProductCard(honeysData, honeyCategory);
-createProductCard(candlesData, candleCategory);
-
-const honeysPlacesList = document.querySelectorAll('.cat-miels');
-const candlesPlacesList = document.querySelectorAll('.cat-bougies');
-
-function addDataInProductCard(place, data){
-    for (let i = 0; i < data.length; i++) {
-        place[i].children[0].src = data[i].img;
-        place[i].children[0].alt = data[i].alt;
-        place[i].children[1].children[0].textContent = data[i].title;
-        place[i].children[1].children[1].textContent = data[i].price;    
-    }
-}
-
-addDataInProductCard(honeysPlacesList, honeysData);
-addDataInProductCard(candlesPlacesList, candlesData);
-
-/** Products Pages Display **/
-
-const learnMore = document.querySelector('.learnMore');
-const learnMoreButton = document.querySelectorAll('.learnMore-button');
-const cross = document.querySelector('.learnMore__cross');
+const productPage = document.querySelector('.learnMore');
+const productPageButtons = document.querySelectorAll('.product');
 const main = document.querySelector("main");
-let limit = 0;
-
-function createProductPage(data, product) {
-    learnMore.children[1].children[1].src = data[product].img;
-    learnMore.children[1].children[1].alt = data[product].alt;
-    learnMore.children[1].children[0].textContent = data[product].title;
-    learnMore.children[2].children[0].children[0].textContent = data[product].price;
-    learnMore.children[2].children[1].textContent = data[product].desc;
-    learnMore.children[2].children[2].children[0].innerHTML = data[product].caract1;
-    learnMore.children[2].children[2].children[1].innerHTML = data[product].caract2;
-    learnMore.children[2].children[3].innerHTML = data[product].advice;
-}
+let scrollLimit = 0;
 
 function closeLearnMore(){
-    learnMore.style.display = "none";
+    productPage.style.display = "none";
     main.style.position = "inherit";
-    limit = 0;
+    scrollLimit = 0;
 }
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY < limit - 200){
+    if (window.scrollY < scrollLimit - 200){
         closeLearnMore();
     }
 })
 
-learnMoreButton.forEach(button => {
+productPageButtons.forEach(button => {
     button.addEventListener('click', () => {
-        learnMore.style.display = "flex";
-
-        if (window.matchMedia("(max-width: 800px)").matches) {
-            learnMore.style.top = window.scrollY + "px";
-            main.style.position = "fixed";
-            limit = window.scrollY;
-        }
-
-        if (button.classList[1] == "miels") {
-            createProductPage(honeysData, button.classList[2]);
-        }
-        if (button.classList[1] == "bougies"){
-            createProductPage(candlesData, button.classList[2]);
-        }
-    })
+        productPage.style.display = "flex";
     
-})
+        if (window.matchMedia("(max-width: 800px)").matches) {
+            productPage.style.top = window.scrollY + "px";
+            main.style.position = "fixed";
+            scrollLimit = window.scrollY;
+        }
 
-cross.addEventListener('click', closeLearnMore);
+        products.map(product => {
+            if (button.classList[1] == product.id) {
+                productPage.innerHTML = 
+                `<div class="learnMore__cross"><img src="assets/pictures/panier/cross.webp" alt="Croix pour quitter"></div>
+                    <div class="learnMore__img">
+                        <h3>${product.title}</h3>
+                        <img src="${product.img}" alt="${product.alt}">
+                    </div>
+                    <div class="learnMore__desc">
+                        <div class="learnMore__price">
+                            <h3>${product.price}</h3>
+                            <input type="image" src="assets/pictures/header/picto_panier.webp" alt="Dessin d'un panier (ajouter au panier)">
+                        </div>
+                        <p>${product.desc}</p>
+                        <div class="learnMore__caract">
+                            <p>${product.caract1}</p> 
+                            <p>${product.caract2}</p>
+                        </div>
+                        <p>${product.advice}</p>
+                    </div>`
+            }
+        })
+
+        const productPageCross = document.querySelector('.learnMore__cross'); 
+        productPageCross.addEventListener('click', closeLearnMore);
+    })
+})
